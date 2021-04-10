@@ -1,18 +1,18 @@
 {{ define "main" }}
-{{ $image := .Params.photo.image }}
-{{ $license := .Site.Params.licenses.Get .Params.photo.license }}
+{{- $image := .Params.photo.image }}
+{{- $low := replace $image "png" "jpg" }}
+{{- $license := .Site.Params.licenses.Get .Params.photo.license }}
 <!-- <script>console.log({{ .Site.Params.licenses.cc0 }});</script> -->
 
-<article class='mx-auto max-w-4xl mt-3'>
+<article class='mx-auto max-w-4xl mt-8 md:mt-12'>
   {{partial "related-posts.html" . }}
   <header>
     <div class="hidden ghost">
       {{ .File.UniqueID }} TRUNCATE
     </div>
-    <h1 itemprop="headline" class="font-display text-6xl mt-24 mb-12">
+    <h1 itemprop="headline" class="font-display text-3xl md:text-6xl mb-4 mt-8">
       {{ .Title }}
     </h1>
-    {{ $low := replace $image "png" "jpg" }}
     <figure class='rounded-lg' style="background-image: url(/assets/images/low/articles/{{ $low }});">
       {{ partial "picture.html" $image }}
       <figcaption class="bg-black text-white dark:bg-brand-100 dark:text-black px-2 rounded-b-lg">

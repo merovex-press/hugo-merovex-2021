@@ -1,26 +1,25 @@
-{{ if .PrevInSection }}
-<li class="page-item">
-  <a href="{{.PrevInSection.Permalink}}" class="page-link">
-    <span aria-hidden="true">&larr;</span>
-    Previous</a>
-</li>
-{{ else }}
-<li class="page-item disabled">
-  <a href="#" class="page-link">
-    <span aria-hidden="true">&larr;</span>
-    Previous</a>
-</li>
-{{ end }}
-{{ if .NextInSection }}
-<li class="page-item">
-  <a href="{{.NextInSection.Permalink}}" class="page-link">Next
-    <span aria-hidden="true">&rarr;</span>
-  </a>
-</li>
-{{ else }}
-<li class="page-item disabled">
-  <a href="#" class="page-link">Next
-    <span aria-hidden="true">&rarr;</span>
-  </a>
-</li>
-{{ end }}
+<div class='flex justify-between items-center'>
+  {{ if .PrevInSection }}
+  <div class="w-1/4">
+    <a href="{{.PrevInSection.Permalink}}" class="">
+      <span aria-hidden="true">&larr;</span>
+      {{.PrevInSection.Title}}</a>
+  </div>
+  {{ else }}
+  <div class="disabled">
+    <a href="#" class="">
+      <span aria-hidden="true">&larr;</span>
+      </a>
+  </div>
+  {{ end }}
+  {{ if .NextInSection }}
+  <div class="text-right w-1/4">
+    <a href="{{.NextInSection.Permalink}}" class="">{{.NextInSection.Title}}
+      <span aria-hidden="true">&rarr;</span>
+    </a>
+  </div>
+  {{ else }}
+  <div class="text-right disabled">
+  </div>
+  {{ end }}
+</div>

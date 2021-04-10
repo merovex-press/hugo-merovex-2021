@@ -1,14 +1,10 @@
 {{ define "main" }}
-{{ $image := .Params.photo.image }}
-{{ $license := .Site.Params.licenses.Get .Params.photo.license }}
-<!-- <script>console.log({{ .Site.Params.licenses.cc0 }});</script> -->
-
-<article class='mx-auto max-w-4xl mt-3'>
+<article class='mx-auto max-w-4xl mt-8 md:mt-12'>
   <header>
     <div class="hidden ghost">
         {{ .File.UniqueID }} TRUNCATE
     </div>
-    <h1 itemprop="headline" class="font-display text-6xl mt-24 mb-12">
+    <h1 itemprop="headline" class="font-display text-6xl mb-12">
         {{ .Title }}
     </h1>
   </header>

@@ -4,3 +4,63 @@
 .test {
   border: 1px solid blue;
 }
+
+@font-face {
+  font-family:"IMFellEnglish";
+  src:url("../assets/fonts/IMFellEnglish-Regular.ttf");
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face {
+  font-family:"IMFellEnglish-Italic";
+  src:url("../assets/fonts/IMFellEnglish-Italic.ttf");
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face {
+  font-family:"MerovexSans";
+  src:url("../assets/fonts/SourceSansPro-Regular.ttf");
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face {
+  font-family:"MerovexSans-Italic";
+  src:url("../assets/fonts/SourceSansPro-Italic.ttf");
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face {
+  font-family:"MerovexSans-Bold";
+  src:url("../assets/fonts/SourceSansPro-Bold.ttf");
+  font-weight:bold;
+  font-style:normal;
+}
+@font-face {
+  font-family:"MerovexSans-BoldItalic";
+  src:url("../assets/fonts/SourceSansPro-BoldItalic.ttf");
+  font-weight:bold;
+  font-style:normal;
+}
+@font-face {
+  font-family:"MerovexSerif";
+  src:url("../assets/fonts/SourceSerifPro-Regular.ttf");
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face {
+  font-family:"MerovexSerif-Italic";
+  src:url("../assets/fonts/SourceSerifPro-Italic.ttf");
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face {
+  font-family:"MerovexSerif-Bold";
+  src:url("../assets/fonts/SourceSerifPro-Bold.ttf");
+  font-weight:bold;
+  font-style:normal;
+}
+@font-face {
+  font-family:"MerovexSerif-BoldItalic";
+  src:url("../assets/fonts/SourceSerifPro-BoldItalic.ttf");
+  font-weight:bold;
+  font-style:normal}

@@ -3,9 +3,9 @@
     <div class="container mx-auto">
       <div class="flex items-center justify-between py-4">
         <div class="flex items-center">
-          <div class='text-white'>
+          <div class='text-white'> <!-- Logo & Title -->
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450.000000 450.000000"
-              preserveAspectRatio="xMidYMid meet" class="fill-current h-10 w-10 text-white opacity-30">
+              preserveAspectRatio="xMidYMid meet" class="fill-current lg:h-10 lg:w-10 h-5 w-5 text-white opacity-30">
               <text x="350" y="80" font-size="40">®</text>
               <g transform="translate(0.000000,450.000000) scale(0.100000,-0.100000)" stroke="none">
                 <path
@@ -15,37 +15,27 @@
               </g>
             </svg>
           </div>
-          <div class="font-display text-3xl ml-2 text-white">
+          
+          <div class="font-display text-xl lg:text-3xl ml-2 text-white">
             {{ .Site.Title }}
             <span class='text-white opacity-30'>{{ .Site.Params.Subtitle }}</span>
           </div>
         </div>
-  <input id="nav-toggle" type=checkbox class="hidden">
-  <label id="show-button" for="nav-toggle" class="flex items-center block sm:hidden text-gray-500 hover:text-blue-500">
-    <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-      <title>Menu Open</title>
-      <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z" />
-    </svg>
-  </label>
-  <label id="hide-button" for="nav-toggle" class="flex items-center hidden text-gray-700 hover:text-blue-500">
-    <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-      <title>Menu Close</title>
-      <polygon points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2" transform="rotate(45 10 10)" />
-    </svg>
-  </label>
+        <!-- Menu (Large) -->
         <div class="hidden sm:flex sm:items-center">
-          <%= render 'elements/navbar-menu' %>
+          LG {{ partial "navbar-menu.html" . }}
         </div>
         <div class="sm:hidden cursor-pointer" data-action="click->reveal#toggle">
-          <%= render 'elements/menu-toggle' , klass: 'h-10 w-10 text-brand-50' %>
+          {{ .Scratch.Set "klass" "text-white h-10 w-10" }}
+          {{partial "svg-settings.html" . }}
         </div>
       </div>
+      <!-- Menu (SMALL) -->
       <div data-reveal-target="item" class="hidden border-t-2 py-2">
-       <div class="flex flex-col">
-        <%= render 'elements/navbar-menu' %>
-       </div>
+        <div class="flex flex-col">
+        SM {{ partial "navbar-menu.html" . }}
+        </div>
       </div>
     </div>
   </div>
-</div>
 </header>

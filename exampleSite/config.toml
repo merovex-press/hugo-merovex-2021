@@ -1,4 +1,4 @@
-theme = "hugo-theme-tailwindcss-starter"
+theme = "merovex-2021"
 languageCode = "en-us"
 baseurl = "http://example.com/"
 title = "Hugo Tailwindcss Starter"

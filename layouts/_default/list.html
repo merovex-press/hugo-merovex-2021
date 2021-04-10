@@ -4,7 +4,7 @@
   {{ range .Pages }}
   <article class="text-gray-700 sm:mx-12 mb-16 prose lg:prose-lg">
     <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-    .Content }}
+    {{ .Render "summary"}}
   </article>
   {{ end }}
 </main>

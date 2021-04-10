@@ -14,7 +14,7 @@
     <meta name="author" content="{{ .Params.Author}}" />
     {{ end -}}
     {{ hugo.Generator }}
-
+    {{- $styles := resources.Get "css/fa.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
     {{- $styles := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
     {{- if .Site.IsServer }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}">

@@ -1,0 +1,61 @@
+{{ define "main" }}
+{{ $image := .Params.photo.image }}
+{{ $license := .Site.Params.licenses.Get .Params.photo.license }}
+<!-- <script>console.log({{ .Site.Params.licenses.cc0 }});</script> -->
+
+<article class='mx-auto max-w-4xl mt-3'>
+  {{partial "related-posts.html" . }}
+  <header>
+    <div class="hidden ghost">
+      {{ .File.UniqueID }} TRUNCATE
+    </div>
+    <h1 itemprop="headline" class="font-display text-6xl mt-24 mb-12">
+      {{ .Title }}
+    </h1>
+    {{ $low := replace $image "png" "jpg" }}
+    <figure class='rounded-lg' style="background-image: url(/assets/images/low/articles/{{ $low }});">
+      {{ partial "picture.html" $image }}
+      <figcaption class="bg-black text-white dark:bg-brand-100 dark:text-black px-2 rounded-b-lg">
+        <a class='hover:underline' href="{{.Params.Photo.source_url}}">
+          {{ .Params.photo.caption }}
+        </a>
+        by
+        <a class='hover:underline' href="{{ .Params.Photo.creator_url }}">
+          {{ .Params.photo.creator }}
+        </a>
+        is licensed under
+        {{ partial "license-link.html" $license }}
+      </figcaption>
+    </figure>
+    <div class="text-center my-8 text-gray-500">
+      {{ partial "icon.html" "fad fa-user-circle" }}
+      <span class="mr-4">Ben Wilson</span>
+      {{ partial "icon.html" "fad fa-calendar-day" }}
+      <time class="mr-4" itemprop="datePublished" datetime="{ .date | date: ' %Y-%m-%d' }}">
+        {{ dateFormat "1 January 2006" .Date }}
+      </time>
+      <span class="mr-4">
+        {{ partial "icon.html" "fad fa-popcorn" }}
+        {{ div .WordCount 180 }} 
+        {{ cond (eq (div .WordCount 180) 1) "minute" "minutes" }}
+      </span>
+      <div class="tags">
+        {{ partial "icon.html" "fad fa-tags" }}
+        {{ range .Keywords }}
+        {{ . }}
+        {{ end }}
+      </div>
+    </div>
+  </header>
+  <div class="prose prose-xl font-serif mx-auto">
+    <p class='lead'>{{.Summary}}</p>
+    <!-- {% include historical-research-series.html %} -->
+    {{ .Content }}
+  </div>
+  {{ partial "related-posts.html" . }}
+  <aside class="opacity-50 text-gray-500 text-center">
+    This article was originally written by Ben Wilson in {{ dateFormat "2006" .Date }}, and published on his blog
+    at<br>{{ .Permalink }}
+  </aside>
+</article>
+{{ end }}

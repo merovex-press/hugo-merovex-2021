@@ -1,3 +1,8 @@
-<footer class="w-full text-center border-t border-gray-200 p-4 pin-b text-xs text-gray-400">
-    <p>made with <a href="https://gohugo.io" class="underline hover:text-blue-400">Hugo</a> and <a href="https://tailwindcss.com" class="underline hover:text-blue-400">TailwindCSS</a></p>
+<footer class='flex justify-between items-center px-8 py-2 mt-16 dark:bg-brand-800 bg-brand-700 text-white'>
+  <div>
+    {{ partial "icon.html" "far fa-laugh"}} Hello from <a class='hover:underline' href="/uses">{{.Site.Params.venue}}</a>.
+  </div>
+  <div><a class='hover:underline' href="/privacy/">Privacy</a></div>
+  <div><a class='hover:underline' href="/permissions/">Terms of Use</a></div>
+  <div>{{ partial "icon.html" "far fa-copyright" }} {{ now.Format "2006"}} Ben Wilson</div>
 </footer>

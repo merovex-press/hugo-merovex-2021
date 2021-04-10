@@ -1,9 +1,19 @@
 {{ define "main" }}
-<article class="text-gray-700 sm:mx-12 mb-16 mx-auto">
-    <h1 class="font-display text-5xl">{{ .Title }}</h1>
-        <div class='prose lg:prose-lg font-serif'>
-        {{ .Content }}
-        </div>
+{{ $image := .Params.photo.image }}
+{{ $license := .Site.Params.licenses.Get .Params.photo.license }}
+<!-- <script>console.log({{ .Site.Params.licenses.cc0 }});</script> -->
+
+<article class='mx-auto max-w-4xl mt-3'>
+  <header>
+    <div class="hidden ghost">
+        {{ .File.UniqueID }} TRUNCATE
     </div>
+    <h1 itemprop="headline" class="font-display text-6xl mt-24 mb-12">
+        {{ .Title }}
+    </h1>
+  </header>
+  <div class="prose prose-xl font-serif mx-auto">
+    {{ .Content }}
+  </div>
 </article>
 {{ end }}

@@ -1,12 +1,3 @@
-// module.exports = {
-//   theme: {
-//     extend: {}
-//   },
-//   variants: {},
-//   plugins: [
-//     require('@tailwindcss/typography'),
-//   ]
-// }
 module.exports = {
   // mode: 'jit',
   darkMode: 'media', // or 'media' or 'class'
@@ -31,6 +22,9 @@ module.exports = {
               '&:visited': {
                 color: theme('colors.violet.500'),
               },
+            },
+            'p+p': {
+              'text-indent': '2ch'
             },
           },
         },

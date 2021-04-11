@@ -1,8 +1,8 @@
-<article class='post-item my-8'>
-  <h2 class='text-2xl font-display'>
+<article class='post-item mt-12'>
+  <h2 class='text-3xl font-display'>
     <a href="{{- .Permalink -}}">{{- .Title -}}</a>
   </h2>
-  <div class="metadata">
+  <div class="metadata mt-4 mb-2">
     <span>
       <i class='fad fa-calendar-day'></i>
       {{ partial "dtg.html" . }}
@@ -15,5 +15,5 @@
       
     </div>
   </div>
-  <div class='prose font-serif'>{{.Summary}}</div>
+  <div class='prose md:prose-lg font-serif'>{{.Summary}}</div>
 </article>

@@ -1,0 +1,19 @@
+<article class='post-item my-8'>
+  <h2 class='text-2xl font-display'>
+    <a href="{{- .Permalink -}}">{{- .Title -}}</a>
+  </h2>
+  <div class="metadata">
+    <span>
+      <i class='fad fa-calendar-day'></i>
+      {{ partial "dtg.html" . }}
+    </span>
+    <span>
+      <i class='fad fa-popcorn'></i>
+      {{ partial "read-time.html" . }}
+    </span>
+    <div class='tags'>
+      
+    </div>
+  </div>
+  <div class='prose font-serif'>{{.Summary}}</div>
+</article>

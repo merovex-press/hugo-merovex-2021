@@ -1,0 +1,9 @@
+{{define "main" }}
+
+<div class="mx-auto max-w-2xl">
+  {{ range .Pages }}
+  {{ partial "post-list-item.html" . }}
+  {{ end }}
+</div>
+
+{{ end }}

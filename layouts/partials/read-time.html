@@ -1,0 +1,2 @@
+{{- $time := add (div .WordCount 180) 1 }}
+{{ $time }} {{ cond (eq $time 1) "minute" "minutes" }}

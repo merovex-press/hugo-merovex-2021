@@ -33,9 +33,9 @@
       </span>
       <div class="tags">
         {{ partial "icon.html" "fad fa-tags" }}
-        {{ range .Keywords }}
-        {{ . }}
-        {{ end }}
+          {{ range .Params.tags }}
+          <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+          {{ end }}
       </div>
     </div>
   </header>

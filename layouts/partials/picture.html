@@ -1,19 +1,20 @@
-{{ $ext := index (last 1 (split . ".")) 0 }}
-{{ $webp := replace . $ext "webp" }}
-{{ $webxp := replace . $ext "@2x.webp" }}
-{{ $webxp := replace $webxp ".@2x.webp" "@2x.webp" }}
+{{- $ext := index (last 1 (split . ".")) 0 }}
+{{- $webp := replace . $ext "webp" }}
+{{- $webxp := replace . $ext "@2x.webp" }}
+{{- $webxp := replace $webxp ".@2x.webp" "@2x.webp" }}
 <picture>
   <!-- Support Desktop -->
   <source srcset="/assets/images/desktop/articles/{{$webp}} 1920w,
-                      /assets/images/desktop/articles/{{$webxp}} 2x" media="(min-width: 1024px)"
+                  /assets/images/desktop/articles/{{$webxp}} 2x"
+                  media="(min-width: 1024px)"
     type="image/webp">
   <!-- Support Tablet -->
   <source srcset="/assets/images/tablet/articles/{{$webp}} 1020w,
-                      /assets/images/tablet/articles/{{$webxp}} 2x"
+                  /assets/images/tablet/articles/{{$webxp}} 2x"
     media="(min-width: 640px) and (max-width: 1023px)" type="image/webp">
   <!-- Support Mobile -->
   <source srcset="/assets/images/mobile/articles/{{$webp}} 630w,
-                      /assets/images/mobile/articles/{{$webxp}} 2x" media="(max-width: 639px)"
-    type="image/webp">
+                  /assets/images/mobile/articles/{{$webxp}} 2x"
+                  media="(max-width: 639px)" type="image/webp">
   <img src="/assets/images/articles/{{.}}" alt="" class='rounded-t-lg sm-rounded-t w-full max-h-96' style="" />
 </picture>

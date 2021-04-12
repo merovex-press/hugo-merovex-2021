@@ -3,7 +3,7 @@
 {{- $low := replace $image "png" "jpg" }}
 {{- $license := .Site.Params.licenses.Get .Params.photo.license }}
 <article class='mx-auto max-w-4xl mt-0 md:mt-12'>
-  {{partial "related-posts.html" . }}
+  {{ partial "related-posts.html" . }}
   <header>
     <h1 itemprop="headline" class="font-display text-3xl md:text-6xl mb-4 mt-8">
       {{ .Title }}
@@ -39,15 +39,12 @@
       </div>
     </div>
   </header>
-  <div class="prose md:prose-xl font-serif mx-auto mb-12">
+  <div class="prose  md:prose-xl dark:prose dark:md:prose-xl font-serif mx-auto mb-12">
     <p class='lead'>{{.Summary}}</p>
     <!-- {% include historical-research-series.html %} -->
     {{ .Content }}
   </div>
   {{ partial "related-posts.html" . }}
-  <aside class="opacity-50 text-gray-500 text-center mt-12">
-    This article was originally written by Ben Wilson in {{ dateFormat "2006" .Date }}, and published on his blog
-    at<br>{{ .Permalink }}
-  </aside>
+  {{ partial "citation.html" . }}
 </article>
 {{ end }}

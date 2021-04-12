@@ -1,0 +1,10 @@
+{{- if .Resources.ByType "image" }}
+{{- with .Resources.ByType "image" }}
+{{- range . }}
+{{- $image := .Resize "x400" }}
+<img class="mx-auto" src='{{ $image.RelPermalink }}'>
+{{- end }}
+{{- end }}
+{{else}}
+<img class="mx-auto" src='https://via.placeholder.com/200x300?text=Book+Cover'>
+{{- end }}

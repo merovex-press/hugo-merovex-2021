@@ -30,15 +30,18 @@ module.exports = {
         },
         dark: {
           css: {
-            color: theme('colors.gray.50'),
+            // color: theme('colors.red.200'),
             a: {
               color: theme('colors.blue.200'),
               '&:hover': {
                 color: theme('colors.blue.100'),
               },
             },
+            p: {
+              color: theme('colors.red.500')
+            },
             'p+p': {
-              'text-indent': '2ch'
+              'text-indent': '6ch'
             },
             'h1, h2, h3, h4, h5, h6': {
               color: theme('colors.gray.50'),

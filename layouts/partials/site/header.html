@@ -23,7 +23,8 @@
         </div>
         <!-- Menu (Large) -->
         <div class="hidden sm:flex sm:items-center">
-          LG {{ partial "site/navbar-menu.html" . }}
+          {{ if .Site.IsServer }}<span class='bg-red-200 rounded-full px-2'>LG</span>{{end}}
+          {{ partial "site/navbar-menu.html" . }}
         </div>
         <div class="sm:hidden cursor-pointer" data-action="click->reveal#toggle">
           {{ .Scratch.Set "klass" "text-white h-8 w-8" }}
@@ -33,7 +34,8 @@
       <!-- Menu (SMALL) -->
       <div data-reveal-target="item" class="hidden border-t-2 py-2">
         <div class="flex flex-col">
-        SM {{ partial "site/navbar-menu.html" . }}
+          {{ if .Site.IsServer }}<span class='bg-green-200 rounded-full px-2'>SM</span>{{end}}
+        {{ partial "site/navbar-menu.html" . }}
         </div>
       </div>
     </div>

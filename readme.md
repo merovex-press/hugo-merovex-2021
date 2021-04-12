@@ -1,4 +1,8 @@
-# Hugo Starter Theme with Tailwind CSS
+# Merovex.com
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/99656175-30a4-4ace-bb2d-c6b8a309bacd/deploy-status)](https://app.netlify.com/sites/merovex-com/deploys)
+
+## Old Notes
 
 Starter files for a Hugo theme with Tailwind CSS.
 

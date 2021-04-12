@@ -63,4 +63,8 @@
   font-family:"MerovexSerif-BoldItalic";
   src:url("../assets/fonts/SourceSerifPro-BoldItalic.ttf");
   font-weight:bold;
-  font-style:normal}
+  font-style:normal
+}
+a.tag + a.tag:before { 
+    content: '\b7\a0'; /* \b7 is a middot, \a0 is a space */
+}

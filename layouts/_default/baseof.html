@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang='{{ .Site.LanguageCode }}'>
-  {{ partial "head.html" . }}
+  {{ partial "site/head.html" . }}
   <body class="flex flex-col min-h-screen bg-yellow-100 dark:bg-black dark:text-white">
-    {{- partial "dev-size-indicator.html" . -}}
-    {{- partial "header.html" . -}}
+    {{- partial "site/dev-size-indicator.html" . -}}
+    {{- partial "site/header.html" . -}}
     <main class="flex-1 mx-4 lg:mx-auto mt-4 sm:mt-16">
     {{- block "main" . }}{{- end }}
     </main>
-    {{- partial "dev-parameters.html" . -}}
-    {{- partial "footer.html" . -}}
+    {{- partial "site/dev-parameters.html" . -}}
+    {{- partial "site/footer.html" . -}}
   </body>
 </html>

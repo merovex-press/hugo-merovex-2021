@@ -23,17 +23,17 @@
         </div>
         <!-- Menu (Large) -->
         <div class="hidden sm:flex sm:items-center">
-          LG {{ partial "navbar-menu.html" . }}
+          LG {{ partial "site/navbar-menu.html" . }}
         </div>
         <div class="sm:hidden cursor-pointer" data-action="click->reveal#toggle">
           {{ .Scratch.Set "klass" "text-white h-8 w-8" }}
-          {{partial "svg-settings.html" . }}
+          {{ partial "site/svg-settings.html" . }}
         </div>
       </div>
       <!-- Menu (SMALL) -->
       <div data-reveal-target="item" class="hidden border-t-2 py-2">
         <div class="flex flex-col">
-        SM {{ partial "navbar-menu.html" . }}
+        SM {{ partial "site/navbar-menu.html" . }}
         </div>
       </div>
     </div>

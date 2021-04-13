@@ -1,6 +1,7 @@
 {{ define "main" }}
-{{- $image := .Params.photo.image }}
-{{- $low := replace $image "png" "jpg" }}
+    
+{{- $image := resources.GetMatch .Params.photo.image -}}
+{{- $photo := .Params.Photo }}
 {{- $license := .Site.Params.licenses.Get .Params.photo.license }}
 <article class='mx-auto max-w-4xl mt-0 md:mt-12'>
   {{ partial "related-posts.html" . }}
@@ -8,20 +9,23 @@
     <h1 itemprop="headline" class="font-display text-3xl md:text-6xl mb-4 mt-8">
       {{ .Title }}
     </h1>
-    <figure class='rounded-lg bg-cover max-h-96 mx-auto max-w-2xl' style="background-image: url(/assets/images/low/articles/{{ $low }});">
-      {{ partial "picture.html" $image }}
+    {{- with .Resources.GetMatch .Params.photo.image }}
+    {{- $low := .Resize "80x q10 Smart Gaussian" }}
+    <figure class='rounded-lg bg-cover max-h-96 mx-auto max-w-2xl' style="background-image: url({{$low.RelPermalink}});">
+      {{ partial "picture.html" . }}
       <figcaption class="bg-black text-white dark:bg-brand-100 dark:text-black px-2 rounded-b-lg">
-        <a class='hover:underline block sm:inline' href="{{.Params.Photo.source_url}}">
-          {{ .Params.photo.caption }}
+        <a class='hover:underline block sm:inline' href="{{$photo.source_url}}">
+          {{ $photo.caption }}
         </a>
         by
-        <a class='hover:underline' href="{{ .Params.Photo.creator_url }}">
-          {{ .Params.photo.creator }}
+        <a class='hover:underline' href="{{ $photo.creator_url }}">
+          {{ $photo.creator }}
         </a>
         is licensed under
         {{ partial "license-link.html" $license }}
       </figcaption>
     </figure>
+    {{- end }}
     <div class="text-center my-8 text-gray-500">
       {{ partial "icon.html" "fad fa-user-circle" }}
       <span class="mr-4">Ben Wilson</span>

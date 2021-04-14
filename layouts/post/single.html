@@ -1,5 +1,5 @@
 {{ define "main" }}
-    
+
 {{- $image := resources.GetMatch .Params.photo.image -}}
 {{- $photo := .Params.Photo }}
 {{- $license := .Site.Params.licenses.Get .Params.photo.license }}
@@ -26,6 +26,7 @@
       </figcaption>
     </figure>
     {{- end }}
+    
     <div class="text-center my-8 text-gray-500">
       {{ partial "icon.html" "fad fa-user-circle" }}
       <span class="mr-4">Ben Wilson</span>

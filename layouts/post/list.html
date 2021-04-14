@@ -1,9 +1,10 @@
 {{define "main" }}
-<h1 class="font-display text-2xl lg:text-6xl">News & Random Thoughts</h1>
-<div class="mx-auto">
-  {{ range .Pages }}
-  {{ partial "post-list-item.html" . }}
-  {{ end }}
+<div class="max-w-3xl mx-auto mt-8 lg:mt-12">
+  <h1 class="font-display text-2xl lg:text-6xl">News & Random Thoughts</h1>
+  <div class="mx-auto">
+    {{ range .Pages }}
+    {{ partial "post-list-item.html" . }}
+    {{ end }}
+  </div>
 </div>
-
 {{ end }}

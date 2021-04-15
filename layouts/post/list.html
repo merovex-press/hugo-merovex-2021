@@ -1,9 +1,9 @@
 {{define "main" }}
-<div class="max-w-3xl mx-auto mt-8 lg:mt-12">
+<div class="max-w-3xl mx-auto mt-8 lg:mt-12 px-4">
   <h1 class="font-display text-2xl lg:text-6xl">News & Random Thoughts</h1>
-  <div class="mx-auto">
+  <div class="mx-auto font-serif">
     {{ range .Pages }}
-    {{ partial "post-list-item.html" . }}
+    {{ partial "post-item.html" . }}
     {{ end }}
   </div>
 </div>

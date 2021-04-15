@@ -3,18 +3,18 @@
 {{- $image := resources.GetMatch .Params.photo.image -}}
 {{- $photo := .Params.Photo }}
 {{- $license := .Site.Params.licenses.Get .Params.photo.license }}
-<article class='mx-auto max-w-4xl mt-0 md:mt-12'>
+<article class='max-w-4xl px-4 mx-auto mt-4 md:mt-12 md:px-0'>
   {{ partial "related-posts.html" . }}
   <header>
-    <h1 itemprop="headline" class="font-display text-3xl md:text-6xl mb-4 mt-8">
+    <h1 itemprop="headline" class="mt-8 mb-4 text-3xl font-display md:text-6xl">
       {{ .Title }}
     </h1>
     {{- with .Resources.GetMatch .Params.photo.image }}
     {{- $low := .Resize "80x q10 Smart Gaussian" }}
-    <figure class='rounded-lg bg-cover max-h-96 mx-auto max-w-2xl' style="background-image: url({{$low.RelPermalink}});">
+    <figure class='max-w-2xl mx-auto bg-cover rounded-lg max-h-96' style="background-image: url({{$low.RelPermalink}});">
       {{ partial "picture.html" . }}
-      <figcaption class="bg-black text-white dark:bg-brand-100 dark:text-black px-2 rounded-b-lg">
-        <a class='hover:underline block sm:inline' href="{{$photo.source_url}}">
+      <figcaption class="px-2 text-white bg-black rounded-b-lg dark:bg-brand-100 dark:text-black">
+        <a class='block hover:underline sm:inline' href="{{$photo.source_url}}">
           {{ $photo.caption }}
         </a>
         by
@@ -27,7 +27,7 @@
     </figure>
     {{- end }}
     
-    <div class="text-center my-8 text-gray-500">
+    <div class="my-8 text-center text-gray-500">
       {{ partial "icon.html" "fad fa-user-circle" }}
       <span class="mr-4">Ben Wilson</span>
       {{ partial "icon.html" "fad fa-calendar-day" }}
@@ -44,7 +44,7 @@
       </div>
     </div>
   </header>
-  <div class="prose  md:prose-xl dark:prose dark:md:prose-xl font-serif mx-auto mb-12">
+  <div class="mx-auto mb-12 font-serif prose md:prose-xl dark:prose dark:md:prose-xl">
     <p class='lead'>{{.Summary}}</p>
     <!-- {% include historical-research-series.html %} -->
     {{ .Content }}

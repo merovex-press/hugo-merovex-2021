@@ -2,12 +2,13 @@
 <div class="max-w-3xl px-4 mx-auto mt-8 lg:mt-12">
   <h1 class="text-2xl font-display lg:text-6xl">News & Random Thoughts</h1>
   <div class="mx-auto font-serif">
-    {{ $paginator := .Paginate (where .Pages "Type" "posts") }}
-    {{ template "_internal/pagination.html" . }}
-    {{ range $paginator.Pages }}
+    { $paginator := .Paginate (where .Pages "Type" "posts") }}
+    { template "_internal/pagination.html" . }}
+    { range $paginator.Pages }}
+    {{ range .Pages }}
     {{ partial "post-item.html" . }}
     {{ end }}
-    {{ template "_internal/pagination.html" . }}
+    { template "_internal/pagination.html" . }}
   </div>
 </div>
 {{ end }}

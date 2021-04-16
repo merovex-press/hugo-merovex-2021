@@ -7,9 +7,7 @@
 {{- $resizedlg := .Resize "500x750" }}
 {{- $resizedxl := .Resize "660x1000" }}
 {{- $low := .Resize "80x q10 Smart Gaussian" }}
-<figure class="bg-cover" style="background-image: url({{$low.RelPermalink}});">
 <picture>
-
 <source media="(min-width: 1280px)" srcset="{{ $resizedlg.RelPermalink }} 1x,
       {{ $resizedxl.RelPermalink }} 2x,
       {{ $resizedxl.RelPermalink }} 3x">
@@ -33,4 +31,3 @@
 <img class="{{$klass}}" src='https://via.placeholder.com/333x500?text=Book+Cover'>
 {{- end }}
 </picture>
-</figure>

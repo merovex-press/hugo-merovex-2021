@@ -26,18 +26,32 @@
       </figcaption>
     </figure>
     {{- end }}
-    
     <div class="my-8 text-center text-gray-500">
-      {{ partial "icon.html" "fad fa-user-circle" }}
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="inline-block bi bi-person-circle"
+        viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+        <path fill-rule="evenodd"
+          d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+      </svg>
       <span class="mr-4">Ben Wilson</span>
-      {{ partial "icon.html" "fad fa-calendar-day" }}
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="inline-block bi bi-calendar-fill" viewBox="0 0 16 16">
+        <path
+          d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5h16V4H0V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5z" />
+      </svg>
       {{ partial "dtg.html" . }}
       <span class="mr-4">
         {{ partial "icon.html" "fad fa-popcorn" }}
         {{ partial "read-time.html" . }}
       </span>
       <div class="tags">
-        {{ partial "icon.html" "fad fa-tags" }}
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="inline-block bi bi-tags-fill"
+          viewBox="0 0 16 16">
+          <path
+            d="M2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2zm3.5 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+          <path
+            d="M1.293 7.793A1 1 0 0 1 1 7.086V2a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l.043-.043-7.457-7.457z" />
+        </svg>
           {{- range .Params.tags }}
           <a class='tag hover:underline' href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
           {{- end }}

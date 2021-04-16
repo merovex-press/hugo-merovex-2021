@@ -2,10 +2,10 @@
     {{- with $.Site.GetPage "section" "book" }}
     {{- range .Pages }}
     {{- if .Params.featured }}
-    <div class="bg-black text-white h-2/3 py-24 px-4">
+    <div class="px-4 py-24 text-white bg-black h-2/3">
     {{- partial "book-summary.html" (dict "book" . "class" "text-blue-200") }}
     </div>
-    <div class="bg-brand-400 text-white text-2xl text-center py-12 px-4">
+    <div class="px-4 py-12 text-2xl text-center text-black bg-brown-300">
         <div class="max-w-4xl mx-auto">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet venenatis dolor. Suspendisse eu justo elit.
         Cras lacinia turpis nulla, nec lobortis sem varius eu. Sed viverra turpis malesuada est aliquet, ac laoreet Leo
@@ -16,18 +16,18 @@
     {{- end }}
     {{- end }}
     {{- end }}
-<div class="py-24 px-4">
+<div class="px-4 py-24">
    <div class="max-w-3xl mx-auto">
-       <h2 class="font-display text-5xl text-brand-600">My Story</h2>
+       <h2 class="text-5xl font-display text-brand-600">My Story</h2>
        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet venenatis dolor. Suspendisse eu justo elit.
     Cras lacinia turpis nulla, nec lobortis sem varius eu. Sed viverra turpis malesuada est aliquet, ac laoreet Leo
     convallis. Vivamus pretium aliquam finibus. Mauris dictum, eros eu malesuada imperdiet, nisl mauris scelerisque diam,
     nec fringilla nisl libero in nulla. Mauris eget massa lacinia sapien faucibus consequat.</p>
    </div>
 </div>
-<div class="py-24 px-4 bg-gray-700 bg-opacity-10">
+<div class="px-4 py-24 bg-gray-700 bg-opacity-10">
     <div class="max-w-3xl mx-auto font-serif">
-        <h2 class="font-display text-5xl text-brand-600">News</h2>
+        <h2 class="text-5xl font-display text-brand-600">News</h2>
         {{- with $.Site.GetPage "section" "post" }}
         {{- range (.Paginate ( first 3 .Pages )).Pages }}
           {{ partial "post-item.html" . }}

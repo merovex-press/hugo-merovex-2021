@@ -3,12 +3,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 
-    {{ if .Params.seo.noindex}}
+    {{- if .Params.seo.noindex}}
     <meta name="robots" content="noindex">
-    {{ end }}
+    {{- end }}
 
-    {{ $title := (cond (ne ($.Param "seo.title") nil) ($.Param "seo.title") ( printf "%s | %s" .Title .Site.Title) ) }}
-    {{ $description := (cond (ne ($.Param "seo.description") nil) ($.Param "seo.description") .Description ) }}
+    {{- $title := (cond (ne ($.Param "seo.title") nil) ($.Param "seo.title") ( printf "%s | %s" .Title .Site.Title) ) }}
+    {{- $description := (cond (ne ($.Param "seo.description") nil) ($.Param "seo.description") .Description ) }}
     <title>{{$title}}</title>
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -33,6 +33,7 @@
     <meta name="author" content="{{ .Params.Author}}" />
     {{ end -}}
     {{ hugo.Generator }}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
     {{- $styles := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
     {{- if .Site.IsServer }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}">

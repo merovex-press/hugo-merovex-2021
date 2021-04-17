@@ -36,11 +36,11 @@
 <div class="px-4 py-24 bg-gray-700 bg-opacity-10">
     <div class="max-w-3xl mx-auto font-serif">
         <h2 class="text-5xl font-display text-brand-600">News</h2>
-        {{- with $.Site.GetPage "section" "posts" }}
-        {{- range (.Paginate ( first 3 .Pages )).Pages }}
-          {{ partial "post-item.html" . }}
-        {{end}}
-        {{- end }}
+        {- with $.Site.GetPage "section" "posts" }}
+        {- range (.Paginate ( first 3 .Pages )).Pages }}
+          { partial "post-item.html" . }}
+        {end}}
+        {- end }}
     </div>
 </div>
 {{ end }}

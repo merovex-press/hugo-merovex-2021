@@ -150,7 +150,7 @@
 }
 .fa-tablet-android-alt:before { content:"\f3fc"
 }
-.fa-tags:before { content:"\f02c"
+.fa-tag:before { content:"\f02c"
 }
 .fa-user-circle:before { content:"\f2bd"
 }
@@ -232,7 +232,7 @@
 }
 .fad.fa-tablet-android-alt:after { content:"\10f3fc"
 }
-.fad.fa-tags:after { content:"\10f02c"
+.fad.fa-tag:after { content:"\10f02c"
 }
 .fad.fa-user-circle:after { content:"\10f2bd"}@font-face { font-family:"Font Awesome 5 Pro";
   font-style:normal;

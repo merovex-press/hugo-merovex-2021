@@ -5,8 +5,8 @@
     | singularize}} read</p>
   <div class="prose lg:prose-xl max-w-none">{{.Summary}}</div>
   <div class="pt-1 italic text-gray-500">
-    {{- range .Params.tags }}
-    # <a class='hover:underline' href="{{ " /tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+    {{- range .Params.tag }}
+    # <a class='hover:underline' href="{{ "/tag/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
     {{- end }}
   </div>
   

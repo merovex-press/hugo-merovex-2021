@@ -10,10 +10,10 @@
       {{- end }}
     <div class="px-4 py-24 text-white bg-black bg-opacity-50 h-2/3" style="background: url({{$background}}); background-size: cover;">
         <div class="max-w-5xl py-8 mx-auto rounded-xl backdrop-filter backdrop-ssaturate-50 backdrop-brightness-50 backdrop-blur-lg">
-            {{- partial "book-summary.html" (dict "book" . "class" "text-white") }}
+            {{- partial "book-summary.html" (dict "book" . "heading" "text-blue-400" "body" "text-white") }}
         </div>
     </div>
-    <div class="px-4 py-12 text-2xl text-center text-black bg-blue-200">
+    <div class="px-4 py-12 text-2xl text-center text-black bg-blue-200 dark:bg-blue-500 dark:text-white">
         <div class="max-w-4xl mx-auto">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet venenatis dolor. Suspendisse eu justo elit.
         Cras lacinia turpis nulla, nec lobortis sem varius eu. Sed viverra turpis malesuada est aliquet, ac laoreet Leo
@@ -26,7 +26,7 @@
     {{- end }}
 <div class="px-4 py-24">
    <div class="max-w-3xl mx-auto">
-       <h2 class="text-5xl font-display text-brand-600">My Story</h2>
+       <h2 class="text-5xl font-display text-brand-600 dark:text-brand-400">My Story</h2>
        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet venenatis dolor. Suspendisse eu justo elit.
     Cras lacinia turpis nulla, nec lobortis sem varius eu. Sed viverra turpis malesuada est aliquet, ac laoreet Leo
     convallis. Vivamus pretium aliquam finibus. Mauris dictum, eros eu malesuada imperdiet, nisl mauris scelerisque diam,

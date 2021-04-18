@@ -13,7 +13,7 @@ module.exports = {
   theme: {
     extend: {
       typography: (theme) => ({
-        DEFAULT: {
+        light: {
           css: {
             'background': 'none',
             color: theme('colors.black'),
@@ -30,27 +30,30 @@ module.exports = {
         },
         dark: {
           css: {
-            // color: theme('colors.red.200'),
             a: {
-              color: theme('colors.blue.500'),
+              color: theme('colors.blue.400'),
               '&:hover': {
                 color: theme('colors.blue.200'),
               },
+              '&:visited': {
+                color: theme('colors.violet.300'),
+              }
             },
-            'a:hover': {
-              color: theme('colors.blue.200'),
-            },
-            'a:visited': {
-              color: theme('colors.violet.200'),
-            },
-            p: {
-              color: theme('colors.red.500')
+            'p, li': {
+              color: theme('colors.gray.100')
             },
             'p+p': {
-              'text-indent': '6ch'
+              'text-indent': '2ch'
             },
-            'h1, h2, h3, h4, h5, h6': {
-              color: theme('colors.gray.50'),
+            blockquote: {
+              color: theme('colors.gray.200'),
+            },
+            strong: {
+              color: theme('colors.yellow.300'),
+              'font-weight': 'bold'
+            },
+            'h1,h2,h3,h4,h5': {
+              color: theme('colors.brand.300'),
               'font-weight': 'semibold'
             },
           },

@@ -68,9 +68,12 @@
 a.tag + a.tag:before { 
     content: '\b7\a0'; /* \b7 is a middot, \a0 is a space */
 }
-body {
-  background: url(/assets/images/backgrounds/beige-paper.png)
+@media (prefers-color-scheme: light) {
+  body {
+    background: url(/assets/images/backgrounds/beige-paper.png)
+  }
 }
+
 /* Color Theme Swatches in Hex */
 .Steampunk-Complimentary-1-hex { color: #9E6915; }
 .Steampunk-Complimentary-2-hex { color: #FFBE54; }

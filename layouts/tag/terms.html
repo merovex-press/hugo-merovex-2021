@@ -15,7 +15,7 @@
               {{- with $firstChild }}
               {{- with .Resources.GetMatch .Params.photo.image }}
               <figure class="w-full">
-                {{ $image := .Resize "500x300 webp picture" }}
+                {{ $image := .Resize "500x300" }}
                 <img src="{{ $image.Permalink }}" alt="">
               </figure>
               {{- end }}

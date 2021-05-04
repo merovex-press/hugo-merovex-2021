@@ -1,7 +1,11 @@
-{{- $resizedsm := .Resize "640x webp picture" }}
-{{- $resizedmd := .Resize "768x webp picture" }}
-{{- $resizedlg := .Resize "1024x webp picture" }}
-{{- $resizedxl := .Resize "2048x webp picture" }}
+{{- $resizedsm := .Resize "640x" }}
+<!--  webp picture -->
+{{- $resizedmd := .Resize "768x" }}
+<!--  webp picture -->
+{{- $resizedlg := .Resize "1024x" }}
+<!--  webp picture -->
+{{- $resizedxl := .Resize "2048x" }}
+<!--  webp picture -->
 <!--
   https://gs.statcounter.com/screen-resolution-stats/all/united-states-of-america
 # 1920px (this covers FullHD screens and up)

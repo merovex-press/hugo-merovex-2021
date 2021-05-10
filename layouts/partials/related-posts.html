@@ -1,5 +1,5 @@
 {{ $css := "px-2 py-1 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-500"}}
-<div class='grid grid-cols-2 gap-4 grid-flow-cols'>
+<div class='grid grid-cols-2 gap-4 my-8 grid-flow-cols'>
   {{ if .PrevInSection }}
   <div class="{{$css}}">
     <a href="{{.PrevInSection.Permalink}}" class="">
@@ -10,7 +10,7 @@
   <div class="disabled">
     <a href="#" class="">
       <span aria-hidden="true">&larr;</span>
-      </a>
+    </a>
   </div>
   {{ end }}
   {{ if .NextInSection }}

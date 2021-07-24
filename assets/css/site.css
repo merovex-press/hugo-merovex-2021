@@ -5,7 +5,7 @@
   border: 1px solid blue;
 }
 
-@font-face {
+/* @font-face {
   font-family:"IMFellEnglish";
   src:url("../assets/fonts/IMFellEnglish-Regular.ttf");
   font-weight:normal;
@@ -14,6 +14,12 @@
 @font-face {
   font-family:"IMFellEnglish-Italic";
   src:url("../assets/fonts/IMFellEnglish-Italic.ttf");
+  font-weight:normal;
+  font-style:normal;
+} */
+@font-face {
+  font-family:"MerovexDisplay";
+  src:url("../assets/fonts/FjallaOne-Regular.ttf");
   font-weight:normal;
   font-style:normal;
 }
@@ -69,9 +75,6 @@ a.tag + a.tag:before {
     content: '\b7\a0'; /* \b7 is a middot, \a0 is a space */
 }
 @media (prefers-color-scheme: light) {
-  body {
-    background: url(/assets/images/backgrounds/beige-paper.png)
-  }
 }
 
 /* Color Theme Swatches in Hex */

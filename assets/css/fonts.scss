@@ -6,8 +6,10 @@
     font-style: normal;
   }
 }
-@include font('IMFellEnglish',             './fonts/IMFellEnglish-Regular');
-@include font('IMFellEnglish-Italic',      './fonts/IMFellEnglish-Italic');
+// @include font('IMFellEnglish',             './fonts/IMFellEnglish-Regular');
+// @include font('IMFellEnglish-Italic',      './fonts/IMFellEnglish-Italic');
+
+@include font('MerovexDisplay',             './fonts/FjallaOne-Regular');
 
 @include font('MerovexSans',             './fonts/SourceSansPro-Regular');
 @include font('MerovexSans-Italic',      './fonts/SourceSansPro-Italic');

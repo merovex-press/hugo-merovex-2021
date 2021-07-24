@@ -63,7 +63,7 @@ module.exports = {
     fontFamily: {
       'sans': ["MerovexSans", '-apple-system', 'system-ui', "Segoe UI", 'Roboto', 'Lato', 'Helvetica', 'Arial', 'sans-serif'],
       'serif': ["MerovexSerif", 'Cambria', 'Georgia', "Times New Roman", 'Times', 'serif'],
-      'display': ['IMFellEnglish', "MerovexSerif", 'Cambria', 'Georgia', "Times New Roman", 'Times', 'serif']
+      'display': ['MerovexDisplay', 'IMFellEnglish', "MerovexSerif", 'Cambria', 'Georgia', "Times New Roman", 'Times', 'serif']
     },
     colors: { // https://tailwindpalette.jurs.me/
       brand: {
@@ -172,7 +172,7 @@ module.exports = {
         900: "#180f21"
       },
       'white': {
-        'DEFAULT': '#e6e4e3'
+        'DEFAULT': '#FFFFFF'
       },
       'bone-white': {
         'DEFAULT': '#FFFFFF'

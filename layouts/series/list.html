@@ -1,14 +1,13 @@
 {{define "main" }}
-<div class="max-w-4xl px-4 mx-auto mt-8 lg:mt-12">
-  <h1 class="mb-12 text-4xl font-display lg:text-6xl">Books</h1>
+<div class="max-w-3xl px-4 mx-auto mt-8 lg:mt-12">
   <div class="mx-auto">
     {{ range .Pages }}
-    <h2 class="mb-8 text-3xl border-b-4 border-gray-500 border-opacity-50 font-display">{{.Title}} Series</h2>
-    {{ range .Pages.ByWeight }}
-    <div class="p-8 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-700">
-      {{ partial "book-summary.html" (dict "book" . "heading" "text-blue-500 dark:text-blue-200" "body" "text-black dark:text-white") }}
+    <h2 class="h1">{{.Title}} Series</h2>
+    <div class="">
+      {{ range .Pages.ByWeight }}
+      {{ partial "book-card.html" (dict "book" . ) }}
+      {{ end }}
     </div>
-    {{ end }}
     {{ end }}
   </div>
 </div>

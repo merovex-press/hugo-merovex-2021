@@ -1,0 +1,64 @@
+{{- $css := "relative items-center flex-1 transition duration-300 ease-in-out px-6 py-2 font-sans font-medium text-center text-blue-700 border border-blue-200 hover:bg-blue-300 hover:text-white dark:text-white dark:border-blue-700 dark:hover:text-black"}}
+{{- $pag := $.Paginator }}
+{{- if gt $pag.TotalPages 1 -}}
+<nav class="relative z-0 flex mx-auto my-8 rounded-lg shadow bg-blue-50 dark:bg-blue-600" aria-label="Pagination">
+  {{- with $pag.First -}}
+  <a href="{{ .URL }}" class="rounded-l-lg {{$css}}" aria-label="First">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+      class="inline-block fill-current bi bi-chevron-double-left" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+      <path fill-rule="evenodd"
+        d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+    </svg>
+  </a>
+  {{ end -}}
+  <a {{ if $pag.HasPrev }}href="{{ $pag.Prev.URL }}" {{ end }} class="{{$css}}" aria-label="Previous">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="inline-block fill-current bi bi-chevron-left"
+      viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+    </svg>
+  </a>
+  {{- $ellipsed := false -}}
+  {{- $shouldEllipse := false -}}
+  {{- range $pag.Pagers -}}
+  {{- $right := sub .TotalPages .PageNumber -}}
+  {{- $showNumber := or (le .PageNumber 3) (eq $right 0) -}}
+  {{- $showNumber := or $showNumber (le .TotalPages 5) -}}{{/* Issue #7523 */}}
+  {{- $showNumber := or $showNumber (and (gt .PageNumber (sub $pag.PageNumber 2)) (lt .PageNumber (add $pag.PageNumber
+  2))) -}}
+  {{- if $showNumber -}}
+  {{- $ellipsed = false -}}
+  {{- $shouldEllipse = false -}}
+  {{- else -}}
+  {{- $shouldEllipse = not $ellipsed -}}
+  {{- $ellipsed = true -}}
+  {{- end -}}
+  {{- if $showNumber }}
+  <a class="{{$css}}{{ if eq . $pag }} active bg-blue-500 text-white dark:bg-blue-200 dark:text-black{{ end }}"
+    href="{{ .URL }}">{{ .PageNumber }}</a>
+  {{- else if $shouldEllipse }}
+  <span class="{{$css}}" aria-hidden="true">&nbsp;&hellip;&nbsp;</span>
+  {{- end -}}
+  {{- end }}
+  <a {{ if $pag.HasNext }}href="{{ $pag.Next.URL }}" {{ end }} class="{{$css}}" aria-label="Next">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="inline-block fill-current bi bi-chevron-right"
+      viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+    </svg>
+  </a>
+  {{- with $pag.Last }}
+  <a href="{{ .URL }}" class="rounded-r-lg {{$css}}" aria-label="Last">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+      class="inline-block fill-current bi bi-chevron-double-right" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z" />
+      <path fill-rule="evenodd"
+        d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z" />
+    </svg>
+  </a>
+  {{- end }}
+</nav>
+{{ end }}

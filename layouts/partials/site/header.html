@@ -3,30 +3,29 @@
     display: block;
   }
 </style>
-<header class="w-full px-4 font-sans shadow">
+<header class="w-full px-4 font-sans shadow text-brand-600 dark:text-white">
   <div data-controller="reveal">
     <div class="container mx-auto">
       <div class="flex flex-wrap items-center justify-between py-4">
         <div class="flex items-center">
-          <div class='text-black dark:text-white'>
+          <div>
             <!-- Logo & Title -->
             {{ partial "merovex-logo.html" "logo"}}
           </div>
-
-          <div class="ml-2 text-xl text-black dark:text-white font-display lg:text-3xl">
+          <div class="ml-2 text-xl dark:text-white font-display lg:text-3xl">
             {{ .Site.Title }}
-            <span class='text-black dark:text-white opacity-30'>{{ .Site.Params.Subtitle }}</span>
+            <span class='opacity-30'>{{ .Site.Params.Subtitle }}</span>
           </div>
         </div>
         <input id="nav-toggle" type=checkbox class="hidden">
         <label id="show-button" for="nav-toggle"
           class="flex items-center block text-gray-500 sm:hidden hover:text-blue-500">
-          {{ .Scratch.Set "klass" "text-black dark:text-white h-8 w-8" }}
+          {{ .Scratch.Set "klass" " h-8 w-8" }}
           {{ partial "site/svg-settings.html" . }}
         </label>
         <!-- Menu (SMALL) -->
         <nav id="nav-menu" class="hidden w-full mt-2 sm:flex sm:w-auto sm:block sm:mt-0 sm:space-x-2">
-          <div class="text-black dark:text-white menu">
+          <div class=" menu">
             <a class='site-link' href="/#featured" id='home-link'>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="inline-block bi bi-house-fill" viewBox="0 0 16 16">

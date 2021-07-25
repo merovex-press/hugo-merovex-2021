@@ -1,11 +1,11 @@
-{{ $klass := "mx-auto shadow-lg" }}
+{{ $klass := "w-full shadow-lg" }}
 <picture>
   {{- if .Resources.Match "*cover*" }}
   {{- with .Resources.GetMatch "*cover*" }}
-  {{- $resizedsm := .Resize "200x300" }}
-  {{- $resizedmd := .Resize "330x500" }}
-  {{- $resizedlg := .Resize "500x750" }}
-  {{- $resizedxl := .Resize "660x1000" }}
+  {{- $resizedsm := .Fill "200x150 Top" }}
+  {{- $resizedmd := .Fill "330x250 Top" }}
+  {{- $resizedlg := .Fill "500x375 Top" }}
+  {{- $resizedxl := .Fill "660x500 Top" }}
   <source media="(min-width: 1280px)" srcset="{{ $resizedlg.RelPermalink }} 1x,
       {{ $resizedxl.RelPermalink }} 2x,
       {{ $resizedxl.RelPermalink }} 3x">
@@ -20,7 +20,7 @@
       {{ $resizedmd.RelPermalink }} 2x,
       {{ $resizedlg.RelPermalink }} 3x">
   <img class="{{$klass}}" src='{{ $resizedmd.RelPermalink }}'>
-  {{end }}
+  {{ end }}
   {{else}}
   <img class="{{$klass}}" src='https://via.placeholder.com/333x500?text=Book+Cover'>
   {{- end }}

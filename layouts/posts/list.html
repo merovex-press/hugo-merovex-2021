@@ -3,6 +3,7 @@
   <h1>News & Random Thoughts</h1>
   <div class="mx-auto font-serif">
     {{ $paginator := .Paginate (where .Pages "Type" "posts") }}
+    {{ partial "widgets/subscribe.html" . }}
     {{ partial "site/pagination.html" . }}
     {{ range $paginator.Pages }}
     {{ partial "post-list-item.html" . }}

@@ -31,9 +31,9 @@ module.exports = {
         dark: {
           css: {
             a: {
-              color: theme('colors.blue.400'),
+              color: theme('colors.blue.300'),
               '&:hover': {
-                color: theme('colors.blue.200'),
+                color: theme('colors.blue.100'),
               },
               '&:visited': {
                 color: theme('colors.violet.300'),

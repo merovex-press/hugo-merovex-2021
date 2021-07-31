@@ -1,6 +1,7 @@
 {{define "main" }}
 <div class="max-w-3xl px-4 mx-auto mt-8 lg:mt-12">
   <div class="mx-auto">
+    {{ partial "widgets/subscribe.html" . }}
     {{ range .Pages }}
     <h2 class="h1">{{.Title}} Series</h2>
     <div class="">

@@ -1,25 +1,22 @@
 {{ $css := "px-2 py-1 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-500"}}
 <div class='grid grid-cols-2 gap-4 my-8 grid-flow-cols'>
-  {{ if .PrevInSection }}
+  {{- if .NextInSection }}
   <div class="{{$css}}">
-    <a href="{{.PrevInSection.Permalink}}" class="">
+    <a href="{{.NextInSection.Permalink}}" class="">
       <span aria-hidden="true">&larr;</span>
-      {{.PrevInSection.Title}}</a>
+      {{.NextInSection.Title}}</a>
   </div>
-  {{ else }}
+  {{- else }}
   <div class="disabled">
-    <a href="#" class="">
-      <span aria-hidden="true">&larr;</span>
-    </a>
   </div>
-  {{ end }}
-  {{ if .NextInSection }}
+  {{- end }}
+  {{- if .PrevInSection }}
   <div class="{{$css}} text-right">
-    <a href="{{.NextInSection.Permalink}}" class="">{{.NextInSection.Title}}
+    <a href="{{.PrevInSection.Permalink}}" class="">{{.PrevInSection.Title}}
       <span aria-hidden="true">&rarr;</span>
     </a>
   </div>
-  {{ else }}
+  {{- else }}
   <div class="text-right disabled">
   </div>
   {{ end }}

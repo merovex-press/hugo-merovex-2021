@@ -30,6 +30,7 @@ module.exports = {
         },
         dark: {
           css: {
+            color: theme('colors.gray.50'),
             a: {
               color: theme('colors.blue.300'),
               '&:hover': {
@@ -40,7 +41,7 @@ module.exports = {
               }
             },
             'p, li': {
-              color: theme('colors.gray.100')
+              color: theme('colors.gray.50')
             },
             'p+p': {
               'text-indent': '2ch'
@@ -53,8 +54,7 @@ module.exports = {
               'font-weight': 'bold'
             },
             'h1,h2,h3,h4,h5': {
-              color: theme('colors.brand.300'),
-              'font-weight': 'semibold'
+              color: theme('colors.brand.200')
             },
           },
         }
@@ -139,7 +139,7 @@ module.exports = {
         900: '#315949',
       },
       gray: {
-        50: "#F7d404",
+        50: "#fcfcfc",
         100: "#d7d4d4",
         200: "#afaaa9",
         300: "#887f7d",

@@ -90,19 +90,28 @@ body {
   @apply flex flex-col min-h-screen bg-white dark:bg-gray-600 dark:text-white;
 }
 h1, .h1 {
-  @apply mt-4 mb-8 text-3xl text-center text-brand-500 dark:text-brand-400 font-display md:text-6xl;
+  @apply mt-4 mb-8 text-3xl text-center text-brand-500 dark:text-brand-200 font-display md:text-6xl;
 }
 a.button {
-  @apply px-4 py-2 my-2 font-sans font-bold border border-gray-200 shadow-md rounded-xl focus:outline-none hover:shadow-sm hover:opacity-100 opacity-80;
+  @apply p-2 m-2 font-sans font-bold border border-gray-200 rounded-lg shadow-md focus:outline-none hover:shadow-sm hover:opacity-100 opacity-80 ;
 }
 a.button.green {
-  @apply  bg-green-700 text-white border-green-900
+  @apply  bg-green-700 text-white border-green-900 
+}
+a.button.noble {
+  @apply text-white bg-green-700 border-green-800 
+}
+a.button.amazon {
+  @apply text-white bg-yellow-600 border-yellow-800 
 }
 a.button.blue {
   @apply text-white bg-blue-400 border-blue-600
 }
 article.single {
   @apply max-w-4xl p-8 mx-auto mt-4 bg-white shadow-md dark:bg-gray-600 rounded-xl md:mt-12 dark:text-white;
+}
+.h2 {
+  @apply mt-4 mb-8 text-3xl text-center text-brand-800 dark:text-yellow-200 font-display md:text-6xl;
 }
 article.list {
   @apply max-w-2xl p-8 mx-auto mt-12 border border-black rounded shadow-lg dark:border-white border-opacity-10;
@@ -133,4 +142,10 @@ header .logo {
 }
 .random-css { 
   @apply relative items-center flex-1 px-6 py-2 font-sans font-medium text-center text-blue-700 transition duration-300 ease-in-out border border-blue-200 hover:bg-blue-300 hover:text-white dark:text-white dark:border-blue-700 dark:hover:text-black;
+}
+.prosaic { 
+  @apply prose md:prose-lg dark:prose-dark;
+}
+.prosaic-serif { 
+  @apply mx-auto font-serif prose md:prose-lg dark:prose-dark;
 }

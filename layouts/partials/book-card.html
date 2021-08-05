@@ -3,7 +3,7 @@
   {{- with .book.Resources.GetMatch "*cover*" }}
   {{- $resizedmd := .Resize "330x500" }}
   <div
-    class="flex-none h-48 overflow-hidden text-center bg-cover border border-r-0 border-black rounded-t border-opacity-10 dark:border-white lg:h-auto lg:w-48 lg:rounded-t-none lg:rounded-l-xl"
+    class="flex-none h-48 overflow-hidden text-center bg-cover border-r-0 rounded-r-none bordered lg:h-auto lg:w-48"
     style="background-image: url('{{$resizedmd.RelPermalink}}')" title="River">
   </div>
   {{end}}
@@ -11,12 +11,12 @@
   <img class="" src='https://via.placeholder.com/333x500?text=Book+Cover'>
   {{end}}
   <div
-    class="flex flex-col justify-between p-4 leading-normal border-b border-l border-r rounded-b lg:border-l-0 lg:border-t lg:rounded-b-none lg:rounded-r-xl bordered-card">
+    class="flex flex-col justify-between p-4 leading-normal border-l-0 rounded-l-none bordered">
     <div>
-      <h3 class="text-3xl text-center font-display lg:text-4xl">
+      <h3 class="h3">
         <a href="{{- .book.Permalink -}}">{{- .book.Title -}}</a>
       </h3>
-      <p class="w-full my-4 prosaic-serif">
+      <p class="w-full my-6 prose-serif">
         {{ .book.Summary | truncate 330 }}
       </p>
     </div>

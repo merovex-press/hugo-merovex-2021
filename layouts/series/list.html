@@ -4,7 +4,7 @@
     {{ partial "widgets/subscribe.html" . }}
     {{ range .Pages }}
     <h2 class="h1">{{.Title}} Series</h2>
-    <div class="">
+    <div class="mb-24">
       {{ range .Pages.ByWeight }}
       {{ partial "book-card.html" (dict "book" . ) }}
       {{ end }}

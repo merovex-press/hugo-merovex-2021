@@ -11,22 +11,22 @@
   font-style:normal;
 }
 @font-face {
-  font-family:"MerovexSans-Italic";
+  font-family:"MerovexSans";
   src:url("../assets/fonts/SourceSansPro-Italic.ttf");
   font-weight:normal;
-  font-style:normal;
+  font-style:italic;
 }
 @font-face {
-  font-family:"MerovexSans-Bold";
+  font-family:"MerovexSans";
   src:url("../assets/fonts/SourceSansPro-Bold.ttf");
-  font-weight:bold;
+  font-weight:700;
   font-style:normal;
 }
 @font-face {
-  font-family:"MerovexSans-BoldItalic";
+  font-family:"MerovexSans";
   src:url("../assets/fonts/SourceSansPro-BoldItalic.ttf");
-  font-weight:bold;
-  font-style:normal;
+  font-weight:700;
+  font-style:italic;
 }
 @font-face {
   font-family:"MerovexSerif";
@@ -35,22 +35,22 @@
   font-style:normal;
 }
 @font-face {
-  font-family:"MerovexSerif-Italic";
+  font-family:"MerovexSerif";
   src:url("../assets/fonts/SourceSerifPro-Italic.ttf");
   font-weight:normal;
-  font-style:normal;
+  font-style:italic;
 }
 @font-face {
-  font-family:"MerovexSerif-Bold";
+  font-family:"MerovexSerif";
   src:url("../assets/fonts/SourceSerifPro-Bold.ttf");
-  font-weight:bold;
+  font-weight:700;
   font-style:normal;
 }
 @font-face {
-  font-family:"MerovexSerif-BoldItalic";
+  font-family:"MerovexSerif";
   src:url("../assets/fonts/SourceSerifPro-BoldItalic.ttf");
-  font-weight:bold;
-  font-style:normal
+  font-weight:700;
+  font-style:italic;
 }
 a.tag + a.tag:before { 
     content: '\b7\a0'; /* \b7 is a middot, \a0 is a space */
@@ -85,7 +85,7 @@ body {
   @apply flex flex-col min-h-screen bg-white dark:bg-gray-600 dark:text-white;
 }
 h1, .h1 {
-  @apply mt-4 mb-8 text-3xl text-center text-brand-500 dark:text-brand-200 font-display md:text-5xl;
+  @apply mt-4 mb-8 text-3xl text-center text-brand-600 dark:text-brand-200 font-display md:text-5xl;
 }
 a.button {
   @apply p-2 m-2 font-sans font-bold border border-gray-200 rounded-lg shadow-md focus:outline-none hover:shadow-sm hover:opacity-100 opacity-80 ;
@@ -103,10 +103,10 @@ a.button.blue {
   @apply text-white bg-blue-400 border-blue-600
 }
 .h2 {
-  @apply mt-4 mb-8 text-3xl text-center text-brand-800 dark:text-yellow-200 font-display md:text-5xl;
+  @apply mt-4 mb-8 text-3xl text-center text-brand-600 dark:text-brand-200 md:text-5xl;
 }
 .h3 { 
-  @apply font-sans text-3xl font-bold text-center lg:text-4xl;
+  @apply font-sans text-3xl font-bold text-center text-brand-600 lg:text-4xl;
 }
 article.single {
   @apply max-w-4xl p-8 mx-auto mt-4 bg-white dark:bg-gray-600 md:mt-12 dark:text-white bordered;

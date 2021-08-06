@@ -141,7 +141,9 @@ header .logo {
 .prosaic { 
   @apply mx-auto prose md:prose-lg lg:prose-xl dark:prose-dark;
 }
-
+.prose code {
+  @apply text-brand-800 dark:text-brand-200;
+}
 .prose-sans { 
   @apply font-sans prosaic;
 }
@@ -150,4 +152,15 @@ header .logo {
 }
 .prose-serif h2 { 
   @apply font-sans;
+}
+blockquote p {
+  @apply mt-4
+}
+blockquote p+p {
+  text-indent: 1em;
+}
+blockquote .quote-mark {
+  font-size: 10rem;
+  right: 100%;
+  @apply absolute top-0 leading-none text-white text-opacity-20 font-display;
 }

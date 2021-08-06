@@ -24,7 +24,8 @@ module.exports = {
               },
             },
             'p+p': {
-              'text-indent': '2ch'
+              'text-indent': '2rem',
+              'margin': '0',
             },
           },
         },
@@ -41,10 +42,11 @@ module.exports = {
               }
             },
             'p, li': {
-              color: theme('colors.gray.50')
+              color: theme('colors.gray.100')
             },
             'p+p': {
-              'text-indent': '2ch'
+              'text-indent': '2rem',
+              'margin': 0,
             },
             blockquote: {
               color: theme('colors.gray.200'),

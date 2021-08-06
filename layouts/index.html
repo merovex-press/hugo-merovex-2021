@@ -20,29 +20,24 @@
 </div>
 <div class="px-4 py-12 text-2xl text-center text-black bg-blue-200 dark:bg-blue-500 dark:text-white">
   <div class="max-w-4xl mx-auto">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet venenatis dolor. Suspendisse eu justo
-      elit.
-      Cras lacinia turpis nulla, nec lobortis sem varius eu. Sed viverra turpis malesuada est aliquet, ac laoreet Leo
-      convallis. Vivamus pretium aliquam finibus. Mauris dictum, eros eu malesuada imperdiet, nisl mauris scelerisque
-      diam,
-      nec fringilla nisl libero in nulla. Mauris eget massa lacinia sapien faucibus consequat.</p>
+    <blockquote class="relative text-left">
+      <div class="hidden quote-mark sm:block" aria-hidden="true">
+        &ldquo;
+      </div>
+      <div class="italic">{{.Content | truncate 1000}}</div>
+      <cite class="inline-block mt-4">
+        Excerpt from
+        <a class="underline" href="{{.Permalink}}">{{.Title}}</a>
+      </cite>
+    </blockquote>
   </div>
 </div>
-{{- end }}
-{{- end }}
-{{- end }}
-<div class="px-4 py-24">
-  <div class="max-w-3xl mx-auto">
-    <h2 class="my-6 text-5xl prose font-display text-brand-600 dark:text-brand-300">My Story</h2>
-    <p class="font-serif prose lg:prose-xl dark:prose-dark">
-      Revelatur enim ira Dei de caelo super omnem impietatem et iniustitiam hominum eorum qui veritatem in iniustitiam
-      detinent quia quod notum est Dei manifestum est in illis Deus enim illis manifestavit invisibilia enim ipsius a
-      creatura mundi per ea quae facta sunt intellecta conspiciuntur sempiterna quoque eius virtus et divinitas ut sint
-      inexcusabiles quia cum cognovissent Deum non sicut Deum glorificaverunt aut gratias egerunt sed evanuerunt in
-      cogitationibus suis et obscuratum est insipiens cor eorum dicentes enim se esse sapientes stulti facti sunt et
-      mutaverunt gloriam incorruptibilis Dei in similitudinem imaginis corruptibilis hominis et volucrum et quadrupedum
-      et serpentium
-    </p>
+<section class="py-24 text-2xl">
+  <div class="max-w-2xl p-8 mx-auto text-center bordered ">
+    {{ partial "widgets/subscribe.html" . }}
   </div>
-</div>
+</section>
+{{- end }}
+{{- end }}
+{{- end }}
 {{ end }}

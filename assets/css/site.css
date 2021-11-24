@@ -10,11 +10,10 @@ h1, .h1 {
 .h3 { 
   @apply font-sans text-3xl font-bold text-center lg:text-4xl;
 }
-.bordered  {
+.bordered {
   @apply border rounded rounded-lg shadow-lg border-opacity-10 border-shade-dark;
 }
-
-.article-background { 
+.article-background {
   @apply bg-shade-lighter dark:bg-opacity-5;
 }
 article.single {
@@ -29,16 +28,21 @@ article.list h2 {
 article.list .summary {
   @apply mb-6 font-serif prose dark:prose-dark max-w-none md:prose-lg;
 }
-.dtg { 
+.dtg {
   @apply font-sans text-center text-brand dark:text-brand-light
 }
 header .logo {
   @apply w-5 h-5 fill-current lg:h-8 lg:w-8 opacity-30;
 }
-header .site-link {
-  @apply px-2 py-1 my-2 hover:border-b-4 border-brand text-shade-dark dark:text-shade-light dark:border-brand-light sm:inline lg:mr-3 ;
+.underline-link {
+  @apply hover:border-b-4 border-brand text-shade-dark dark:text-shade-light dark:border-brand-light
 }
-
-.cta-callout { 
+header .site-link {
+  @apply px-2 py-1 my-2 underline-link sm:inline lg:mr-3 ;
+}
+footer .site-link {
+  @apply underline-link;
+}
+.cta-callout {
   @apply max-w-lg p-8 mx-auto text-center transform bg-opacity-50 -rotate-1 bordered bg-accent-lightest dark:bg-accent-dark;
 }

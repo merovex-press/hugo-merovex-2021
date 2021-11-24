@@ -33,7 +33,11 @@
     <h2 class='font-sans'>Selected Passage</h2>
     {{.Content}}
   </section>
-  <div class="py-8 mx-auto text-center no-print">{{ partial "cta-links.html" . }}</div>
+  <aside class="py-8 mx-auto text-center no-print">{{ partial "cta-links.html" . }}</aside>
+  {{ partial "related-posts.html" . }}
   {{ partial "citation.html" . }}
+  <aside class="mt-12 cta-callout no-print">
+    {{ partial "widgets/subscribe.html" . }}
+  </aside>
 </article>
 {{ end }}

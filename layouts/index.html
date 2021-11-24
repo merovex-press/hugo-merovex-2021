@@ -14,11 +14,13 @@
 {{- end }}
 <div class="bg-opacity-90 backdrop-brightness-10 h-2/3"
   style="background: url({{$background}}); background-size: cover;">
-  <div class="py-12 backdrop-filter bg-opacity-90 backdrop-saturate-50 backdrop-brightness-50 backdrop-blur-xl">
+  <div
+    class="py-12 backdrop-filter bg-opacity-90 backdrop-saturate-50 backdrop-brightness-50 backdrop-blur-xl text-shade-light">
     {{- partial "book-summary.html" (dict "book" . ) }}
   </div>
 </div>
-<div class="px-4 py-12 text-2xl text-center text-black bg-secondary-100 dark:bg-secondary-800 dark:text-white">
+<div
+  class="px-4 py-12 text-2xl text-center bg-opacity-20 text-shade-darker bg-brand dark:bg-accent-dark dark:text-shade-lighter">
   <div class="max-w-4xl mx-auto">
     <blockquote class="relative text-left">
       <div class="hidden quote-mark sm:block" aria-hidden="true">

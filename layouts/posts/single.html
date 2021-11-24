@@ -6,9 +6,10 @@
 <article class='single'>
   <!-- {{ partial "related-posts.html" . }} -->
   <header>
+    {{partial "author-image-round.html"}}
     <div class='dtg'>{{ partial "dtg.html" . }}</div>
     <h1 itemprop="headline">{{ .Title }}</h1>
-    <div class="hidden my-8 text-center text-gray-500 dark:text-gray-300">
+    <div class="hidden my-8 text-center text-opacity-30 text-shade-dark dark:text-shade-light">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
         class="inline-block bi bi-person-circle" viewBox="0 0 16 16">
         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
@@ -46,5 +47,8 @@
   </div>
   {{ partial "related-posts.html" . }}
   {{ partial "citation.html" . }}
+  <div class="mt-12 cta-callout no-print">
+    {{ partial "widgets/subscribe.html" . }}
+  </div>
 </article>
 {{ end }}

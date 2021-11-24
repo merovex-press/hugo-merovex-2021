@@ -1,5 +1,4 @@
-<article
-  class="w-full mt-8 shadow-xl lg:max-w-full lg:flex dark:text-white lg:mt-12 dark:bg-gray-800 dark:bg-opacity-30">
+<article class="w-full mt-8 shadow-xl list lg:max-w-full lg:flex dark:text-white lg:mt-12 ">
   {{- if .book.Resources.Match "*cover*" }}
   {{- with .book.Resources.GetMatch "*cover*" }}
   {{- $resizedmd := .Resize "330x500" }}

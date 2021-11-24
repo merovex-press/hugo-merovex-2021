@@ -1,0 +1,15 @@
+.button { 
+  @apply p-2 m-2 font-sans text-sm font-semibold uppercase border-opacity-50 rounded bordered text-brand border-brand hover:bg-brand hover:text-shade-lighter;
+}
+.button .brand { 
+  @apply bg-brand
+}
+.button .success { 
+  @apply text-shade-lighter border-success hover:bg-success;
+}
+.button .warning { 
+  @apply text-shade-lighter border-warning hover:bg-warning;
+}
+.button .danger { 
+  @apply text-shade-lighter border-danger hover:bg-danger;
+}

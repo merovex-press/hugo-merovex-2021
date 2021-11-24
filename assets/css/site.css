@@ -1,130 +1,27 @@
-@font-face {
-  font-family:"MerovexDisplay";
-  src:url("../assets/fonts/FjallaOne-Regular.ttf");
-  font-weight:normal;
-  font-style:normal;
-}
-@font-face {
-  font-family:"MerovexSans";
-  src:url("../assets/fonts/SourceSansPro-Regular.ttf");
-  font-weight:normal;
-  font-style:normal;
-}
-@font-face {
-  font-family:"MerovexSans";
-  src:url("../assets/fonts/SourceSansPro-Italic.ttf");
-  font-weight:normal;
-  font-style:italic;
-}
-@font-face {
-  font-family:"MerovexSans";
-  src:url("../assets/fonts/SourceSansPro-Bold.ttf");
-  font-weight:700;
-  font-style:normal;
-}
-@font-face {
-  font-family:"MerovexSans";
-  src:url("../assets/fonts/SourceSansPro-BoldItalic.ttf");
-  font-weight:700;
-  font-style:italic;
-}
-@font-face {
-  font-family:"MerovexSerif";
-  src:url("../assets/fonts/SourceSerifPro-Regular.ttf");
-  font-weight:normal;
-  font-style:normal;
-}
-@font-face {
-  font-family:"MerovexSerif";
-  src:url("../assets/fonts/SourceSerifPro-Italic.ttf");
-  font-weight:normal;
-  font-style:italic;
-}
-@font-face {
-  font-family:"MerovexSerif";
-  src:url("../assets/fonts/SourceSerifPro-Bold.ttf");
-  font-weight:700;
-  font-style:normal;
-}
-@font-face {
-  font-family:"MerovexSerif";
-  src:url("../assets/fonts/SourceSerifPro-BoldItalic.ttf");
-  font-weight:700;
-  font-style:italic;
-}
-a.tag + a.tag:before { 
-    content: '\b7\a0'; /* \b7 is a middot, \a0 is a space */
-}
-@media (prefers-color-scheme: light) {
-}
-.text-brand-800 dark:text-brand-200 { 
-  @apply text-brand-700 dark:text-brand-200;
-}
-/* Color Theme Swatches in Hex */
-.Steampunk-Complimentary-1-hex { color: #9E6915; }
-.Steampunk-Complimentary-2-hex { color: #FFBE54; }
-.Steampunk-Complimentary-3-hex { color: #EBA737; }
-.Steampunk-Complimentary-4-hex { color: #05569E; }
-.Steampunk-Complimentary-5-hex { color: #3695EB; }
-
-/* Color Theme Swatches in RGBA */
-.Steampunk-Complimentary-1-rgba { color: rgba(158, 105, 21, 1); }
-.Steampunk-Complimentary-2-rgba { color: rgba(255, 190, 84, 1); }
-.Steampunk-Complimentary-3-rgba { color: rgba(235, 167, 55, 1); }
-.Steampunk-Complimentary-4-rgba { color: rgba(5, 86, 158, 1); }
-.Steampunk-Complimentary-5-rgba { color: rgba(54, 149, 235, 1); }
-
-/* Color Theme Swatches in HSLA */
-.Steampunk-Complimentary-1-hsla { color: hsla(36, 76, 35, 1); }
-.Steampunk-Complimentary-2-hsla { color: hsla(37, 100, 66, 1); }
-.Steampunk-Complimentary-3-hsla { color: hsla(37, 81, 56, 1); }
-.Steampunk-Complimentary-4-hsla { color: hsla(208, 93, 31, 1); }
-.Steampunk-Complimentary-5-hsla { color: hsla(208, 81, 56, 1); }
-.bordered  {
-  @apply border border-gray-500 rounded rounded-lg shadow-lg lg:rounded-xl border-opacity-20;
-}
 body {
-  @apply flex flex-col min-h-screen text-gray-900 bg-white dark:bg-gray-900 dark:text-brand-200;
+  @apply bg-shade-light text-shade-dark dark:bg-shade-darker dark:text-shade-light;
 }
 h1, .h1 {
-  @apply mt-4 mb-8 text-3xl text-center text-brand-800 dark:text-brand-200 dark:text-brand-100 font-display md:text-5xl;
-}
-.button { 
-  @apply bg-brand-600 dark:bg-brand-300 text-white dark:text-black
-}
-a.button {
-  @apply p-2 m-2 font-sans font-bold border border-gray-500 border-opacity-50 rounded-lg shadow-md focus:outline-none hover:shadow-sm hover:opacity-100 opacity-80;
-}
-a.button.green {
-  @apply bg-green-700 text-white border-green-900 
-}
-a.button.noble {
-  @apply text-white bg-green-700 border-green-800 
-}
-a.button.amazon {
-  @apply text-white bg-yellow-600 border-yellow-800 
-}
-a.button.blue {
-  @apply text-white bg-blue-400 border-blue-600
-}
-a.button.brand {
-  @apply text-white bg-brand-400 border-brand-600
+  @apply mt-4 mb-8 text-3xl text-center font-display md:text-4xl;
 }
 .h2 {
-  @apply mt-4 mb-8 text-3xl text-center text-brand-800 dark:text-brand-200 md:text-5xl;
+  @apply mt-4 mb-8 text-3xl text-center md:text-5xl;
 }
 .h3 { 
-  @apply font-sans text-3xl font-bold text-center text-brand-800 dark:text-brand-200 lg:text-4xl;
+  @apply font-sans text-3xl font-bold text-center lg:text-4xl;
 }
-article.single {
-  @apply max-w-4xl p-8 mx-auto mt-4 bg-white border-gray-500 border-opacity-10 dark:bg-gray-800 dark:bg-opacity-30 md:mt-12 dark:text-white bordered;
-}
-article.list {
-  @apply max-w-2xl p-8 mx-auto mt-12 border-gray-500 bordered border-opacity-20 dark:bg-gray-800 dark:bg-opacity-30;
+.bordered  {
+  @apply border rounded rounded-lg shadow-lg border-opacity-10 border-shade-dark;
 }
 
-.pagination-button { 
-  @apply px-4 py-2 font-bold text-green-900 bg-green-200 rounded-lg shadow-md dark:bg-brand-500 bordered hover:shadow-sm;
+.article-background { 
+  @apply bg-shade-lighter dark:bg-opacity-5;
+}
+article.single {
+  @apply max-w-4xl p-8 mx-auto mt-4 bordered md:mt-12 article-background;
+}
+article.list {
+  @apply max-w-2xl mx-auto mt-12 bordered article-background;
 }
 article.list h2 {
   @apply mt-3 mb-6 font-sans text-4xl font-bold text-center;
@@ -133,40 +30,15 @@ article.list .summary {
   @apply mb-6 font-serif prose dark:prose-dark max-w-none md:prose-lg;
 }
 .dtg { 
-  @apply font-sans text-center text-black opacity-60 dark:text-white;
-}
-header .site-link {
-  @apply px-2 py-1 my-2 hover:border-b-4 border-brand-600 sm:inline lg:mr-3 ;
+  @apply font-sans text-center text-brand dark:text-brand-light
 }
 header .logo {
-  @apply w-5 h-5 fill-current text-brand-700 dark:text-white lg:h-8 lg:w-8 opacity-30;
+  @apply w-5 h-5 fill-current lg:h-8 lg:w-8 opacity-30;
 }
-.random-css { 
-  @apply relative items-center flex-1 px-6 py-2 font-sans font-medium text-center text-blue-700 transition duration-300 ease-in-out border border-blue-200 hover:bg-blue-300 hover:text-white dark:text-white dark:border-blue-700 dark:hover:text-black;
+header .site-link {
+  @apply px-2 py-1 my-2 hover:border-b-4 border-brand text-shade-dark dark:text-shade-light dark:border-brand-light sm:inline lg:mr-3 ;
 }
-.prosaic { 
-  @apply mx-auto prose text-gray-700 dark:text-gray-200 md:prose-lg lg:prose-xl dark:prose-dark;
-}
-.prose code {
-  @apply text-brand-800 dark:text-brand-200;
-}
-.prose-sans { 
-  @apply font-sans prosaic;
-}
-.prose-serif { 
-  @apply font-serif prosaic;
-}
-.prose-serif h2 { 
-  @apply font-sans;
-}
-blockquote p {
-  @apply mt-4
-}
-blockquote p+p {
-  text-indent: 1em;
-}
-blockquote .quote-mark {
-  font-size: 10rem;
-  right: 100%;
-  @apply absolute top-0 leading-none text-gray-500 text-opacity-30 font-display;
+
+.cta-callout { 
+  @apply max-w-lg p-8 mx-auto text-center transform bg-opacity-50 -rotate-1 bordered bg-accent-lightest dark:bg-accent-dark;
 }

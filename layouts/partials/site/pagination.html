@@ -1,6 +1,6 @@
 {{- $pag := $.Paginator }}
 {{- if gt $pag.TotalPages 1 -}}
-<nav class="relative z-0 flex mx-auto my-8 font-sans" aria-label="Pagination">
+<nav class="relative z-0 flex mx-auto my-8 font-sans no-print" aria-label="Pagination">
   <div class="flex-1 text-center">
     {{ if $pag.HasPrev }}
     <a {{ if $pag.HasPrev }}href="{{ $pag.Prev.URL }}" {{ end }} class="brand button" aria-label="Previous">

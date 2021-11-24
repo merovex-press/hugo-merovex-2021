@@ -2,7 +2,7 @@
 {{- $icons := .Site.Params.icons }}
 {{- if .Params.cta }}
 {{- range $key, $val := .Params.cta}}
-<a class='{{$key}} button' href="{{ $val }}">
+<a class='border-{{$key}} hover:bg-{{$key}} text-{{$key}} button' href="{{ $val }}">
   <i class="{{$icons.Get $key}}" aria-hidden="true"></i> {{title $key }}
 </a>
 {{- end }}

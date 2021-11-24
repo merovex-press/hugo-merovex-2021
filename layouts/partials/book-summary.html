@@ -3,13 +3,13 @@
     {{ partial "book-cover-image.html" .book }}
   </div>
   <div class="flex items-center px-2 md:w-2/3 md:px-4">
-    <div class="mx-6">
-      <h3 class='text-6xl text-white font-display'>{{.book.Title}}
-      </h3>
-      <div class="my-8 font-sans text-shadow text-white font-bold prose md:prose-xl max-w-none {{.body}}">
-        {{.book.Summary}}</div>
+    <div class="mx-6 text-center">
+      <h3 class='text-6xl text-brand-light font-display'>{{.book.Title}}</h3>
+      <div class="my-8 font-sans text-shadow text-shade-lighter  prose md:prose-xl max-w-none {{.body}}">
+        {{.book.Summary}}
+      </div>
       <div class="text-center">
-        <a href="{{.book.Permalink}}" class='button brand'>Read more</a>
+        <a href="{{.book.Permalink}}" class='button'>Read more</a>
       </div>
     </div>
   </div>

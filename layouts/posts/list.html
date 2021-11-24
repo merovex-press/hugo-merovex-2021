@@ -2,7 +2,7 @@
 <div class="max-w-4xl px-4 mx-auto mt-8 lg:mt-12">
   <div class="mx-auto font-serif">
     {{ $paginator := .Paginate (where .Pages "Type" "posts") }}
-    <div class="max-w-lg p-8 mx-auto text-center transform -rotate-1 bordered dark:bg-gray-800 dark:bg-opacity-30">
+    <div class="cta-callout no-print">
       {{ partial "widgets/subscribe.html" . }}
     </div>
     {{ partial "site/pagination.html" . }}

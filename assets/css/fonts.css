@@ -1,0 +1,54 @@
+@font-face {
+  font-family:"MerovexDisplay";
+  src:url("../assets/fonts/FjallaOne-Regular.ttf");
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face {
+  font-family:"MerovexSans";
+  src:url("../assets/fonts/SourceSansPro-Regular.ttf");
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face {
+  font-family:"MerovexSans";
+  src:url("../assets/fonts/SourceSansPro-Italic.ttf");
+  font-weight:normal;
+  font-style:italic;
+}
+@font-face {
+  font-family:"MerovexSans";
+  src:url("../assets/fonts/SourceSansPro-Bold.ttf");
+  font-weight:700;
+  font-style:normal;
+}
+@font-face {
+  font-family:"MerovexSans";
+  src:url("../assets/fonts/SourceSansPro-BoldItalic.ttf");
+  font-weight:700;
+  font-style:italic;
+}
+@font-face {
+  font-family:"MerovexSerif";
+  src:url("../assets/fonts/SourceSerifPro-Regular.ttf");
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face {
+  font-family:"MerovexSerif";
+  src:url("../assets/fonts/SourceSerifPro-Italic.ttf");
+  font-weight:normal;
+  font-style:italic;
+}
+@font-face {
+  font-family:"MerovexSerif";
+  src:url("../assets/fonts/SourceSerifPro-Bold.ttf");
+  font-weight:700;
+  font-style:normal;
+}
+@font-face {
+  font-family:"MerovexSerif";
+  src:url("../assets/fonts/SourceSerifPro-BoldItalic.ttf");
+  font-weight:700;
+  font-style:italic;
+}

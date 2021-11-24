@@ -1,0 +1,35 @@
+.prosaic { 
+  @apply mx-auto prose md:prose-lg lg:prose-xl dark:prose-dark;
+}
+.prosaic a { 
+  @apply font-sans text-brand-dark dark:text-brand-light;
+}
+.prosaic table { 
+  @apply rounded-lg;
+}
+.prosaic th { 
+  @apply dark:text-shade-dark text-shade-light font-sans bg-brand dark:bg-brand-light p-2
+}
+.prosaic a:hover {
+  @apply border-b-4 border-accent-dark
+}
+.prose-sans { 
+  @apply font-sans prosaic;
+}
+.prose-serif { 
+  @apply font-serif prosaic;
+}
+.prose-serif h2 { 
+  @apply font-sans;
+}
+blockquote p {
+  @apply mt-4
+}
+blockquote p+p {
+  text-indent: 1em;
+}
+blockquote .quote-mark {
+  font-size: 10rem;
+  right: 100%;
+  @apply absolute top-0 leading-none text-opacity-20 text-brand font-display;
+}

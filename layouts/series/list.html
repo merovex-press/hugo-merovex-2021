@@ -1,9 +1,11 @@
 {{define "main" }}
-<div class="max-w-3xl px-4 mx-auto mt-8 lg:mt-12">
+<div class="max-w-3xl px-4 mx-auto mt-8 lg:mt-12 ">
   <div class="mx-auto">
-    {{ partial "widgets/subscribe.html" . }}
+    <div class="max-w-lg p-8 mx-auto text-center transform -rotate-1 bordered dark:bg-gray-800 dark:bg-opacity-30">
+      {{ partial "widgets/subscribe.html" . }}
+    </div>
     {{ range .Pages }}
-    <h2 class="h1">{{.Title}} Series</h2>
+    <h2 class="mt-24 h1">{{.Title}} Series</h2>
     <div class="mb-24">
       {{ range .Pages.ByWeight }}
       {{ partial "book-card.html" (dict "book" . ) }}

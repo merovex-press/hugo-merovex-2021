@@ -3,7 +3,7 @@
 <nav class="relative z-0 flex mx-auto my-8 font-sans" aria-label="Pagination">
   <div class="flex-1 text-center">
     {{ if $pag.HasPrev }}
-    <a {{ if $pag.HasPrev }}href="{{ $pag.Prev.URL }}" {{ end }} class="blue button" aria-label="Previous">
+    <a {{ if $pag.HasPrev }}href="{{ $pag.Prev.URL }}" {{ end }} class="brand button" aria-label="Previous">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
         class="inline-block fill-current bi bi-chevron-double-left" viewBox="0 0 16 16">
         <path fill-rule="evenodd"
@@ -16,7 +16,7 @@
   </div>
   <div class='flex-1 text-center'>
     {{ if $pag.HasNext }}
-    <a {{ if $pag.HasNext }}href="{{ $pag.Next.URL }}" {{ end }} class="blue button" aria-label="Next">
+    <a {{ if $pag.HasNext }}href="{{ $pag.Next.URL }}" {{ end }} class="brand button" aria-label="Next">
       See earlier posts
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
         class="inline-block fill-current bi bi-chevron-double-right" viewBox="0 0 16 16">

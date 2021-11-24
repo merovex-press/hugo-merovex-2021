@@ -1,17 +1,16 @@
-<article class="w-full mt-8 shadow-xl lg:max-w-full lg:flex dark:text-white lg:mt-12">
+<article
+  class="w-full mt-8 shadow-xl lg:max-w-full lg:flex dark:text-white lg:mt-12 dark:bg-gray-800 dark:bg-opacity-30">
   {{- if .book.Resources.Match "*cover*" }}
   {{- with .book.Resources.GetMatch "*cover*" }}
   {{- $resizedmd := .Resize "330x500" }}
-  <div
-    class="flex-none h-48 overflow-hidden text-center bg-cover border-r-0 rounded-r-none bordered lg:h-auto lg:w-48"
+  <div class="flex-none h-48 overflow-hidden text-center bg-cover border-r-0 rounded-r-none bordered lg:h-auto lg:w-48"
     style="background-image: url('{{$resizedmd.RelPermalink}}')" title="River">
   </div>
   {{end}}
   {{else}}
   <img class="" src='https://via.placeholder.com/333x500?text=Book+Cover'>
   {{end}}
-  <div
-    class="flex flex-col justify-between p-4 leading-normal border-l-0 rounded-l-none bordered">
+  <div class="flex flex-col justify-between p-4 leading-normal border-l-0 rounded-l-none bordered">
     <div>
       <h3 class="h3">
         <a href="{{- .book.Permalink -}}">{{- .book.Title -}}</a>
@@ -21,7 +20,7 @@
       </p>
     </div>
     <div class="flex items-center justify-center">
-      <a href="{{- .book.Permalink -}}" class="button blue">Read more</a>
+      <a href="{{- .book.Permalink -}}" class="button brand">Read more</a>
       {{ partial "cta-links.html" .book }}
     </div>
   </div>

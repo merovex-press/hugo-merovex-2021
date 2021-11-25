@@ -1,9 +1,9 @@
-<article class='relative p-8 list no-print'>
+<article class='p-8  card'>
   <div class='dtg'>{{ partial "dtg.html" . }}</div>
-  <h2 class='h2'> {{- .Title -}} </h2>
+  <h2 class='h2 card-title'> {{- .Title -}} </h2>
   <div class='summary'>{{.Summary | truncate 330 }}</div>
   <div class='text-center '>
-    <a href="{{- .Permalink -}}" class="full-link" aria-label="Post: {{ .Title }} on {{ dateFormat " January 2, 2006"
+    <a href="{{- .Permalink -}}" class="card-link" aria-label="Post: {{ .Title }} on {{ dateFormat " January 2, 2006"
       .Date }}"></a>
     <span class="button">Read More</span>
   </div>

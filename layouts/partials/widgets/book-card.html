@@ -1,5 +1,4 @@
-<article id='{{ .book.Title | urlize }}'
-  class="relative w-full mt-8 shadow-xl list lg:max-w-full lg:flex dark:text-white lg:mt-12">
+<article id='{{ .book.Title | urlize }}' class="lg:flex card">
   {{- if .book.Resources.Match "*cover*" }}
   {{- with .book.Resources.GetMatch "*cover*" }}
   {{- $resizedmd := .Resize "330x500" }}
@@ -20,7 +19,7 @@
       </p>
     </div>
     <div class="flex items-center justify-center">
-      <a href="{{- .book.Permalink -}}" class="full-link"></a>
+      <a href="{{- .book.Permalink -}}" class="card-link"></a>
       <span class="button brand">Read more</span>
     </div>
   </div>

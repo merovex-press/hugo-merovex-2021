@@ -17,21 +17,23 @@ h1, .h1 {
   @apply bg-shade-lighter dark:bg-opacity-5;
 }
 article.single {
-  @apply max-w-4xl p-8 mx-auto mt-4 bordered md:mt-12 article-background;
+  @apply max-w-4xl p-8 mx-auto mt-4 md:mt-12 bordered article-background;
 }
-article.list {
-  @apply max-w-2xl mx-auto mt-12 bordered article-background;
+.card {
+  @apply relative w-full mx-auto mt-8 lg:max-w-2xl bordered article-background;
 }
-.full-link {
+
+.card-link {
   @apply absolute top-0 left-0 z-10 w-full h-full
 }
+.card-link:hover ~ .card-title { @apply underline }
 .link { 
   @apply text-brand-dark hover:underline;
 }
-article.list h2 {
+article.card h2 {
   @apply mt-3 mb-6 font-sans text-4xl font-bold text-center;
 }
-article.list .summary {
+article.card .summary {
   @apply mb-6 font-serif prose dark:prose-dark max-w-none md:prose-lg;
 }
 .dtg {

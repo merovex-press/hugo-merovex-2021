@@ -1,4 +1,5 @@
-<article class="w-full mt-8 shadow-xl list lg:max-w-full lg:flex dark:text-white lg:mt-12 ">
+<article id='{{ .book.Title | urlize }}'
+  class="relative w-full mt-8 shadow-xl list lg:max-w-full lg:flex dark:text-white lg:mt-12">
   {{- if .book.Resources.Match "*cover*" }}
   {{- with .book.Resources.GetMatch "*cover*" }}
   {{- $resizedmd := .Resize "330x500" }}
@@ -19,8 +20,8 @@
       </p>
     </div>
     <div class="flex items-center justify-center">
-      <a href="{{- .book.Permalink -}}" class="button brand">Read more</a>
-      {{ partial "cta-links.html" .book }}
+      <a href="{{- .book.Permalink -}}" class="full-link"></a>
+      <span class="button brand">Read more</span>
     </div>
   </div>
 </article>

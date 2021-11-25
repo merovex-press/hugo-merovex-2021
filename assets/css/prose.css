@@ -1,8 +1,12 @@
 .prosaic { 
-  @apply mx-auto prose md:prose-lg lg:prose-xl dark:prose-dark;
+  @apply mx-auto prose md:prose-lg lg:prose-xl dark:prose-dark ;
 }
 .prosaic a { 
   @apply font-sans text-brand-dark dark:text-brand-light;
+}
+.prosaic p+p { 
+  text-indent: 1.5em;
+  @apply m-0
 }
 .prosaic table { 
   @apply rounded-lg;

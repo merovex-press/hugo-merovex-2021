@@ -4,11 +4,27 @@
     <div class="cta-callout">
       {{ partial "widgets/subscribe.html" . }}
     </div>
+    <aside class="w-1/3 mx-auto my-12">
+      <h3 class="text-left h3">Backlist</h3>
+      <ul class="">
+        {{ range .Pages }}
+        <li class='mt-4'>
+          <strong>{{.Title}}</strong>
+        </li>
+        <ul class="pl-4 list-disc list-inside">
+          {{- range .Pages.ByWeight }}
+          <li><a href="#{{.Title| urlize }}" class='link'>{{.Title}}</a></li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </ul>
+    </aside>
+
     {{ range .Pages }}
-    <h2 class="mt-24 h1">{{.Title}} Series</h2>
+    <h2 class="mt-12 h1" id='{{ .Title | urlize }}'>{{.Title}} Series</h2>
     <div class="mb-24">
-      {{ range .Pages.ByWeight }}
-      {{ partial "book-card.html" (dict "book" . ) }}
+      {{- range .Pages.ByWeight }}
+      {{ partial "widgets/book-card.html" (dict "book" . ) }}
       {{ end }}
     </div>
     {{ end }}

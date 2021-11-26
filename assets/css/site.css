@@ -28,7 +28,7 @@ article.single {
 }
 .card-link:hover ~ .card-title { @apply underline }
 .link { 
-  @apply text-brand-dark hover:underline;
+  @apply text-brand-dark hover:underline dark:text-brand-light;
 }
 article.card h2 {
   @apply mt-3 mb-6 font-sans text-4xl font-bold text-center;

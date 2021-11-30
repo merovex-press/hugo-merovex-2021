@@ -61,6 +61,9 @@ module.exports = {
             'h1,h2,h3,h4,h5': {
               color: theme('colors.brand.light')
             },
+            code: {
+              color: theme('colors.accent.light')
+            }
           },
         }
       }),

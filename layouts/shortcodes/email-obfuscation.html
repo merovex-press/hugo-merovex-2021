@@ -1,0 +1,5 @@
+{{$email := .Get "email"}}
+{{$subject := .Get "subject"}}
+{{$bits := split $email "@"}}
+<SCRIPT
+  LANGUAGE="JavaScript">user = '{{(index $bits 0)}}'; site = '{{(index $bits 1)}}'; document.write('<a href=\"mailto:' + user + '@' + site + '?subject={{ replace $subject " " "%20" }}\">'); document.write(user + '@' + site + '</a>');</SCRIPT>

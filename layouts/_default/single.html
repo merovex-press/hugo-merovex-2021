@@ -5,9 +5,9 @@
     {{ partial "site/nav.html"}}
     <h1 itemprop="headline" class='md:text-6xl'>{{.Title}}</h1>
   </header>
-  <div class="prose-serif">
+  <section class="prose-serif">
     {{ .Content }}
-  </div>
+  </section>
   {{ partial "site/logo-footer.html" . }}
 </article>
 {{ end }}

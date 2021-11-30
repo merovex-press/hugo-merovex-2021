@@ -26,6 +26,9 @@
 .prose-serif h2 { 
   @apply font-sans;
 }
+.prose table td, .prose table th { 
+  @apply text-sm px-4
+}
 blockquote p {
   @apply mt-4
 }

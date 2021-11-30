@@ -1,12 +1,13 @@
 {{ define "main" }}
 <article class='single'>
   <header>
-    <h1 itemprop="headline">
-      {{ .Title }}
-    </h1>
+    {{ partial "author-image-round.html" "/" }}
+    {{ partial "site/nav.html"}}
+    <h1 itemprop="headline" class='md:text-6xl'>{{.Title}}</h1>
   </header>
   <div class="prose-serif">
     {{ .Content }}
   </div>
+  {{ partial "site/logo-footer.html" . }}
 </article>
 {{ end }}

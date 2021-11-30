@@ -7,6 +7,7 @@
   <!-- {{ partial "related-posts.html" . }} -->
   <header>
     {{partial "author-image-round.html" "/posts"}}
+    {{partial "site/nav.html"}}
     <div class='dtg'>{{ partial "dtg.html" . }}</div>
     <h1 itemprop="headline">{{ .Title }}</h1>
     <div class="hidden my-8 text-center text-opacity-30 text-shade-dark dark:text-shade-light">
@@ -50,5 +51,6 @@
   <div class="mt-12 cta-callout no-print">
     {{ partial "widgets/subscribe.html" . }}
   </div>
+  {{ partial "site/logo-footer.html" . }}
 </article>
 {{ end }}

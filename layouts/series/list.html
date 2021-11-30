@@ -1,6 +1,12 @@
 {{define "main" }}
-<div class="max-w-3xl px-4 mx-auto mt-8 lg:mt-12 ">
+<article class="single">
+  <header>
+    {{ partial "author-image-round.html" "/" }}
+    {{ partial "site/nav.html"}}
+    <h1 itemprop="headline" class='md:text-6xl'>{{.Title}}</h1>
+  </header>
   <div class="mx-auto">
+
     <div class="cta-callout">
       {{ partial "widgets/subscribe.html" . }}
     </div>
@@ -29,5 +35,6 @@
     </div>
     {{ end }}
   </div>
-</div>
+  {{ partial "site/logo-footer.html" . }}
+</article>
 {{ end }}

@@ -14,13 +14,13 @@ h1, .h1 {
   @apply font-sans text-3xl font-bold text-center lg:text-4xl;
 }
 .bordered {
-  @apply rounded rounded-lg md:shadow-lg md:border md:border-opacity-10 md:border-shade-dark;
+  @apply border rounded rounded-lg shadow-lg border-opacity-10 border-shade-dark;
 }
 .article-background {
   @apply bg-shade-lighter dark:bg-opacity-5;
 }
 article.single {
-  @apply max-w-4xl p-8 mx-auto mt-4 md:mt-12 bordered article-background;
+  @apply max-w-4xl p-8 mx-auto mt-4 border-opacity-0 md:border-opacity-10 md:mt-12 bordered article-background;
 }
 .card {
   @apply relative w-full mx-auto mt-8 lg:max-w-2xl bordered article-background;

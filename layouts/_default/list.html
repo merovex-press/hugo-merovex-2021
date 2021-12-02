@@ -1,11 +1,28 @@
-{{ define "main" }}
-<main class="test mx-auto">
+{{ define "mainx" }}
+<main class="mx-auto test">
   LIST
   {{ range .Pages }}
-  <article class="text-gray-700 sm:mx-12 mb-16 prose lg:prose-lg">
+  <article class="mb-16 prose text-gray-700 sm:mx-12 lg:prose-lg">
     <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
     {{ .Render "summary"}}
   </article>
   {{ end }}
 </main>
+{{ end }}
+{{define "main" }}
+<article class="single">
+  <header>
+    {{ partial "author-image-round.html" "/" }}
+    {{ partial "site/nav.html"}}
+    <h1 itemprop="headline" class='md:text-6xl'>{{.Title}}</h1>
+  </header>
+  <div class="mx-auto font-serif">
+    {{ range .Pages }}
+    <article class="mb-16 prose text-gray-700 sm:mx-12 lg:prose-lg">
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      {{.Summary | truncate 330 }}
+    </article>
+    {{ end }}
+  </div>
+</article>
 {{ end }}

@@ -75,23 +75,22 @@ module.exports = {
     },
     colors: {
       brand: {
-        DEFAULT: '#406EA6',
-        light: '#98B6D7', // WCAG 2.0 7:0
-        dark: '#31537D' // WCAG 2.0 7:0
+        DEFAULT: '#7c95ae', // 406EA6 / 8ca2b8
+        light: '#9cafc1', // WCAG 2.0 7:0
+        dark: '#37495a' // WCAG 2.0 7:0
       },
       accent: {
-        lightest: '#c69e6c', // WCAG 2.0 7:0
-        light: '#6f502b',
-        DEFAULT: '#a67840',
-        dark: '#5d4324',
-        darkest: '#382816', // WCAG 2.0 7:0
+        lightest: '#ccbcac', // WCAG 2.0 7:0
+        light: '#b59f88',
+        DEFAULT: '#ae957c',
+        dark: '#806850',
+        darkest: '#514233', // WCAG 2.0 7:0
       },
       shade: {
-        lighter: '#fcfcfc',
-        light: '#F3F3F2', // white
-        DEFAULT: '#7a746c',
-        dark: '#312f2c', // black
-        darker: '#121110',
+        lighter: '#fdfdfd',
+        light: '#f4f3f2', // white
+        dark: '#332f2b', // black
+        darker: '#171614',
       },
       info: {
         light: '#FeF1F2',

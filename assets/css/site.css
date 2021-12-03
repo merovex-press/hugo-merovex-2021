@@ -36,7 +36,7 @@ article.card h2 {
   @apply mt-3 mb-6 font-sans text-4xl font-bold text-center;
 }
 article.card .summary {
-  @apply mb-6 font-serif prose dark:prose-dark max-w-none md:prose-lg;
+  @apply mb-6 font-sans prose dark:prose-dark max-w-none md:prose-lg;
 }
 .dtg {
   @apply font-sans text-center text-brand dark:text-brand-light

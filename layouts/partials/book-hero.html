@@ -5,7 +5,7 @@
   <div class="px-2 md:w-2/3 md:px-4">
     <h3 class='text-3xl font-display'><a class='{{.heading}} hover:underline'
         href="{{.book.Permalink}}">HERE{{.book.Title}}</a></h3>
-    <div class="mb-6 font-serif prose md:prose-xl max-w-none {{.body}}">{{.book.Summary}}</div>
+    <div class="mb-6 font-sans prose md:prose-xl max-w-none {{.body}}">{{.book.Summary}}</div>
     <div class="text-center">{{ partial "cta-links.html" .book }}</div>
   </div>
 </article>

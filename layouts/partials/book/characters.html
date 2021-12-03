@@ -1,8 +1,9 @@
 {{- if .Params.characters }}
 <section class='my-8 prose-serif'>
   <h2 class="h2">Major Characters</h2>
-  {{ range .Params.characters }}
-  <li><a href="/characters/{{.url}}">{{.name}}</a></li>
-  {{ end }}
+  <ul>{{ range .Params.characters }}
+    <li><a href="/characters/{{.url}}">{{.name}}</a></li>
+    {{ end }}
+  </ul>
 </section>
 {{ end }}

@@ -1,0 +1,14 @@
+{{- if .Params.praise }}
+<section id='praise' class='hidden prose-serif'>
+  <h2>What other readers have said</h2>
+  {{ range .Params.praise }}
+  <figure>
+    <blockquote{{if .url}} cite="{{.url}}" {{end}}>
+      <p>{{.text}}</p>
+      </blockquote>
+      {{if (.person)}}<figcaption>—{{.person}}{{if (.cite)}}, <cite>Brave New World</cite>{{end}}</figcaption>
+      {{end}}
+  </figure>
+  {{ end }}
+</section>
+{{- end }}

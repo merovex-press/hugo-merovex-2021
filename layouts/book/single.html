@@ -20,31 +20,10 @@
     </div>
   </div>
 
-  {{ if .Params.praise }}
-  <section id='praise' class='hidden prose-serif'>
-    <h2>What other readers have said</h2>
-    {{ range .Params.praise }}
-    <figure>
-      <blockquote{{if .url}} cite="{{.url}}" {{end}}>
-        <p>{{.text}}</p>
-        </blockquote>
-        {{if (.person)}}<figcaption>—{{.person}}{{if (.cite)}}, <cite>Brave New World</cite>{{end}}</figcaption>
-        {{end}}
-    </figure>
-    {{ end }}
-  </section>{{ end }}
-  {{- if .Params.characters }}
-  <section class='my-8 prose-serif'>
-    <h2 class="h2">Major Characters</h2>
-    {{ range .Params.characters }}
-    <li><a href="/characters/{{.url}}">{{.name}}</a></li>
-    {{ end }}
-  </section>
-  {{ end }}
-  <section id='excerpt' class='prose-serif'>
-    <h2 class='font-sans h2'>Selected Passage</h2>
-    {{.Content}}
-  </section>
+  {{ partial "book/praises.html" . }}
+  {{ partial "book/characters.html" . }}
+  {{ partial "book/excerpt.html" . }}
+
   <aside class="py-8 mx-auto text-center no-print">{{ partial "cta-links.html" . }}</aside>
   {{ partial "related-posts.html" . }}
   {{ partial "citation.html" . }}

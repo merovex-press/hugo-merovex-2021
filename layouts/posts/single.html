@@ -1,14 +1,13 @@
 {{ define "main" }}
 
-{{- $image := resources.GetMatch .Params.photo.image -}}
-{{- $photo := .Params.Photo }}
-{{- $license := .Site.Params.licenses.Get .Params.photo.license }}
+
 <article class='single'>
   <header>
     {{partial "author-image-round.html" "/posts"}}
     {{partial "site/nav.html"}}
     <div class='dtg'>{{ partial "dtg.html" . }}</div>
     <h1 itemprop="headline">{{ .Title }}</h1>
+    {{ partial "posts/figure.html" . }}
     <div class="hidden my-8 text-center text-opacity-30 text-shade-dark dark:text-shade-light">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
         class="inline-block bi bi-person-circle" viewBox="0 0 16 16">

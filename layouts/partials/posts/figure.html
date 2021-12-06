@@ -1,0 +1,20 @@
+{{- $photo := .Params.Photo }}
+{{- $license := .Site.Params.licenses.Get .Params.photo.license }}
+{{- with .Resources.GetMatch .Params.photo.image }}
+{{- $low := .Resize "80x q10 Smart Gaussian" }}
+<figure class='max-w-2xl mx-auto mb-12 bg-cover rounded-lg max-h-96'
+  style="background-image: url({{$low.RelPermalink}});">
+  {{ partial "picture.html" . }}
+  <figcaption class="px-2 rounded-b-lg text-shade-lighter bg-brand-dark">
+    <a class='block hover:underline sm:inline' href="{{$photo.source_url}}">
+      {{ $photo.caption }}
+    </a>
+    by
+    <a class='hover:underline' href="{{ $photo.creator_url }}">
+      {{ $photo.creator }}
+    </a>
+    is licensed under
+    {{ partial "license-link.html" $license }}
+  </figcaption>
+</figure>
+{{- end }}

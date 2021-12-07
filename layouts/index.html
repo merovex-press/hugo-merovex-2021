@@ -3,7 +3,6 @@
   <header>
     {{ partial "author-image-round.html" "/series" }}
     {{ partial "site/nav.html"}}
-    {{ partial "related-posts.html" . }}
   </header>
   {{- with $.Site.GetPage "section" "book" }}
   {{- range .Pages }}

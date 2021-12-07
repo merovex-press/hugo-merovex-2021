@@ -21,7 +21,7 @@
   @apply font-sans prosaic;
 }
 .prose-serif { 
-  @apply font-sans prosaic;
+  @apply font-serif prosaic;
 }
 .prose-serif h2 { 
   @apply font-sans;

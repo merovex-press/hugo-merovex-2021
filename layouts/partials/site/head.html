@@ -7,7 +7,6 @@
     {{- end }}
 
     {{- $title := (cond (ne ($.Param "seo.title") nil) ($.Param "seo.title") ( printf "%s | %s" .Title .Site.Title) ) }}
-    {{- $description := (cond (ne ($.Param "seo.description") nil) ($.Param "seo.description") .Description ) }}
     <title>{{$title}}</title>
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -18,11 +17,7 @@
     <meta name="application-name" content="{{ $title }}" />
     <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
     <meta name="theme-color" content="#406EA6" />
-    <meta name="description" content="{{ $description }} " />
-    {{- if .Keywords }}
-    <meta name="keywords" content="{{ delimit .Keywords " ," }}" />
-    {{ end -}}
-
+    {{ template "_internal/schema.html" . }}
     {{ template "_internal/opengraph.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
 

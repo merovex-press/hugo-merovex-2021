@@ -113,10 +113,12 @@ module.exports = {
         dark: '#DA190B'
       },
       amazon: {
-        DEFAULT: '#FF9900'
+        DEFAULT: '#FF9900',
+        light: '#FFAB2E'
       },
       noble: {
-        DEFAULT: '#366251'
+        DEFAULT: '#366251',
+        light: '#99C7B1'
       }
     }
   }

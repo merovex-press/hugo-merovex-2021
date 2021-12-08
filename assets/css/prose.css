@@ -11,6 +11,9 @@
 .prosaic table { 
   @apply rounded-lg;
 }
+.prosaic code { 
+  @apply dark:text-brand-light text-brand font-code
+}
 .prosaic th { 
   @apply dark:text-shade-dark text-shade-light font-sans bg-brand dark:bg-brand-light p-2
 }
@@ -38,8 +41,8 @@ blockquote p {
 blockquote p+p {
   text-indent: 1em;
 }
-blockquote .quote-mark {
+div .quote-mark {
   font-size: 10rem;
   right: 100%;
-  @apply absolute top-0 leading-none text-opacity-20 text-brand font-display;
+  @apply absolute top-0 leading-none text-opacity-40 text-brand font-display;
 }

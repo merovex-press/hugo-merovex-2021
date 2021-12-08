@@ -52,3 +52,7 @@
   font-weight:700;
   font-style:italic;
 }
+@font-face {
+  font-family:"MerovexCode";
+  src:url("../assets/fonts/SourceCodePro-VariableFont_wght.ttf");
+}

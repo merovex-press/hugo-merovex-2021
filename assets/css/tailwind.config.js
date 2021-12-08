@@ -29,6 +29,9 @@ module.exports = {
               'text-indent': '2rem',
               'margin': '0',
             },
+            blockquote: {
+              border: 'none',
+            }
           },
         },
         dark: {
@@ -53,6 +56,7 @@ module.exports = {
             },
             blockquote: {
               color: theme('colors.shade.light'),
+              border: 'none',
             },
             strong: {
               color: theme('colors.warning'),
@@ -71,7 +75,8 @@ module.exports = {
     fontFamily: {
       'sans': ["MerovexSans", '-apple-system', 'system-ui', "Segoe UI", 'Roboto', 'Lato', 'Helvetica', 'Arial', 'sans-serif'],
       'serif': ["MerovexSerif", 'Cambria', 'Georgia', "Times New Roman", 'Times', 'serif'],
-      'display': ["MerovexDisplay", "MerovexSans", '-apple-system', 'system-ui', "Segoe UI", 'Roboto', 'Lato', 'Helvetica', 'Arial', 'sans-serif']
+      'display': ["MerovexDisplay", "MerovexSans", '-apple-system', 'system-ui', "Segoe UI", 'Roboto', 'Lato', 'Helvetica', 'Arial', 'sans-serif'],
+      'code': ["MerovexCode", "ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace"]
     },
     colors: {
       brand: {

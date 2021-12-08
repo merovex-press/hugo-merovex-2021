@@ -8,7 +8,7 @@ h1, .h1 {
   @apply mt-4 mb-8 text-3xl text-center font-display md:text-4xl;
 }
 .h2 {
-  @apply mt-4 mb-8 text-3xl text-center md:text-5xl;
+  @apply mt-4 mb-8 text-3xl font-bold text-center md:text-5xl text-brand dark:text-brand-light;
 }
 .h3 { 
   @apply font-sans text-3xl font-bold text-center lg:text-4xl;
@@ -54,5 +54,5 @@ footer .site-link {
   @apply underline-link;
 }
 .cta-callout {
-  @apply max-w-lg p-8 mx-auto text-center transform bg-opacity-50 -rotate-1 bordered bg-brand-light dark:bg-brand-dark;
+  @apply max-w-lg p-8 mx-auto text-center transform bg-opacity-50 -rotate-1 bordered bg-brand-light text-shade-lighter;
 }

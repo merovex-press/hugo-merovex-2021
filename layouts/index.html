@@ -8,10 +8,10 @@
   {{- range .Pages }}
   {{- if .Params.featured }}
   <section class="">
-    <h1 class="text-2xl">
-      Available Now!
-      <span class="block mt-8 text-5xl uppercase">{{.Title}}</span>
+    <h1 class="text-5xl">
+      New from Ben Wilson
     </h1>
+    <h2 class="h2">{{.Title}}</h2>
     <div class='my-12 md:flex'>
       <div class="mx-auto mb-12 md:w-1/3 md:mb-0">
         {{ partial "book-cover-image.html" . }}
@@ -24,18 +24,18 @@
       </div>
     </div>
   </section>
-  <section class='max-w-2xl mx-auto lg:text-xl'>
+  <section class='max-w-2xl mx-auto prose-sans lg:text-xl'>
     <h2 class='h2'>Excerpt from {{.Title}}</h2>
-    <blockquote class="relative text-left">
+    <div class="relative text-left">
       <div class="hidden quote-mark sm:block" aria-hidden="true">
         &ldquo;
       </div>
-      <div class="italic">{{.Content | truncate 1000}}</div>
+      <div class="prose-sans">{{.Content | truncate 10000}}</div>
       <cite class="inline-block mt-4">
         Excerpt from
         <a class="underline" href="{{.Permalink}}">{{.Title}}</a>
       </cite>
-    </blockquote>
+    </div>
   </section>
 
   <aside class="my-12 text-center no-print">{{ partial "cta-links.html" . }}</aside>
@@ -43,7 +43,7 @@
   {{ end }}
   {{ end }}
   <div class="py-24 text-2xl">
-    <aside class="max-w-2xl p-8 mx-auto text-center ">
+    <aside class="flex max-w-2xl p-8 mx-auto">
       {{ partial "widgets/subscribe.html" . }}
     </aside>
   </div>

@@ -15,7 +15,11 @@
         <a href="{{- .book.Permalink -}}">{{- .book.Title -}}</a>
       </h3>
       <p class="w-full my-6 font-sans">
+        {{if .book.Params.Hook}}
+        {{.book.Params.Hook | truncate 150}}
+        {{else}}
         {{ .book.Summary | truncate 330 }}
+        {{end}}
       </p>
     </div>
     <div class="flex items-center justify-center">

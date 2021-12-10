@@ -54,5 +54,5 @@ footer .site-link {
   @apply underline-link;
 }
 .cta-callout {
-  @apply max-w-lg p-8 mx-auto text-center transform bg-opacity-50 -rotate-1 bordered bg-brand-light text-shade-lighter;
+  @apply max-w-lg p-8 mx-auto text-center transform border-2 -rotate-1 bordered border-brand;
 }

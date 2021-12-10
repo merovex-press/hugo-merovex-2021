@@ -23,7 +23,7 @@ article.single {
   @apply max-w-4xl p-8 mx-auto mt-4 border-opacity-0 md:border-opacity-10 md:mt-12 bordered article-background;
 }
 .card {
-  @apply relative w-full mx-auto mt-8 lg:max-w-2xl bordered article-background;
+  @apply relative w-full mx-auto mt-8 md:max-w-2xl bordered article-background;
 }
 .card-link {
   @apply absolute top-0 left-0 z-10 w-full h-full

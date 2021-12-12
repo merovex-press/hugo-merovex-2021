@@ -26,10 +26,10 @@
 .prose-serif { 
   @apply font-serif prosaic;
 }
-.prose-serif h2 { 
-  @apply font-sans;
+.prosaic h2 { 
+  @apply font-serif;
 }
-.prose-serif strong { 
+.prosaic strong { 
   @apply font-sans dark:text-warning-light;
 }
 .prose table td, .prose table th { 

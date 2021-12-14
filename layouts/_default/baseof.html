@@ -3,12 +3,10 @@
 {{ partial "site/head.html" . }}
 
 <body>
-  {{- partial "site/dev-size-indicator.html" . -}}
   {{- partial "site/header.html" . -}}
   <main class="flex-1 w-screen mt-0">
     {{- block "main" . }}{{- end }}
   </main>
-  {{- partial "site/dev-parameters.html" . -}}
   {{- partial "site/footer.html" . -}}
 </body>
 

@@ -36,13 +36,14 @@
         href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&family=Source+Serif+Pro&display=swap"
         rel="stylesheet">
 
-    {{- $styles := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
+    {{- $styles := resources.Get "css/theme.css" -}}
     {{- if .Site.IsServer }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
     {{ else }}
-    {{- $styles := $styles| minify | fingerprint | resources.PostProcess -}}
+    {{- $styles := $styles | minify | fingerprint | resources.PostProcess -}}
     <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
     {{ end -}}
+
     {{- if .IsHome -}}
     {{- range .Site.AllPages -}}
     {{- $section := .Section -}}

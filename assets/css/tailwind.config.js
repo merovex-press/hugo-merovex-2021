@@ -1,5 +1,12 @@
 module.exports = {
-  // mode: 'jit',
+  mode: 'jit',
+  purge: [
+    "./content/**/*.md",
+    "./content/**/*.html",
+    "./themes/hugo-merovex-2021/layouts/**/*.html",
+    "./themes/hugo-merovex-2021/layouts/partials/**/*.html",
+    "./themes/hugo-merovex-2021/layouts/partials/posts/*.html"
+  ],
   darkMode: 'media',
   variants: {
     extend: {

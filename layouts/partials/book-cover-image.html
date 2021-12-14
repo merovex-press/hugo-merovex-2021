@@ -2,10 +2,10 @@
 <picture>
     {{- if .Resources.Match "*cover*" }}
     {{- with .Resources.GetMatch "*cover*" }}
-    {{- $resizedsm := .Resize "200x300 webp" }}
-    {{- $resizedmd := .Resize "330x500 webp" }}
-    {{- $resizedlg := .Resize "500x750 webp" }}
-    {{- $resizedxl := .Resize "660x1000 webp" }}
+    {{- $resizedsm := .Resize "200x300" }}
+    {{- $resizedmd := .Resize "330x500" }}
+    {{- $resizedlg := .Resize "500x750" }}
+    {{- $resizedxl := .Resize "660x1000" }}
     <source media="(min-width: 1280px)" srcset="{{ $resizedlg.RelPermalink }} 1x,
       {{ $resizedxl.RelPermalink }} 2x,
       {{ $resizedxl.RelPermalink }} 3x">

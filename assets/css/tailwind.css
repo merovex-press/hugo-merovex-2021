@@ -392,7 +392,7 @@
   .prose-serif { 
     @apply font-serif prosaic;
   }
-  .prosaic h2 { 
+  .prosaic h2, .prosaic h3 { 
     @apply font-serif dark:text-brand-light;
   }
   .prosaic strong { 

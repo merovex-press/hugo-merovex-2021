@@ -1,6 +1,6 @@
 module.exports = {
   mode: 'jit',
-  purge: [
+  content: [
     "./content/**/*.md",
     "./content/**/*.html",
     "./themes/hugo-merovex-2021/layouts/**/*.html",

@@ -319,7 +319,8 @@
     @apply max-w-4xl p-8 mx-auto mt-4 border-opacity-0 md:border-opacity-10 md:mt-12 bordered article-background;
   }
   header .logo {
-    @apply w-5 h-5 fill-current lg:h-8 lg:w-8 opacity-30;
+    @apply w-5 h-5 lg:h-8 lg:w-8 opacity-30;
+    fill: currentColor;
   }
   header .site-link {
     @apply px-2 py-1 my-2 underline-link sm:inline lg:mr-3 ;
@@ -392,7 +393,7 @@
     @apply font-serif prosaic;
   }
   .prosaic h2 { 
-    @apply font-serif;
+    @apply font-serif dark:text-brand-light;
   }
   .prosaic strong { 
     @apply font-sans dark:text-warning-light;

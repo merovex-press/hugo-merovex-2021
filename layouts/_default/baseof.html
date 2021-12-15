@@ -3,11 +3,10 @@
 {{ partial "site/head.html" . }}
 
 <body>
-  {{- partial "site/header.html" . -}}
   <main class="flex-1 w-screen mt-0">
     {{- block "main" . }}{{- end }}
+    {{- partial "site/footer.html" . -}}
   </main>
-  {{- partial "site/footer.html" . -}}
 </body>
 
 </html>

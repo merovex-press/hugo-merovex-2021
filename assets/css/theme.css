@@ -4548,6 +4548,10 @@ footer .site-link:hover {
   background-color: rgb(198 158 108 / var(--tw-bg-opacity));
 }
 
+.bg-brand\/20 {
+  background-color: rgb(64 110 166 / 0.2);
+}
+
 .bg-opacity-90 {
   --tw-bg-opacity: 0.9;
 }
@@ -5352,6 +5356,10 @@ footer .site-link:hover {
   .dark\:bg-warning-light {
     --tw-bg-opacity: 1;
     background-color: rgb(198 139 51 / var(--tw-bg-opacity));
+  }
+
+  .dark\:bg-accent-dark\/20 {
+    background-color: rgb(93 67 36 / 0.2);
   }
 
   .dark\:text-shade-lighter {

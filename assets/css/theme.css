@@ -3997,12 +3997,23 @@ footer .site-link:hover {
   border-color: rgb(93 67 36 / var(--tw-border-opacity));
 }
 
-.prose-sans h2 {
+.prose-sans h2, .prose-sans h3 {
   font-family: Source Serif Pro, Cambria, Georgia, Times New Roman, Times, serif;
 }
 
 @media (prefers-color-scheme: dark) {
-  .prose-sans h2 {
+  .prose-sans h2, .prose-sans h3 {
+    --tw-text-opacity: 1;
+    color: rgb(152 182 215 / var(--tw-text-opacity));
+  }
+}
+
+.prose-sans h2, .prose-sans h3 {
+  font-family: Source Serif Pro, Cambria, Georgia, Times New Roman, Times, serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  .prose-sans h2, .prose-sans h3 {
     --tw-text-opacity: 1;
     color: rgb(152 182 215 / var(--tw-text-opacity));
   }
@@ -4023,12 +4034,12 @@ footer .site-link:hover {
   font-family: Source Sans Pro, -apple-system, system-ui, Segoe UI, Roboto, Lato, Helvetica, Arial, sans-serif;
 }
 
-.prosaic h2 {
+.prosaic h2, .prosaic h3 {
   font-family: Source Serif Pro, Cambria, Georgia, Times New Roman, Times, serif;
 }
 
 @media (prefers-color-scheme: dark) {
-  .prosaic h2 {
+  .prosaic h2, .prosaic h3 {
     --tw-text-opacity: 1;
     color: rgb(152 182 215 / var(--tw-text-opacity));
   }
@@ -4558,6 +4569,14 @@ footer .site-link:hover {
 
 .bg-cover {
   background-size: cover;
+}
+
+.fill-brand {
+  fill: #406EA6;
+}
+
+.fill-brand\/50 {
+  fill: rgb(64 110 166 / 0.5);
 }
 
 .p-8 {
@@ -5181,6 +5200,10 @@ footer .site-link:hover {
   background-color: rgb(54 98 81 / var(--tw-bg-opacity));
 }
 
+.hover\:fill-brand:hover {
+  fill: #406EA6;
+}
+
 .hover\:text-shade-light:hover {
   --tw-text-opacity: 1;
   color: rgb(243 243 242 / var(--tw-text-opacity));
@@ -5352,6 +5375,10 @@ footer .site-link:hover {
     color: rgb(49 83 125 / var(--tw-text-opacity));
   }
 
+  .dark\:text-brand-dark\/50 {
+    color: rgb(49 83 125 / 0.5);
+  }
+
   .dark\:hover\:bg-amazon-light:hover {
     --tw-bg-opacity: 1;
     background-color: rgb(255 171 46 / var(--tw-bg-opacity));
@@ -5365,6 +5392,10 @@ footer .site-link:hover {
   .dark\:hover\:bg-brand-light:hover {
     --tw-bg-opacity: 1;
     background-color: rgb(152 182 215 / var(--tw-bg-opacity));
+  }
+
+  .dark\:hover\:fill-brand-dark:hover {
+    fill: #31537D;
   }
 
   .dark\:hover\:text-shade-dark:hover {

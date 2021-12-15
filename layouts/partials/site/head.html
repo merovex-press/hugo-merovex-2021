@@ -30,12 +30,6 @@
     {{ end -}}
     {{ hugo.Generator }}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&family=Source+Serif+Pro&display=swap"
-        media="print" onload="this.onload=null;this.removeAttribute('media');" rel="stylesheet">
-
     {{- $styles := resources.Get "css/theme.css" -}}
     {{- if .Site.IsServer }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}">

@@ -82,7 +82,7 @@ module.exports = {
     fontFamily: {
       'sans': ["Source Sans Pro", '-apple-system', 'system-ui', "Segoe UI", 'Roboto', 'Lato', 'Helvetica', 'Arial', 'sans-serif'],
       'serif': ["Source Serif Pro", 'Cambria', 'Georgia', "Times New Roman", 'Times', 'serif'],
-      'display': ["Fjalla One", "MerovexSans", '-apple-system', 'system-ui', "Segoe UI", 'Roboto', 'Lato', 'Helvetica', 'Arial', 'sans-serif'],
+      'display': ["Merovex Display", "MerovexSans", '-apple-system', 'system-ui', "Segoe UI", 'Roboto', 'Lato', 'Helvetica', 'Arial', 'sans-serif'],
       'code': ["MerovexCode", "ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace"]
     },
     colors: {

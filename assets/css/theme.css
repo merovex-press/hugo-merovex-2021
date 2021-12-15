@@ -4162,10 +4162,6 @@ footer .site-link:hover {
   margin-bottom: 1.5rem;
 }
 
-.mr-4 {
-  margin-right: 1rem;
-}
-
 .mb-24 {
   margin-bottom: 6rem;
 }
@@ -4258,20 +4254,20 @@ footer .site-link:hover {
   height: 2rem;
 }
 
-.h-48 {
-  height: 12rem;
-}
-
-.h-full {
-  height: 100%;
+.h-5 {
+  height: 1.25rem;
 }
 
 .h-6 {
   height: 1.5rem;
 }
 
-.h-5 {
-  height: 1.25rem;
+.h-48 {
+  height: 12rem;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .max-h-96 {
@@ -4302,12 +4298,12 @@ footer .site-link:hover {
   width: 5rem;
 }
 
-.w-6 {
-  width: 1.5rem;
-}
-
 .w-5 {
   width: 1.25rem;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .max-w-4xl {
@@ -4766,9 +4762,8 @@ footer .site-link:hover {
   color: rgb(18 17 16 / var(--tw-text-opacity));
 }
 
-.text-shade-dark {
-  --tw-text-opacity: 1;
-  color: rgb(49 47 44 / var(--tw-text-opacity));
+.text-shade-dark\/60 {
+  color: rgb(49 47 44 / 0.6);
 }
 
 .text-brand-light {
@@ -4801,20 +4796,9 @@ footer .site-link:hover {
   color: rgb(49 83 125 / var(--tw-text-opacity));
 }
 
-.text-shade-dark\/60 {
-  color: rgb(49 47 44 / 0.6);
-}
-
-.text-shade-dark\/30 {
-  color: rgb(49 47 44 / 0.3);
-}
-
-.text-opacity-60 {
-  --tw-text-opacity: 0.6;
-}
-
-.text-opacity-30 {
-  --tw-text-opacity: 0.3;
+.text-shade-dark {
+  --tw-text-opacity: 1;
+  color: rgb(49 47 44 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -4830,24 +4814,12 @@ footer .site-link:hover {
   opacity: 0.3;
 }
 
-.opacity-80 {
-  opacity: 0.8;
-}
-
-.opacity-70 {
-  opacity: 0.7;
-}
-
-.opacity-50 {
-  opacity: 0.5;
-}
-
-.opacity-40 {
-  opacity: 0.4;
-}
-
 .opacity-20 {
   opacity: 0.2;
+}
+
+.opacity-80 {
+  opacity: 0.8;
 }
 
 .shadow {
@@ -5053,10 +5025,6 @@ footer .site-link:hover {
   content:"\f1d8"
 }
 
-.fa-popcorn:before {
-  content:"\f819"
-}
-
 .fab {
   font-family:"Font Awesome 5 Brands";
   font-weight:400
@@ -5237,10 +5205,6 @@ footer .site-link:hover {
   opacity: 1;
 }
 
-.hover\:opacity-60:hover {
-  opacity: 0.6;
-}
-
 .hover\:shadow-md:hover {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -5359,9 +5323,8 @@ footer .site-link:hover {
     color: rgb(252 252 252 / var(--tw-text-opacity));
   }
 
-  .dark\:text-shade-light {
-    --tw-text-opacity: 1;
-    color: rgb(243 243 242 / var(--tw-text-opacity));
+  .dark\:text-shade-light\/60 {
+    color: rgb(243 243 242 / 0.6);
   }
 
   .dark\:text-amazon-light {
@@ -5387,14 +5350,6 @@ footer .site-link:hover {
   .dark\:text-brand-dark {
     --tw-text-opacity: 1;
     color: rgb(49 83 125 / var(--tw-text-opacity));
-  }
-
-  .dark\:text-shade-light\/60 {
-    color: rgb(243 243 242 / 0.6);
-  }
-
-  .dark\:text-shade-light\/30 {
-    color: rgb(243 243 242 / 0.3);
   }
 
   .dark\:hover\:bg-amazon-light:hover {
@@ -5942,10 +5897,6 @@ footer .site-link:hover {
 
   .md\:block {
     display: block;
-  }
-
-  .md\:inline-block {
-    display: inline-block;
   }
 
   .md\:inline {

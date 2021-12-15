@@ -27,7 +27,7 @@
     </nav>
 
     {{ range .Pages }}
-    <h2 class="mt-12 h1" id='{{ .Title | urlize }}'>{{.Title}} Series</h2>
+    <h2 class="mt-12 h2" id='{{ .Title | urlize }}'>{{.Title}} Series</h2>
     <div class="mb-24">
       {{- range .Pages.ByWeight }}
       {{ partial "widgets/book-card.html" (dict "book" . ) }}

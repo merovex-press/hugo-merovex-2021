@@ -5010,6 +5010,8 @@ footer .site-link:hover {
 
   src: url("../assets/fonts/FjallaOne-Regular.ttf");
 
+  font-display: swap;
+
   font-weight:normal;
 
   font-style:normal;
@@ -5020,6 +5022,8 @@ footer .site-link:hover {
 
   src: url("../assets/fonts/SourceSans3-VariableFont_wght.ttf");
 
+  font-display: swap;
+
   font-weight: 500;
 }
 
@@ -5028,6 +5032,8 @@ footer .site-link:hover {
 
   src: url("../assets/fonts/SourceSans3-Italic-VariableFont_wght.ttf");
 
+  font-display: swap;
+
   font-style: italic;
 }
 
@@ -5035,6 +5041,8 @@ footer .site-link:hover {
   font-family:"Merovex Serif";
 
   src: url("../assets/fonts/SourceSerifPro-Regular.ttf");
+
+  font-display: swap;
 
   font-weight:normal;
 
@@ -5046,6 +5054,8 @@ footer .site-link:hover {
 
   src: url("../assets/fonts/SourceSerifPro-Italic.ttf");
 
+  font-display: swap;
+
   font-weight:normal;
 
   font-style:italic;
@@ -5055,6 +5065,8 @@ footer .site-link:hover {
   font-family:"Merovex Serif";
 
   src: url("../assets/fonts/SourceSerifPro-Bold.ttf");
+
+  font-display: swap;
 
   font-weight:700;
 
@@ -5066,6 +5078,8 @@ footer .site-link:hover {
 
   src: url("../assets/fonts/SourceSerifPro-BoldItalic.ttf");
 
+  font-display: swap;
+
   font-weight:700;
 
   font-style:italic;
@@ -5075,6 +5089,8 @@ footer .site-link:hover {
   font-family:"Merovex Code";
 
   src: url("../assets/fonts/SourceCodePro-VariableFont_wght.ttf");
+
+  font-display: swap;
 }
 
 .article-background {

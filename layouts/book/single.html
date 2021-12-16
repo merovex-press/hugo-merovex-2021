@@ -14,7 +14,7 @@
     <div class="flex items-center p-4 md:w-2/3 md:px-6">
       <div>
         <div class="flex items-center mb-8 prose-sans">{{.Summary}}</div>
-        <div class="text-center no-print">{{ partial "cta-links.html" . }}</div>
+        <div class="text-center print:hidden">{{ partial "cta-links.html" . }}</div>
       </div>
     </div>
   </div>
@@ -23,10 +23,10 @@
   {{ partial "book/characters.html" . }}
   {{ partial "book/excerpt.html" . }}
 
-  <aside class="py-8 mx-auto text-center no-print">{{ partial "cta-links.html" . }}</aside>
+  <aside class="py-8 mx-auto text-center print:hidden">{{ partial "cta-links.html" . }}</aside>
   {{ partial "related-posts.html" . }}
   {{ partial "citation.html" . }}
-  <aside class="mt-12 cta-callout no-print">
+  <aside class="mt-12 cta-callout print:hidden">
     {{ partial "widgets/subscribe.html" . }}
   </aside>
   {{ partial "site/logo-footer.html" . }}

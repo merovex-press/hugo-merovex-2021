@@ -17,10 +17,10 @@
     </ul>
   </div>
 
-  <aside class="py-8 mx-auto text-center no-print">{{ partial "cta-links.html" . }}</aside>
+  <aside class="py-8 mx-auto text-center print:hidden">{{ partial "cta-links.html" . }}</aside>
   {{ partial "related-posts.html" . }}
   {{ partial "citation.html" . }}
-  <aside class="mt-12 cta-callout no-print">
+  <aside class="mt-12 cta-callout print:hidden">
     {{ partial "widgets/subscribe.html" . }}
   </aside>
   {{ partial "site/logo-footer.html" . }}

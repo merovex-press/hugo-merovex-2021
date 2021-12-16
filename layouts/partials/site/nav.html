@@ -1,44 +1,17 @@
-<nav id="nav-menu" class="w-full mx-auto mb-12 text-xl text-center">
-  <a class='inline-block w-1/3 py-2 text-center uppercase align-middle rounded md:w-1/6 hover:shadow-md hover:text-shade-lighter hover:bg-brand'
-    href="/#featured" id='home-link'>
-    <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-5 h-5 opacity-20" viewBox="0 0 20 20"
-      fill="currentColor">
-      <path
-        d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
-    </svg> Home
+<nav id="nav-menu">
+  <a href="/#featured">
+    {{partial "svg/home.html" "nav-icon" }} HOME
   </a>
-  <a class='inline-block w-1/3 py-2 text-center uppercase align-middle rounded md:w-1/6 hover:shadow-md hover:text-shade-lighter hover:bg-brand'
-    href="/series">
-    <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-6 h-6 opacity-20" fill="none" viewBox="0 0 24 24"
-      stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-    </svg> Books
+  <a href="/series">
+    {{partial "svg/book.html" "nav-icon" }} Books
   </a>
-  <a class='inline-block w-1/3 py-2 text-center uppercase align-middle rounded md:w-1/6 hover:shadow-md hover:text-shade-lighter hover:bg-brand'
-    href="/about">
-    <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-5 h-5 opacity-20" viewBox="0 0 20 20"
-      fill="currentColor">
-      <path fill-rule="evenodd"
-        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-        clip-rule="evenodd" />
-    </svg> About
+  <a href="/about">
+    {{partial "svg/info.html" "nav-icon" }} About
   </a>
-  <a class='inline-block w-1/3 py-2 text-center uppercase align-middle rounded md:w-1/6 hover:shadow-md hover:text-shade-lighter hover:bg-brand'
-    rel="prefetch" href="/posts/">
-    <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-5 h-5 opacity-20" viewBox="0 0 20 20"
-      fill="currentColor">
-      <path fill-rule="evenodd"
-        d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z"
-        clip-rule="evenodd" />
-    </svg> Updates
+  <a rel="prefetch" href="/posts/">
+    {{partial "svg/bell.html" "nav-icon" }} Updates
   </a>
-  <a rel="prefetch" href="/subscribe/"
-    class="hidden inline-block w-1/3 py-2 text-center uppercase align-middle rounded md:w-1/6 hover:shadow-md hover:text-shade-lighter hover:bg-brand">
-    <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
-      <path
-        d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
-    </svg>
-    <i class="bi bi-people-fill"></i> Community
-  </a>
+  <!-- <a rel="prefetch" href="/subscribe/" class="">
+    Community
+  </a> -->
 </nav>

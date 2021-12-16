@@ -7,7 +7,7 @@
   </header>
   <div class="mx-auto font-sans">
     {{ $paginator := .Paginate (where .Pages "Type" "posts") }}
-    <div class="cta-callout no-print">
+    <div class="cta-callout print:hidden">
       {{ partial "widgets/subscribe.html" . }}
     </div>
     {{ partial "site/pagination.html" . }}

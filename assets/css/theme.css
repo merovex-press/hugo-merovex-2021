@@ -1989,6 +1989,63 @@ footer .site-link:hover {
   }
 }
 
+#nav-menu {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+  width: 100%;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+@media print {
+  #nav-menu {
+    display: none;
+  }
+}
+
+#nav-menu a {
+  display: inline-block;
+  width: 33.333333%;
+  border-radius: 0.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+#nav-menu a:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(64 110 166 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(252 252 252 / var(--tw-text-opacity));
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 768px) {
+  #nav-menu a {
+    width: 16.666667%;
+  }
+}
+
+#nav-menu a .nav-icon {
+  margin-bottom: 0.25rem;
+  display: none;
+  height: 1.25rem;
+  width: 1.25rem;
+  opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+  #nav-menu a .nav-icon {
+    display: inline-block;
+  }
+}
+
 /* PROSE */
 
 .prosaic {
@@ -4129,6 +4186,10 @@ footer .site-link:hover {
   margin-bottom: 1.5rem;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .mb-3 {
   margin-bottom: 0.75rem;
 }
@@ -4241,6 +4302,10 @@ footer .site-link:hover {
   display: none;
 }
 
+.h-5 {
+  height: 1.25rem;
+}
+
 .h-4 {
   height: 1rem;
 }
@@ -4265,10 +4330,6 @@ footer .site-link:hover {
   height: 2rem;
 }
 
-.h-5 {
-  height: 1.25rem;
-}
-
 .h-6 {
   height: 1.5rem;
 }
@@ -4283,6 +4344,10 @@ footer .site-link:hover {
 
 .max-h-96 {
   max-height: 24rem;
+}
+
+.w-5 {
+  width: 1.25rem;
 }
 
 .w-full {
@@ -4307,10 +4372,6 @@ footer .site-link:hover {
 
 .w-20 {
   width: 5rem;
-}
-
-.w-5 {
-  width: 1.25rem;
 }
 
 .w-6 {
@@ -4687,10 +4748,6 @@ footer .site-link:hover {
   text-align: right;
 }
 
-.align-middle {
-  vertical-align: middle;
-}
-
 .font-sans {
   font-family: Source Sans Pro, -apple-system, system-ui, Segoe UI, Roboto, Lato, Helvetica, Arial, sans-serif;
 }
@@ -4827,10 +4884,6 @@ footer .site-link:hover {
 
 .opacity-30 {
   opacity: 0.3;
-}
-
-.opacity-20 {
-  opacity: 0.2;
 }
 
 .opacity-80 {
@@ -4991,11 +5044,6 @@ footer .site-link:hover {
   line-height:1
 }
 
-.fa-fw {
-  text-align:center;
-  width:1.25em
-}
-
 .fa.fa-pull-left,.fab.fa-pull-left,.fal.fa-pull-left,.far.fa-pull-left,.fas.fa-pull-left {
   margin-right:.3em
 }
@@ -5024,25 +5072,8 @@ footer .site-link:hover {
   }
 }
 
-.fa-at:before {
-  content:"\f1fa"
-}
-
-.fa-facebook:before {
-  content:"\f09a"
-}
-
-.fa-newspaper:before {
-  content:"\f1ea"
-}
-
 .fa-paper-plane:before {
   content:"\f1d8"
-}
-
-.fab {
-  font-family:"Font Awesome 5 Brands";
-  font-weight:400
 }
 
 @font-face {
@@ -5210,11 +5241,6 @@ footer .site-link:hover {
   color: rgb(64 110 166 / var(--tw-text-opacity));
 }
 
-.hover\:text-shade-lighter:hover {
-  --tw-text-opacity: 1;
-  color: rgb(252 252 252 / var(--tw-text-opacity));
-}
-
 .hover\:underline:hover {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -5222,12 +5248,6 @@ footer .site-link:hover {
 
 .hover\:opacity-100:hover {
   opacity: 1;
-}
-
-.hover\:shadow-md:hover {
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .focus\:outline-none:focus {
@@ -5397,6 +5417,12 @@ footer .site-link:hover {
   .dark\:hover\:text-shade-dark:hover {
     --tw-text-opacity: 1;
     color: rgb(49 47 44 / var(--tw-text-opacity));
+  }
+}
+
+@media print {
+  .print\:hidden {
+    display: none;
   }
 }
 
@@ -5944,10 +5970,6 @@ footer .site-link:hover {
 
   .md\:w-2\/3 {
     width: 66.666667%;
-  }
-
-  .md\:w-1\/6 {
-    width: 16.666667%;
   }
 
   .md\:max-w-2xl {

@@ -1,10 +1,7 @@
 {{- $buttons := .Site.Params.buttons }}
 {{- $icons := .Site.Params.icons }}
-
 {{- if .Params.cta }}
 {{- range $key, $val := .Params.cta}}
-
-
 <a class='{{ if eq $key "amazon" }}  
   {{- "border-amazon dark:border-amazon-light dark:hover:text-shade-dark dark:text-amazon-light dark:hover:bg-amazon-light hover:bg-amazon text-amazon button"}}
   {{ else if eq $key "noble" }}

@@ -363,6 +363,15 @@
   .card .summary {
     @apply mb-6 font-sans prose dark:prose-dark max-w-none md:prose-lg;
   }
+  #nav-menu {
+    @apply w-full mx-auto mb-12 text-xl text-center print:hidden;
+  }
+  #nav-menu a {
+    @apply inline-block w-1/3 py-2 text-center uppercase align-middle rounded md:w-1/6 hover:shadow-md hover:text-shade-lighter hover:bg-brand;
+  }
+  #nav-menu a .nav-icon {
+    @apply hidden w-5 h-5 mb-1 opacity-50 md:inline-block;
+  }
   /* PROSE */
   .prosaic { 
     @apply mx-auto prose md:prose-lg lg:prose-xl dark:prose-dark ;

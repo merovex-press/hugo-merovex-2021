@@ -2,7 +2,7 @@
 {{- $license := .Site.Params.licenses.Get .Params.photo.license }}
 {{- with .Resources.GetMatch .Params.photo.image }}
 {{- $low := .Resize "80x q10 Smart Gaussian" }}
-<figure class='max-w-2xl mx-auto mb-12 bg-cover rounded-lg max-h-96'
+<figure class='max-w-2xl mx-auto mb-12 bg-cover rounded-lg max-h-96 print:hidden'
   style="background-image: url({{$low.RelPermalink}});">
   {{ partial "picture.html" . }}
   <figcaption class="px-2 rounded-b-lg text-shade-lighter bg-brand-dark">

@@ -1,4 +1,4 @@
-<aside class="mt-12 text-center text-gray-700 opacity-30 hover:opacity-100 dark:text-gray-300">
+<aside class="mt-12 text-center text-shade print:text-shade-darker hover:text-shade-dark dark:hover:text-shade-lighter">
   Copyright © {{ dateFormat "2006" .Date }}, Benjamin C. Wilson. All rights reserved.
   <br>Originally published at
   {{ .Site.BaseURL| replaceRE "/$" "" }}{{with .Params.Aliases}}{{ index . 0 }}{{end}}

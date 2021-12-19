@@ -1,0 +1,32 @@
+{{define "main" }}
+<article class='single'>
+  <header>
+    {{ partial "author-image-round.html" "/" }}
+    {{ partial "site/nav.html"}}
+    <h1 itemprop="headline" class='md:text-6xl'>{{.Title}}</h1>
+  </header>
+  <table class="border">
+
+    <tr>
+      <th>Location</th>
+      <th>Name</th>
+      <th>UWP</th>
+      <th>Stars</th>
+      <th>Orbits</th>
+    </tr>
+    {{ range $.Site.Data.terradoma.volumes }}
+    {{range . }}
+    <tr>
+      <td>{{.location}}</td>
+      <td>{{.name}}</td>
+      <td>{{.uwp}}</td>
+      <td>{{.star}}</td>
+      <td>{{.orbits}}</td>
+    </tr>
+
+    {{ end }}
+    {{ end }}
+  </table>
+
+</article>
+{{end}}

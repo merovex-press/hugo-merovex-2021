@@ -4217,14 +4217,14 @@ footer .site-link:hover {
   margin: 1rem;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .my-12 {
@@ -4423,6 +4423,10 @@ footer .site-link:hover {
   width: 33.333333%;
 }
 
+.w-2\/3 {
+  width: 66.666667%;
+}
+
 .w-screen {
   width: 100vw;
 }
@@ -4437,30 +4441,6 @@ footer .site-link:hover {
 
 .w-6 {
   width: 1.5rem;
-}
-
-.w-16 {
-  width: 4rem;
-}
-
-.w-32 {
-  width: 8rem;
-}
-
-.w-48 {
-  width: 12rem;
-}
-
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-60 {
-  width: 15rem;
-}
-
-.w-2\/3 {
-  width: 66.666667%;
 }
 
 .max-w-4xl {
@@ -4487,16 +4467,16 @@ footer .site-link:hover {
   max-width: none;
 }
 
+.flex-initial {
+  flex: 0 1 auto;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
 
 .flex-none {
   flex: none;
-}
-
-.flex-initial {
-  flex: 0 1 auto;
 }
 
 .table-auto {
@@ -4592,10 +4572,6 @@ footer .site-link:hover {
   border-radius: 0.5rem;
 }
 
-.rounded-md {
-  border-radius: 0.375rem;
-}
-
 .rounded-t-lg {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
@@ -4669,6 +4645,11 @@ footer .site-link:hover {
   border-color: rgb(198 139 51 / var(--tw-border-opacity));
 }
 
+.border-shade {
+  --tw-border-opacity: 1;
+  border-color: rgb(122 116 108 / var(--tw-border-opacity));
+}
+
 .border-amazon {
   --tw-border-opacity: 1;
   border-color: rgb(255 153 0 / var(--tw-border-opacity));
@@ -4687,16 +4668,6 @@ footer .site-link:hover {
 .border-accent-lightest {
   --tw-border-opacity: 1;
   border-color: rgb(198 158 108 / var(--tw-border-opacity));
-}
-
-.border-shade-dark {
-  --tw-border-opacity: 1;
-  border-color: rgb(49 47 44 / var(--tw-border-opacity));
-}
-
-.border-shade {
-  --tw-border-opacity: 1;
-  border-color: rgb(122 116 108 / var(--tw-border-opacity));
 }
 
 .bg-brand {
@@ -4819,11 +4790,6 @@ footer .site-link:hover {
   padding-right: 0px;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -4866,10 +4832,6 @@ footer .site-link:hover {
 
 .font-serif {
   font-family: Merovex Serif, Cambria, Georgia, Times New Roman, Times, serif;
-}
-
-.font-code {
-  font-family: Merovex Code, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 }
 
 .text-sm {
@@ -5935,26 +5897,6 @@ footer .site-link:hover {
 
   .md\:w-2\/3 {
     width: 66.666667%;
-  }
-
-  .md\:w-32 {
-    width: 8rem;
-  }
-
-  .md\:w-16 {
-    width: 4rem;
-  }
-
-  .md\:w-48 {
-    width: 12rem;
-  }
-
-  .md\:w-60 {
-    width: 15rem;
-  }
-
-  .md\:w-1\/2 {
-    width: 50%;
   }
 
   .md\:max-w-2xl {

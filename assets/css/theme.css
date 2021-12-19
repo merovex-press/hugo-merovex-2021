@@ -4689,6 +4689,16 @@ footer .site-link:hover {
   border-color: rgb(198 158 108 / var(--tw-border-opacity));
 }
 
+.border-shade-dark {
+  --tw-border-opacity: 1;
+  border-color: rgb(49 47 44 / var(--tw-border-opacity));
+}
+
+.border-shade {
+  --tw-border-opacity: 1;
+  border-color: rgb(122 116 108 / var(--tw-border-opacity));
+}
+
 .bg-brand {
   --tw-bg-opacity: 1;
   background-color: rgb(64 110 166 / var(--tw-bg-opacity));

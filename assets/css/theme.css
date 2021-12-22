@@ -4700,6 +4700,14 @@ footer .site-link:hover {
   width: 1.5rem;
 }
 
+.w-24 {
+  width: 6rem;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
 .max-w-4xl {
   max-width: 56rem;
 }

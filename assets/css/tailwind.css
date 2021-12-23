@@ -60,7 +60,6 @@
   }
 }
 @layer base {
-  
   html {
     scroll-behavior: smooth;
   }
@@ -99,7 +98,7 @@
   .dtg {
     @apply font-sans text-center text-brand dark:text-brand-light
   }
-  article.single {
+  .single {
     @apply max-w-4xl p-8 mx-auto mt-4 border-opacity-0 md:border-opacity-10 md:mt-12 bordered article-background;
   }
   header .logo {

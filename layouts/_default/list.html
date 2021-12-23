@@ -1,28 +1,16 @@
-{{ define "mainx" }}
-<main class="mx-auto test">
-  LIST
-  {{ range .Pages }}
-  <article class="mb-16 prose text-gray-700 sm:mx-12 lg:prose-lg">
-    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-    {{ .Render "summary"}}
-  </article>
-  {{ end }}
-</main>
-{{ end }}
 {{define "main" }}
-<article class="single">
+<div class="border single">
   <header>
     {{ partial "author-image-round.html" "/" }}
     {{ partial "site/nav.html"}}
     <h1 itemprop="headline" class='md:text-6xl'>{{.Title}}</h1>
   </header>
-  <div class="mx-auto font-sans">
-    {{ range .Pages }}
-    <article class="mx-auto mb-16 text-gray-700 sm:mx-12">
-      <h2 class="h2"><a class="h3" href="{{ .Permalink }}">{{ .Title }}</a></h2>
-      <div class="mx-auto prose lg:prose-xl">{{.Summary | truncate 330 }}</div>
-    </article>
-    {{ end }}
-  </div>
-</article>
+  {{ range .Pages }}
+  <article class="p-4 card">
+    <h2 class="h2"><a class="h3" href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <div class="mx-auto prose-sans">{{.Summary | truncate 330 }}
+    </div>
+  </article>
+  {{ end }}
+</div>
 {{ end }}

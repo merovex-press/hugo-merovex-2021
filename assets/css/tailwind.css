@@ -58,13 +58,16 @@
   .bordered {
     @apply border rounded rounded-lg drop-shadow-lg print:drop-shadow-none border-opacity-10 print:border-0 border-shade-dark;
   }
+  .shade-text {
+    @apply dark:text-shade-lighter text-shade-darker;
+  }
 }
 @layer base {
   html {
     scroll-behavior: smooth;
   }
   body {
-    @apply subpixel-antialiased bg-shade-light text-shade-dark dark:bg-shade-darker dark:text-shade-light;
+    @apply subpixel-antialiased bg-shade-light shade-text dark:bg-shade-darker;
   }
   h1, .h1 {
     @apply mt-4 mb-8 text-3xl text-center font-display md:text-4xl;
@@ -121,7 +124,7 @@
     @apply p-2 m-2 font-sans text-sm font-semibold uppercase border-opacity-50 rounded bordered text-brand border-brand hover:bg-brand hover:text-shade-lighter dark:text-brand-light dark:border-brand-light;
   }
   .button .info { 
-    @apply text-shade-dark border-shade-dark hover:bg-shade-dark dark:text-shade-light dark:border-shade-light dark:hover:bg-shade-light;
+    @apply shade-text border-shade-dark hover:bg-shade-dark dark:border-shade-light dark:hover:bg-shade-light;
   }
   .button.success { 
     @apply text-success border-success hover:bg-success;
@@ -157,7 +160,7 @@
   }
   /* PROSE */
   .prosaic { 
-    @apply mx-auto prose md:prose-lg lg:prose-xl dark:prose-dark;
+    @apply mx-auto prose md:prose-lg lg:prose-xl dark:prose-dark print:text-shade-darker;
   }
   .prosaic a { 
     @apply font-sans text-brand-dark dark:text-brand-light;
@@ -179,7 +182,7 @@
     @apply border-b-4 border-accent-dark
   }
   .prose-sans { 
-    @apply font-sans prosaic print:font-serif print:text-shade-darker;
+    @apply font-sans prosaic print:font-serif ;
   }
   .prose-serif { 
     @apply font-serif prosaic;
@@ -193,5 +196,4 @@
   .prose table td, .prose table th { 
     @apply text-sm px-4
   }
-  
 }

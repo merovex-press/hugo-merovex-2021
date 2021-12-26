@@ -4655,6 +4655,14 @@ footer .site-link:hover {
   max-height: 24rem;
 }
 
+.min-h-full {
+  min-height: 100%;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .w-5 {
   width: 1.25rem;
 }
@@ -4976,6 +4984,18 @@ footer .site-link:hover {
 .bg-accent-lightest {
   --tw-bg-opacity: 1;
   background-color: rgb(198 158 108 / var(--tw-bg-opacity));
+}
+
+.bg-shade\/50 {
+  background-color: rgb(122 116 108 / 0.5);
+}
+
+.bg-shade\/30 {
+  background-color: rgb(122 116 108 / 0.3);
+}
+
+.bg-shade\/20 {
+  background-color: rgb(122 116 108 / 0.2);
 }
 
 .bg-opacity-90 {

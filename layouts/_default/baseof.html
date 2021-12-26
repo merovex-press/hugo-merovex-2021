@@ -3,7 +3,7 @@
 {{ partial "site/head.html" . }}
 
 <body>
-  <main class="flex-1 w-screen mt-0 print:max-w-5xl">
+  <main class="flex-1 w-screen min-h-screen mt-0 print:max-w-5xl">
     {{- block "main" . }}{{- end }}
     {{- partial "site/footer.html" . -}}
   </main>

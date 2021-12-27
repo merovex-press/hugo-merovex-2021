@@ -4499,6 +4499,10 @@ footer .site-link:hover {
   margin-bottom: 0.75rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -4513,10 +4517,6 @@ footer .site-link:hover {
 
 .mt-0 {
   margin-top: 0px;
-}
-
-.mt-8 {
-  margin-top: 2rem;
 }
 
 .mt-12 {
@@ -4653,10 +4653,6 @@ footer .site-link:hover {
 
 .max-h-96 {
   max-height: 24rem;
-}
-
-.min-h-full {
-  min-height: 100%;
 }
 
 .min-h-screen {
@@ -4956,6 +4952,10 @@ footer .site-link:hover {
   border-color: rgb(198 158 108 / var(--tw-border-opacity));
 }
 
+.bg-shade\/20 {
+  background-color: rgb(122 116 108 / 0.2);
+}
+
 .bg-shade {
   --tw-bg-opacity: 1;
   background-color: rgb(122 116 108 / var(--tw-bg-opacity));
@@ -4986,18 +4986,6 @@ footer .site-link:hover {
   background-color: rgb(198 158 108 / var(--tw-bg-opacity));
 }
 
-.bg-shade\/50 {
-  background-color: rgb(122 116 108 / 0.5);
-}
-
-.bg-shade\/30 {
-  background-color: rgb(122 116 108 / 0.3);
-}
-
-.bg-shade\/20 {
-  background-color: rgb(122 116 108 / 0.2);
-}
-
 .bg-opacity-90 {
   --tw-bg-opacity: 0.9;
 }
@@ -5018,6 +5006,10 @@ footer .site-link:hover {
   fill: rgb(64 110 166 / 0.5);
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -5032,10 +5024,6 @@ footer .site-link:hover {
 
 .p-2 {
   padding: 0.5rem;
-}
-
-.p-3 {
-  padding: 0.75rem;
 }
 
 .px-3 {

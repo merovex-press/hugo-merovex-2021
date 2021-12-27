@@ -4651,6 +4651,14 @@ footer .site-link:hover {
   height: 100%;
 }
 
+.h-9 {
+  height: 2.25rem;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
 .max-h-96 {
   max-height: 24rem;
 }
@@ -4713,6 +4721,10 @@ footer .site-link:hover {
 
 .w-6 {
   width: 1.5rem;
+}
+
+.w-96 {
+  width: 24rem;
 }
 
 .max-w-4xl {
@@ -4832,6 +4844,10 @@ footer .site-link:hover {
   overflow: hidden;
 }
 
+.overflow-scroll {
+  overflow: scroll;
+}
+
 .overflow-y-auto {
   overflow-y: auto;
 }
@@ -4886,6 +4902,14 @@ footer .site-link:hover {
 
 .border {
   border-width: 1px;
+}
+
+.border-8 {
+  border-width: 8px;
+}
+
+.border-2 {
+  border-width: 2px;
 }
 
 .border-t {
@@ -4950,6 +4974,11 @@ footer .site-link:hover {
 .border-accent-lightest {
   --tw-border-opacity: 1;
   border-color: rgb(198 158 108 / var(--tw-border-opacity));
+}
+
+.border-brand-light {
+  --tw-border-opacity: 1;
+  border-color: rgb(152 182 215 / var(--tw-border-opacity));
 }
 
 .bg-shade\/20 {

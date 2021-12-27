@@ -92,10 +92,10 @@
   .link { 
     @apply text-brand-dark hover:underline dark:text-brand-light;
   }
-  .travel-calculator input { 
+  .toolkit input { 
     @apply px-2 py-1 font-medium text-right border rounded-lg dark:bg-shade dark:bg-shade-darker dark:border-shade-light w-44 md:text-xl font-code
   }
-  .travel-calculator label { 
+  .toolkit label { 
     @apply flex-1 block font-medium md:inline-block md:text-xl;
   }
   .dtg {

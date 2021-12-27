@@ -743,7 +743,7 @@ blockquote p+p {
   }
 }
 
-.travel-calculator input {
+.toolkit input {
   width: 11rem;
   border-radius: 0.5rem;
   border-width: 1px;
@@ -757,41 +757,41 @@ blockquote p+p {
 }
 
 @media (prefers-color-scheme: dark) {
-  .travel-calculator input {
+  .toolkit input {
     --tw-border-opacity: 1;
     border-color: rgb(243 243 242 / var(--tw-border-opacity));
   }
 
-  .travel-calculator input {
+  .toolkit input {
     --tw-bg-opacity: 1;
     background-color: rgb(122 116 108 / var(--tw-bg-opacity));
   }
 
-  .travel-calculator input {
+  .toolkit input {
     --tw-bg-opacity: 1;
     background-color: rgb(18 17 16 / var(--tw-bg-opacity));
   }
 }
 
 @media (min-width: 768px) {
-  .travel-calculator input {
+  .toolkit input {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
 
-.travel-calculator label {
+.toolkit label {
   display: block;
   flex: 1 1 0%;
   font-weight: 500;
 }
 
 @media (min-width: 768px) {
-  .travel-calculator label {
+  .toolkit label {
     display: inline-block;
   }
 
-  .travel-calculator label {
+  .toolkit label {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }

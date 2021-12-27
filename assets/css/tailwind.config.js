@@ -12,9 +12,8 @@ module.exports = {
     extend: {
       typography: ['dark'],
       borderWidth: ['hover', 'focus'],
-      
+      backgroundColor: ['responsive', 'first', 'last', 'even', 'odd', 'hover', 'focus']
     },
-    backgroundColor: ['responsive', 'first', 'last', 'even', 'odd', 'hover', 'focus']
   },
   plugins: [
     require('@tailwindcss/typography'),

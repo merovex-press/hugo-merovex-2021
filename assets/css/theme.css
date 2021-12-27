@@ -4651,14 +4651,6 @@ footer .site-link:hover {
   height: 100%;
 }
 
-.h-9 {
-  height: 2.25rem;
-}
-
-.h-96 {
-  height: 24rem;
-}
-
 .max-h-96 {
   max-height: 24rem;
 }
@@ -4677,6 +4669,10 @@ footer .site-link:hover {
 
 .w-4 {
   width: 1rem;
+}
+
+.w-16 {
+  width: 4rem;
 }
 
 .w-9 {
@@ -4721,10 +4717,6 @@ footer .site-link:hover {
 
 .w-6 {
   width: 1.5rem;
-}
-
-.w-96 {
-  width: 24rem;
 }
 
 .max-w-4xl {
@@ -4844,10 +4836,6 @@ footer .site-link:hover {
   overflow: hidden;
 }
 
-.overflow-scroll {
-  overflow: scroll;
-}
-
 .overflow-y-auto {
   overflow-y: auto;
 }
@@ -4902,10 +4890,6 @@ footer .site-link:hover {
 
 .border {
   border-width: 1px;
-}
-
-.border-8 {
-  border-width: 8px;
 }
 
 .border-2 {
@@ -4974,11 +4958,6 @@ footer .site-link:hover {
 .border-accent-lightest {
   --tw-border-opacity: 1;
   border-color: rgb(198 158 108 / var(--tw-border-opacity));
-}
-
-.border-brand-light {
-  --tw-border-opacity: 1;
-  border-color: rgb(152 182 215 / var(--tw-border-opacity));
 }
 
 .bg-shade\/20 {
@@ -5151,16 +5130,16 @@ footer .site-link:hover {
   font-family: Merovex Sans, -apple-system, system-ui, Segoe UI, Roboto, Lato, Helvetica, Arial, sans-serif;
 }
 
+.font-code {
+  font-family: Merovex Code, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+}
+
 .font-display {
   font-family: Merovex Display, MerovexSans, -apple-system, system-ui, Segoe UI, Roboto, Lato, Helvetica, Arial, sans-serif;
 }
 
 .font-serif {
   font-family: Merovex Serif, Cambria, Georgia, Times New Roman, Times, serif;
-}
-
-.font-code {
-  font-family: Merovex Code, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 }
 
 .text-sm {
@@ -5171,6 +5150,11 @@ footer .site-link:hover {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-9xl {
@@ -5611,6 +5595,11 @@ footer .site-link:hover {
     color: #6f502b;
   }
 
+  .dark\:border-brand-light {
+    --tw-border-opacity: 1;
+    border-color: rgb(152 182 215 / var(--tw-border-opacity));
+  }
+
   .dark\:border-amazon-light {
     --tw-border-opacity: 1;
     border-color: rgb(255 171 46 / var(--tw-border-opacity));
@@ -5619,11 +5608,6 @@ footer .site-link:hover {
   .dark\:border-noble-light {
     --tw-border-opacity: 1;
     border-color: rgb(153 199 177 / var(--tw-border-opacity));
-  }
-
-  .dark\:border-brand-light {
-    --tw-border-opacity: 1;
-    border-color: rgb(152 182 215 / var(--tw-border-opacity));
   }
 
   .dark\:bg-shade-dark {

@@ -1,7 +1,7 @@
 {{ define "main" }}
 <article class='single'>
   <header>
-    {{ partial "author-image-round.html" "/" }}
+    {{ partial "author-image-round.html" .Parent.Permalink }}
     {{ partial "site/nav.html"}}
     <h1 itemprop="headline" class='md:text-6xl'>{{.Title}}</h1>
   </header>

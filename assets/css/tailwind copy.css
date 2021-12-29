@@ -61,9 +61,6 @@
   .shade-text {
     @apply dark:text-shade-lighter text-shade-darker;
   }
-  .prosaic { 
-    @apply mx-auto prose md:prose-lg lg:prose-xl dark:prose-dark print:text-shade-darker;
-  }
 }
 
 @layer base {
@@ -166,7 +163,9 @@
     @apply hidden w-5 h-5 mb-1 opacity-50 md:inline-block;
   }
   /* PROSE */
-  
+  .prosaic { 
+    /* @apply mx-auto prose md:prose-lg lg:prose-xl dark:prose-dark print:text-shade-darker; */
+  }
   .prosaic a { 
     @apply font-sans text-brand-dark dark:text-brand-light;
   }

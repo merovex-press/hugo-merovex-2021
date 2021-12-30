@@ -20,7 +20,6 @@
     src: url("../assets/fonts/SourceSans3-Italic-VariableFont_wght.ttf");
     font-style: italic;
   }
-
   @font-face {
     font-family:"Merovex Serif";
     src: url("../assets/fonts/SourceSerifPro-Regular.ttf");
@@ -62,7 +61,38 @@
     @apply dark:text-shade-lighter text-shade-darker;
   }
   .prosaic { 
-    @apply mx-auto prose md:prose-lg lg:prose-xl dark:prose-dark print:text-shade-darker;
+    @apply mx-auto prose md:prose-lg lg:prose-xl print:text-shade-darker print:font-serif;
+  }
+  .prosaic h2, .prosaic h3 {
+    @apply text-brand dark:text-brand-light
+  }
+   .prosaic a { 
+    @apply font-sans text-brand-dark dark:text-brand-light;
+  }
+  .prosaic p+p { 
+    text-indent: 1.5em;
+    @apply m-0
+  }
+  .prosaic table { 
+    @apply rounded-lg;
+  }
+  .prosaic code { 
+    @apply dark:text-brand-light text-brand font-code
+  }
+  .prosaic th { 
+    @apply dark:text-shade-dark text-shade-light font-sans bg-brand dark:bg-brand-light p-2
+  }
+  .prosaic a:hover {
+    @apply bg-warning-light rounded
+  }
+  .prosaic h2, .prosaic h3 { 
+    @apply font-serif dark:text-brand-light;
+  }
+  .prosaic strong { 
+    @apply font-sans dark:text-warning-light;
+  }
+    .prosaic table td, .prosaic table th { 
+    @apply text-sm px-4
   }
 }
 
@@ -166,40 +196,11 @@
     @apply hidden w-5 h-5 mb-1 opacity-50 md:inline-block;
   }
   /* PROSE */
-  
-  .prosaic a { 
-    @apply font-sans text-brand-dark dark:text-brand-light;
-  }
-  .prosaic p+p { 
-    text-indent: 1.5em;
-    @apply m-0
-  }
-  .prosaic table { 
-    @apply rounded-lg;
-  }
-  .prosaic code { 
-    @apply dark:text-brand-light text-brand font-code
-  }
-  .prosaic th { 
-    @apply dark:text-shade-dark text-shade-light font-sans bg-brand dark:bg-brand-light p-2
-  }
-  .prosaic a:hover {
-    @apply bg-warning-light rounded
-  }
   .prosaic-sans { 
-    @apply font-sans prosaic print:font-serif ;
+    @apply font-sans prosaic;
   }
   .prosaic-serif { 
-    /* @apply mx-auto prose md:prose-lg lg:prose-xl dark:prose-dark print:text-shade-darker; */
     @apply font-serif prosaic;
   }
-  .prosaic h2, .prosaic h3 { 
-    @apply font-serif dark:text-brand-light;
-  }
-  .prosaic strong { 
-    @apply font-sans dark:text-warning-light;
-  }
-  .prose table td, .prose table th { 
-    @apply text-sm px-4
-  }
+
 }

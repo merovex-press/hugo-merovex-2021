@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./content/**/*.md",
     "./content/**/*.html",
+    "./content/**/*.js",
     "./themes/hugo-merovex-2021/layouts/**/*.html",
     "./themes/hugo-merovex-2021/layouts/partials/**/*.html",
     "./themes/hugo-merovex-2021/layouts/partials/posts/*.html"

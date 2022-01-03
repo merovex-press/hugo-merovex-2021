@@ -1,7 +1,7 @@
 <article id='{{ .book.Title | urlize }}' class="lg:flex card">
   {{- if .book.Resources.Match "*cover*" }}
   {{- with .book.Resources.GetMatch "*cover*" }}
-  {{- $resizedmd := .Resize "330x500" }}
+  {{- $resizedmd := .Resize "330x500 webp" }}
   <div class="flex-none h-48 overflow-hidden text-center bg-cover border-r-0 rounded-r-none bordered lg:h-auto lg:w-48"
     style="background-image: url('{{$resizedmd.RelPermalink}}')" title="River">
   </div>

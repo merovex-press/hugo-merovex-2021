@@ -4,12 +4,11 @@
     {{partial "author-image-round.html" "/posts"}}
     {{partial "site/nav.html"}}
     <div class='dtg'>{{ partial "dtg.html" . }}</div>
-    <h1 itemprop="headline">{{ .Title }}</h1>
+    <h1 itemprop="headline">{{ .Title }}<span class='block'>{{.Params.Subtitle}}</span></h1>
     {{ partial "posts/figure.html" . }}
   </header>
   <div class="mb-12 prosaic-sans">
     {{ .Content }}
-
   </div>
   {{ partial "related-posts.html" . }}
   {{ partial "citation.html" . }}

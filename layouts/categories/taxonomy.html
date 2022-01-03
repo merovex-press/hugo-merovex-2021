@@ -1,18 +1,27 @@
-{{ define "main" }}
-<div class="container mx-auto">
-  <div class="section">
-    <a class='text-2xl' href="/categories/">Back to News & Random Thoughts</a>
-    <div class="content">
-      <h1 class="mt-6 text-3xl md:text-5xl font-display">{{ .Title | humanize | title}}</h1>
-      {{ .Content }}
-    </div>
-    <div class="grid grid-cols-1 gap-5 p-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 auto-rows-max">
-      {{ range .Paginator.Pages }}
-      <div class="">
-        {{ partial "widgets/post-card.html" . }}
-      </div>
-      {{ end }}
-    </div>
-  </div>
+{{ define "xmain" }}
+<div class="article">
+
 </div>
+{{ end }}
+{{define "main" }}
+<article class="single">
+  <header>
+    {{ partial "author-image-round.html" "/posts" }}
+    {{ partial "site/nav.html"}}
+    <h1 itemprop="headline" class='md:text-6xl'>
+      {{.Title}}
+    </h1>
+  </header>
+  <div class="mx-auto font-sans">
+    <div class="cta-callout print:hidden">
+      {{ partial "widgets/subscribe.html" . }}
+    </div>
+    {{ partial "site/pagination.html" . }}
+    {{ range .Paginator.Pages }}
+    {{ partial "widgets/post-card.html" . }}
+    {{ end }}
+    {{ partial "site/pagination.html" . }}
+    {{ partial "site/logo-footer.html" . }}
+  </div>
+</article>
 {{ end }}

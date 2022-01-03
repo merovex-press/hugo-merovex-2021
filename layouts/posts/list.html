@@ -3,7 +3,9 @@
   <header>
     {{ partial "author-image-round.html" "/" }}
     {{ partial "site/nav.html"}}
-    <h1 itemprop="headline" class='md:text-6xl'>{{.Title}}</h1>
+    <h1 itemprop="headline" class='md:text-6xl'>
+      {{.Title}}
+    </h1>
   </header>
   <div class="mx-auto font-sans">
     {{ $paginator := .Paginate (where .Pages "Type" "posts") }}

@@ -36,8 +36,10 @@
     <link rel="stylesheet" rel="preload" as="font" href="{{ $fonts.RelPermalink }}">
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
     {{ else }}
-    {{- $fonts := $styles | minify | fingerprint | resources.PostProcess -}}
-    <link rel="stylesheet" rel="preload" as="font" href="{{ $fonts.Permalink }}">
+    {{- $fonts := $fonts | minify | fingerprint | resources.PostProcess -}}
+    {{- $styles := $styles | minify | fingerprint | resources.PostProcess -}}
+    <link rel="stylesheet" rel="preload" as="font" href="{{ $fonts.Permalink }}"
+        integrity="{{ $fonts.Data.Integrity }}">
     <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
     {{ end -}}
 

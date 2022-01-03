@@ -30,11 +30,14 @@
     {{ end -}}
     {{ hugo.Generator }}
 
+    {{- $fonts := resources.Get "css/fonts.css" -}}
     {{- $styles := resources.Get "css/theme.css" -}}
     {{- if .Site.IsServer }}
+    <link rel="stylesheet" rel="preload" as="font" href="{{ $fonts.RelPermalink }}">
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
     {{ else }}
-    {{- $styles := $styles | minify | fingerprint | resources.PostProcess -}}
+    {{- $fonts := $styles | minify | fingerprint | resources.PostProcess -}}
+    <link rel="stylesheet" rel="preload" as="font" href="{{ $fonts.Permalink }}">
     <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
     {{ end -}}
 

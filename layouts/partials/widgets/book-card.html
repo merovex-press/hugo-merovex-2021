@@ -22,8 +22,8 @@
       </p>
     </div>
     <div class="flex items-center justify-center">
-      <a href="{{- .book.Permalink -}}" class="card-link"></a>
-      <span class="button">Learn more</span>
+      <a href="{{- .book.Permalink -}}" class="card-link" aria-label="Book Details: {{.book.Title}}">Learn More</a>
+      <span class="button" aria-hidden="true">Learn more</span>
     </div>
   </div>
 </article>

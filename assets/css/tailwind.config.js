@@ -114,7 +114,7 @@ module.exports = {
         darkest: '#29180f', // WCAG 2.0 7:0
       },
       shade: { // Tailwind Stone
-        lighter: '#fafaf9',
+        lighter: '#FFFFFF',
         light: '#e7e5e4', // white
         DEFAULT: '#57534e',
         dark: '#292524', // black

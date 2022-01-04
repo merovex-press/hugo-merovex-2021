@@ -1,4 +1,6 @@
 <!-- Favicon, Seriously. -->
-<link rel="icon" type="image/svg+xml" href="/f/favicon.svg">
-
+<!-- <link rel="icon" type="image/svg+xml" href="/f/favicon.svg"> -->
+{{- $img := resources.Get "images/ben-wilson-2021-square-160.webp" -}}
+{{- $resize := $img.Resize "300x png"}}
+<link rel="icon" type="image/png" sizes="300x300" href="{{$resize.Permalink}}">
 <!-- /Favicon -->

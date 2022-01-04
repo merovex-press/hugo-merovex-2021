@@ -93,7 +93,7 @@ module.exports = {
       })
     },
     fontFamily: {
-      'sans': ["Merovex Sans", '-apple-system', 'system-ui', "Segoe UI", 'Roboto', 'Lato', 'Helvetica', 'Arial', 'sans-serif'],
+      'sans': ["Merovex Sans", "Segoe UI", 'Roboto', 'Lato', 'Helvetica', 'Arial', '-apple-system', 'system-ui', 'sans-serif'],
       'serif': ["Merovex Serif", 'Cambria', 'Georgia', "Times New Roman", 'Times', 'serif'],
       'display': ["Merovex Display", "MerovexSans", '-apple-system', 'system-ui', "Segoe UI", 'Roboto', 'Lato', 'Helvetica', 'Arial', 'sans-serif'],
       'code': ["Merovex Code", "ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace"]

@@ -42,7 +42,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: Merovex Sans, -apple-system, system-ui, Segoe UI, Roboto, Lato, Helvetica, Arial, sans-serif;
+  font-family: Merovex Sans, Segoe UI, Roboto, Lato, Helvetica, Arial, -apple-system, system-ui, sans-serif;
   /* 4 */
 }
 
@@ -657,7 +657,7 @@ h1, .h1 {
 
 .h3 {
   text-align: center;
-  font-family: Merovex Sans, -apple-system, system-ui, Segoe UI, Roboto, Lato, Helvetica, Arial, sans-serif;
+  font-family: Merovex Sans, Segoe UI, Roboto, Lato, Helvetica, Arial, -apple-system, system-ui, sans-serif;
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: 700;
@@ -774,7 +774,7 @@ blockquote p+p {
 
 .dtg {
   text-align: center;
-  font-family: Merovex Sans, -apple-system, system-ui, Segoe UI, Roboto, Lato, Helvetica, Arial, sans-serif;
+  font-family: Merovex Sans, Segoe UI, Roboto, Lato, Helvetica, Arial, -apple-system, system-ui, sans-serif;
   --tw-text-opacity: 1;
   color: rgb(50 98 135 / var(--tw-text-opacity));
 }
@@ -1414,7 +1414,7 @@ footer .site-link:hover {
 .button {
   margin: 0.5rem;
   padding: 0.5rem;
-  font-family: Merovex Sans, -apple-system, system-ui, Segoe UI, Roboto, Lato, Helvetica, Arial, sans-serif;
+  font-family: Merovex Sans, Segoe UI, Roboto, Lato, Helvetica, Arial, -apple-system, system-ui, sans-serif;
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 600;
@@ -1588,7 +1588,7 @@ footer .site-link:hover {
   margin-top: 0.75rem;
   margin-bottom: 1.5rem;
   text-align: center;
-  font-family: Merovex Sans, -apple-system, system-ui, Segoe UI, Roboto, Lato, Helvetica, Arial, sans-serif;
+  font-family: Merovex Sans, Segoe UI, Roboto, Lato, Helvetica, Arial, -apple-system, system-ui, sans-serif;
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 700;
@@ -1992,7 +1992,7 @@ footer .site-link:hover {
 .card .summary {
   margin-bottom: 1.5rem;
   max-width: none;
-  font-family: Merovex Sans, -apple-system, system-ui, Segoe UI, Roboto, Lato, Helvetica, Arial, sans-serif;
+  font-family: Merovex Sans, Segoe UI, Roboto, Lato, Helvetica, Arial, -apple-system, system-ui, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -2375,7 +2375,7 @@ footer .site-link:hover {
 /* PROSE */
 
 .prosaic-sans {
-  font-family: Merovex Sans, -apple-system, system-ui, Segoe UI, Roboto, Lato, Helvetica, Arial, sans-serif;
+  font-family: Merovex Sans, Segoe UI, Roboto, Lato, Helvetica, Arial, -apple-system, system-ui, sans-serif;
 }
 
 .prosaic-sans color {
@@ -3294,7 +3294,7 @@ footer .site-link:hover {
 }
 
 .prosaic-sans a {
-  font-family: Merovex Sans, -apple-system, system-ui, Segoe UI, Roboto, Lato, Helvetica, Arial, sans-serif;
+  font-family: Merovex Sans, Segoe UI, Roboto, Lato, Helvetica, Arial, -apple-system, system-ui, sans-serif;
   --tw-text-opacity: 1;
   color: rgb(41 74 104 / var(--tw-text-opacity));
 }
@@ -3332,7 +3332,7 @@ footer .site-link:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(50 98 135 / var(--tw-bg-opacity));
   padding: 0.5rem;
-  font-family: Merovex Sans, -apple-system, system-ui, Segoe UI, Roboto, Lato, Helvetica, Arial, sans-serif;
+  font-family: Merovex Sans, Segoe UI, Roboto, Lato, Helvetica, Arial, -apple-system, system-ui, sans-serif;
   --tw-text-opacity: 1;
   color: rgb(231 229 228 / var(--tw-text-opacity));
 }
@@ -3378,7 +3378,7 @@ footer .site-link:hover {
 }
 
 .prosaic-sans strong {
-  font-family: Merovex Sans, -apple-system, system-ui, Segoe UI, Roboto, Lato, Helvetica, Arial, sans-serif;
+  font-family: Merovex Sans, Segoe UI, Roboto, Lato, Helvetica, Arial, -apple-system, system-ui, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -4109,7 +4109,7 @@ footer .site-link:hover {
 }
 
 .font-sans {
-  font-family: Merovex Sans, -apple-system, system-ui, Segoe UI, Roboto, Lato, Helvetica, Arial, sans-serif;
+  font-family: Merovex Sans, Segoe UI, Roboto, Lato, Helvetica, Arial, -apple-system, system-ui, sans-serif;
 }
 
 .font-code {
@@ -5278,7 +5278,7 @@ footer .site-link:hover {
 }
 
 .prosaic a {
-  font-family: Merovex Sans, -apple-system, system-ui, Segoe UI, Roboto, Lato, Helvetica, Arial, sans-serif;
+  font-family: Merovex Sans, Segoe UI, Roboto, Lato, Helvetica, Arial, -apple-system, system-ui, sans-serif;
   --tw-text-opacity: 1;
   color: rgb(41 74 104 / var(--tw-text-opacity));
 }
@@ -5316,7 +5316,7 @@ footer .site-link:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(50 98 135 / var(--tw-bg-opacity));
   padding: 0.5rem;
-  font-family: Merovex Sans, -apple-system, system-ui, Segoe UI, Roboto, Lato, Helvetica, Arial, sans-serif;
+  font-family: Merovex Sans, Segoe UI, Roboto, Lato, Helvetica, Arial, -apple-system, system-ui, sans-serif;
   --tw-text-opacity: 1;
   color: rgb(231 229 228 / var(--tw-text-opacity));
 }
@@ -5351,7 +5351,7 @@ footer .site-link:hover {
 }
 
 .prosaic strong {
-  font-family: Merovex Sans, -apple-system, system-ui, Segoe UI, Roboto, Lato, Helvetica, Arial, sans-serif;
+  font-family: Merovex Sans, Segoe UI, Roboto, Lato, Helvetica, Arial, -apple-system, system-ui, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -8,7 +8,7 @@
   {{ range .Pages }}
   <article class="p-4 card">
     <h2 class="h2"><a class="h3" href="{{ .Permalink }}">{{ .Title }}</a></h2>
-    <div class="mx-auto prose-sans">{{.Summary | truncate 330 }}
+    <div class="mx-auto prosaic-sans">{{.Summary | truncate 330 }}
     </div>
   </article>
   {{ end }}

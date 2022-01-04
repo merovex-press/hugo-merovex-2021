@@ -2,14 +2,15 @@
   {{- if .book.Resources.Match "*cover*" }}
   {{- with .book.Resources.GetMatch "*cover*" }}
   {{- $resizedmd := .Resize "330x500 webp" }}
-  <div class="flex-none h-48 overflow-hidden text-center bg-cover border-r-0 rounded-r-none bordered lg:h-auto lg:w-48"
+  <div
+    class="flex-none h-48 overflow-hidden text-center bg-cover border border-r-0 border-opacity-25 rounded-l-lg rounded-r-none lg:h-auto lg:w-48"
     style="background-image: url('{{$resizedmd.RelPermalink}}')" title="River">
   </div>
   {{end}}
   {{else}}
   <img class="" src='https://via.placeholder.com/333x500?text=Book+Cover'>
   {{end}}
-  <div class="flex flex-col justify-between p-4 leading-normal border-l-0 rounded-l-none bordered">
+  <div class="flex flex-col justify-between p-4 leading-normal border-l-0 rounded-l-none">
     <div>
       <h3 class='h3 font-display'>{{.book.Title}}</h3>
       <p class="w-full my-6 font-sans">

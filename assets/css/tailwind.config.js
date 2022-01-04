@@ -8,6 +8,7 @@ module.exports = {
     "./themes/hugo-merovex-2021/layouts/partials/**/*.html",
     "./themes/hugo-merovex-2021/layouts/partials/posts/*.html"
   ],
+  safelist: ["rm-link", "rm-parent"],
   darkMode: 'media',
   variants: {
     extend: {

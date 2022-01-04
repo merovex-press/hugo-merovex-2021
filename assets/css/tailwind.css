@@ -22,7 +22,7 @@
   .prosaic h2, .prosaic h3 {
     @apply text-brand dark:text-brand-light
   }
-   .prosaic a { 
+  .prosaic a { 
     @apply font-sans text-brand-dark dark:text-brand-light;
   }
   .prosaic p+p { 
@@ -38,9 +38,6 @@
   .prosaic th { 
     @apply dark:text-shade-dark text-shade-light font-sans bg-brand dark:bg-brand-light p-2
   }
-  .prosaic a:hover {
-    @apply bg-warning-light rounded
-  }
   .prosaic h2, .prosaic h3 { 
     @apply font-serif dark:text-brand-light;
   }
@@ -50,6 +47,9 @@
     .prosaic table td, .prosaic table th { 
     @apply text-sm px-4
   }
+  .rm-link {
+    @apply absolute bottom-0 block w-full pt-48 pb-8 mx-auto text-xl text-center rounded-b-md bg-gradient-to-t from-shade-light/100 via-shade-light/75 to-shade-light/0 dark:from-shade-dark/100 dark:via-shade-dark/75 dark:to-shade-dark/0;
+  }
 }
 
 @layer base {
@@ -57,7 +57,7 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply subpixel-antialiased bg-shade-light shade-text dark:bg-shade-darker;
+    @apply subpixel-antialiased bg-shade-lighter shade-text dark:bg-shade-darker;
   }
   h1, .h1 {
     @apply mt-4 mb-8 text-3xl text-center font-display md:text-4xl;
@@ -158,5 +158,4 @@
   .prosaic-serif { 
     @apply font-serif prosaic;
   }
-
 }

@@ -93,9 +93,9 @@ module.exports = {
       })
     },
     fontFamily: {
-      'sans': ["Merovex Sans", "Segoe UI", 'Roboto', 'Lato', 'Helvetica', 'Arial', '-apple-system', 'system-ui', 'sans-serif'],
+      'sans': ["Merovex Sans", 'Arial', 'sans-serif'],
       'serif': ["Merovex Serif", 'Cambria', 'Georgia', "Times New Roman", 'Times', 'serif'],
-      'display': ["Merovex Display", "MerovexSans", '-apple-system', 'system-ui', "Segoe UI", 'Roboto', 'Lato', 'Helvetica', 'Arial', 'sans-serif'],
+      'display': ["Merovex Display", 'Arial', 'sans-serif'],
       'code': ["Merovex Code", "ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace"]
     },
     colors: {

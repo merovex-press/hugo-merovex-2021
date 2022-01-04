@@ -791,7 +791,12 @@ blockquote p+p {
   /* @apply max-w-4xl p-8 mx-auto mt-4 border-opacity-0 md:border-opacity-10 md:mt-12 article-background; */
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   max-width: 56rem;
+  border-radius: 0.75rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }

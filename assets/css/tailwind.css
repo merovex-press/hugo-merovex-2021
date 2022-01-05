@@ -94,7 +94,7 @@
   }
   .single {
     /* @apply max-w-4xl p-8 mx-auto mt-4 border-opacity-0 md:border-opacity-10 md:mt-12 article-background; */
-    @apply max-w-4xl mx-auto;
+    @apply max-w-4xl py-12 mx-auto;
   }
   header .logo {
     @apply w-5 h-5 lg:h-8 lg:w-8 opacity-30;

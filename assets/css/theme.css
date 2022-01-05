@@ -596,6 +596,7 @@ html {
 body {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  font-weight: 500;
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
   --tw-text-opacity: 1;

@@ -55,7 +55,7 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply subpixel-antialiased bg-shade-lighter shade-text dark:bg-shade-darker;
+    @apply subpixel-antialiased font-medium bg-shade-lighter shade-text dark:bg-shade-darker;
   }
   h1, .h1 {
     @apply mt-4 mb-8 text-3xl font-bold text-center font-display md:text-6xl;

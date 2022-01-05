@@ -4,20 +4,27 @@
     <div class="hidden quote-mark sm:block" aria-hidden="true">
       &ldquo;
     </div>
-    <div class='relative'>
-      <div id="excerpt" class="pb-10 prosaic-serif">
-        {{.Content | truncate 10000}}
+    <div id="excerpt" class="pb-10 prosaic-serif">
+      <div id='teaser' class="relative">
+        {{.Content | truncate 440}}
+        <div
+          class="absolute bottom-0 block w-full pt-48 pb-8 mx-auto text-xl text-center rounded-b-md bg-gradient-to-t from-shade-lighter/100 via-shade-lighter/80 to-shade-lighter/0 dark:from-shade-darker/100 dark:via-shade-darker/75 dark:to-shade-dark/0">
+          <a class='button bg-shade-lighter' onclick="toogleReadMore();">Read More</a>
+        </div>
+      </div>
+      <div id='full' class="hidden">
+        {{.Content }}
+        <aside class="mx-auto my-12 text-center print:hidden">{{ partial "cta-links.html" . }}</aside>
       </div>
     </div>
   </div>
 </section>
-<script type="text/javascript" src="/assets/js/read-more.js"></script>
 <script>
-  $readMoreJS.init({
-    target: '#excerpt',
-    numOfWords: 50,
-    toggle: true,
-    moreLink: 'Read More',
-    lessLink: 'Read Less'
-  });
+  function toogleReadMore() {
+    var moreBtn = document.getElementById("more-btn");
+    var more = document.getElementById("full");
+    var teaser = document.getElementById("teaser");
+    more.classList.toggle("hidden");
+    teaser.classList.toggle("hidden");
+  }
 </script>

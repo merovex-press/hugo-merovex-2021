@@ -7,34 +7,21 @@
   {{- with $.Site.GetPage "section" "book" }}
   {{- range .Pages }}
   {{- if .Params.featured }}
-  <section class="">
-    <h1 class="text-5xl">
-      New from Ben Wilson
-    </h1>
-    <h2 class="h2">{{.Title}}</h2>
-    {{ partial "book/header.html" .}}
-    {{ partial "book/excerpt.html" . }}
-    <script type="text/javascript" src="/assets/js/read-more.js"></script>
-    <script>
-      $readMoreJS.init({
-        target: '#excerpt',
-        numOfWords: 50,
-        toggle: true,
-        moreLink: 'Read More',
-        lessLink: 'Read Less'
-      });
-    </script>
-
-    <aside class="my-12 text-center print:hidden">{{ partial "cta-links.html" . }}</aside>
-    {{ end }}
-    {{ end }}
-    {{ end }}
-    <div class="py-24 text-2xl">
-      <aside class="flex max-w-2xl p-8 mx-auto">
-        {{ partial "widgets/subscribe.html" . }}
-      </aside>
-    </div>
-    {{ partial "site/logo-footer.html" . }}
+  <h1 class="text-5xl">
+    New from Ben Wilson
+  </h1>
+  <h2 class="h2">{{.Title}}</h2>
+  {{ partial "book/header.html" .}}
+  {{ partial "book/excerpt.html" . }}
+  {{ end }}
+  {{ end }}
+  {{ end }}
+  <div class="py-24 text-2xl">
+    <aside class="flex max-w-2xl p-8 mx-auto">
+      {{ partial "widgets/subscribe.html" . }}
+    </aside>
+  </div>
+  {{ partial "site/logo-footer.html" . }}
 </article>
 
 {{ end }}

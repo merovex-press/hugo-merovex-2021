@@ -3,6 +3,9 @@
 {{- if .Parent }}
 {{- $link = .Parent.RelPermalink }}
 {{- end }}
+{{- if .Params.homelink}}
+{{- $link = .Params.homelink }}
+{{- end }}
 <div class="m-4" id='top'>
   <a href="{{$link}}">
     <img src="{{$img.Permalink}}" alt='author headshot' height="60" width="60" class='mx-auto mb-2 rounded-full'>

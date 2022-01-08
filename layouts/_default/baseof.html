@@ -4,18 +4,17 @@
 
 <body>
   <header>
-    {{ partial "author-image-round.html" . }}
-    <!-- .Parent.Permalink -->
+    {{ partial "author-image-round.html" }}
     {{ partial "site/nav.html"}}
     <h1 itemprop="headline" class='md:text-6xl'>{{.Title}}<span class='block'>{{.Params.Subtitle}}</span></h1>
-    {{ block "figure" .}}{{end}}
+    {{- block "figure" .}}{{end}}
   </header>
   <main class="flex-1 w-screen min-h-screen mt-0 print:max-w-5xl">
     <div class='max-w-4xl py-12 mx-auto'>
       {{- block "main" . }}{{- end }}
-      <div class="mt-12 cta-callout print:hidden">
+      <aside class="mt-12 cta-callout print:hidden">
         {{ partial "widgets/subscribe.html" . }}
-      </div>
+      </aside>
       {{ partial "site/logo-footer.html" . }}
     </div>
   </main>
@@ -24,8 +23,8 @@
 <script>
   function ml_webform_success_4460713() { var r = ml_jQuery || jQuery; r(".ml-subscribe-form-4460713 .row-success").show(), r(".ml-subscribe-form-4460713 .row-form").hide() }
 </script>
-<img src="https://track.mailerlite.com/webforms/o/4460713/e0g5g7?v1641653861" width="1" height="1"
-  style="max-width:1px;max-height:1px;visibility:hidden;padding:0;margin:0;display:block" alt="." border="0">
+<img src="https://track.mailerlite.com/webforms/o/4460713/e0g5g7?v1641653861" width="1" height="1" class="hidden"
+  alt="">
 <script src="https://static.mailerlite.com/js/w/webforms.min.js?v0c75f831c56857441820dcec3163967c"
   type="text/javascript"></script>
 

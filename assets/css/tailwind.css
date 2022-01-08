@@ -47,7 +47,6 @@
   .prosaic table td, .prosaic table th { 
     @apply text-sm px-4
   }
-
 }
 
 @layer base {

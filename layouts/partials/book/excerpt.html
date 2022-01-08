@@ -9,7 +9,8 @@
         {{.Content | truncate 440}}
         <div
           class="absolute bottom-0 block w-full pt-48 pb-8 mx-auto text-xl text-center rounded-b-md bg-gradient-to-t from-shade-lighter/100 via-shade-lighter/80 to-shade-lighter/0 dark:from-shade-darker/100 dark:via-shade-darker/75 dark:to-shade-dark/0">
-          <a class='button bg-shade-lighter' onclick="toogleReadMore();">Read More</a>
+          <a class='button bg-shade-lighter' onclick="toggleContinueReading();">Continue Reading
+            {{partial "svg/chevron-double-right.html" "inline-block w-3 h-3" }}</a>
         </div>
       </div>
       <div id='full' class="hidden">
@@ -20,11 +21,8 @@
   </div>
 </section>
 <script>
-  function toogleReadMore() {
-    var moreBtn = document.getElementById("more-btn");
-    var more = document.getElementById("full");
-    var teaser = document.getElementById("teaser");
-    more.classList.toggle("hidden");
-    teaser.classList.toggle("hidden");
+  function toggleContinueReading() {
+    document.getElementById("full").classList.toggle("hidden");
+    document.getElementById("teaser").classList.toggle("hidden");
   }
 </script>

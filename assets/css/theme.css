@@ -4556,6 +4556,10 @@ footer .site-link:hover {
   display: table;
 }
 
+.table-cell {
+  display: table-cell;
+}
+
 .grid {
   display: grid;
 }
@@ -4933,6 +4937,16 @@ footer .site-link:hover {
   border-color: rgb(228 209 185 / var(--tw-border-opacity));
 }
 
+.border-brand-dark {
+  --tw-border-opacity: 1;
+  border-color: rgb(41 74 104 / var(--tw-border-opacity));
+}
+
+.border-brand-light {
+  --tw-border-opacity: 1;
+  border-color: rgb(138 194 218 / var(--tw-border-opacity));
+}
+
 .border-opacity-25 {
   --tw-border-opacity: 0.25;
 }
@@ -5131,6 +5145,10 @@ footer .site-link:hover {
 
 .text-right {
   text-align: right;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .font-sans {

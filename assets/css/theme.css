@@ -4620,6 +4620,10 @@ footer .site-link:hover {
   height: 100%;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .max-h-96 {
   max-height: 24rem;
 }

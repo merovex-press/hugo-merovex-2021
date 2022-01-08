@@ -3,10 +3,10 @@
 {{ partial "site/head.html" . }}
 
 <body>
-  <main class="flex-1 w-screen min-h-screen mt-0 print:max-w-5xl">
+  <main class="flex-1 w-screen h-screen min-h-screen mt-0 print:max-w-5xl">
     {{- block "main" . }}{{- end }}
-    {{- partial "site/footer.html" . -}}
   </main>
+  {{- partial "site/footer.html" . -}}
 </body>
 <script>
   function ml_webform_success_4460713() { var r = ml_jQuery || jQuery; r(".ml-subscribe-form-4460713 .row-success").show(), r(".ml-subscribe-form-4460713 .row-form").hide() }

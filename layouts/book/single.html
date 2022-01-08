@@ -1,23 +1,8 @@
 {{ define "main" }}
-<article class='single'>
-  <header>
-    {{ partial "author-image-round.html" "/series" }}
-    {{ partial "site/nav.html"}}
-    {{ partial "related-posts.html" . }}
-    <h1 itemprop="headline" class='md:text-6xl'>{{.Title}}</h1>
-  </header>
-  <aside class="mt-12 cta-callout print:hidden">
-    {{ partial "widgets/subscribe.html" . }}
-  </aside>
-  {{ partial "book/header.html" .}}
-  {{ partial "book/praises.html" . }}
-  {{ partial "book/characters.html" . }}
-  {{ partial "book/excerpt.html" . }}
-  {{ partial "related-posts.html" . }}
-  {{ partial "citation.html" . }}
-  <aside class="mt-12 cta-callout print:hidden">
-    {{ partial "widgets/subscribe.html" . }}
-  </aside>
-  {{ partial "site/logo-footer.html" . }}
-</article>
+{{ partial "book/header.html" .}}
+{{ partial "book/praises.html" . }}
+{{ partial "book/characters.html" . }}
+{{ partial "book/excerpt.html" . }}
+{{ partial "related-posts.html" . }}
+{{ partial "citation.html" . }}
 {{ end }}

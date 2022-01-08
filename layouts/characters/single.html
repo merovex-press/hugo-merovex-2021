@@ -2,7 +2,7 @@
 
 <article class='single'>
   <header>
-    {{ partial "author-image-round.html" "/series" }}
+    {{ partial "author-image-round.html" . }}
     {{ partial "site/nav.html"}}
     {{ partial "related-posts.html" . }}
     <h1 itemprop="headline" class='md:text-6xl'>{{.Title}}</h1>

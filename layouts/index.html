@@ -1,27 +1,14 @@
 {{ define "main" }}
-<article class='single'>
-  <header>
-    {{ partial "author-image-round.html" "/series" }}
-    {{ partial "site/nav.html"}}
-  </header>
-  {{- with $.Site.GetPage "section" "book" }}
-  {{- range .Pages }}
-  {{- if .Params.featured }}
-  <h1 class="text-5xl">
-    New from Ben Wilson
-  </h1>
-  <h2 class="h2">{{.Title}}</h2>
-  {{ partial "book/header.html" .}}
-  {{ partial "book/excerpt.html" . }}
-  {{ end }}
-  {{ end }}
-  {{ end }}
-  <div class="py-24 text-2xl">
-    <aside class="flex max-w-2xl p-8 mx-auto">
-      {{ partial "widgets/subscribe.html" . }}
-    </aside>
-  </div>
-  {{ partial "site/logo-footer.html" . }}
-</article>
-
+{{- with $.Site.GetPage "section" "book" }}
+{{- range .Pages }}
+{{- if .Params.featured }}
+<h1 class="text-5xl">
+  New from Ben Wilson
+</h1>
+<h2 class="h2">{{.Title}}</h2>
+{{ partial "book/header.html" .}}
+{{ partial "book/excerpt.html" . }}
+{{ end }}
+{{ end }}
+{{ end }}
 {{ end }}

@@ -3,8 +3,21 @@
 {{ partial "site/head.html" . }}
 
 <body>
-  <main class="flex-1 w-screen h-screen min-h-screen mt-0 print:max-w-5xl">
-    {{- block "main" . }}{{- end }}
+  <header>
+    {{ partial "author-image-round.html" . }}
+    <!-- .Parent.Permalink -->
+    {{ partial "site/nav.html"}}
+    <h1 itemprop="headline" class='md:text-6xl'>{{.Title}}<span class='block'>{{.Params.Subtitle}}</span></h1>
+    {{ block "figure" .}}{{end}}
+  </header>
+  <main class="flex-1 w-screen min-h-screen mt-0 print:max-w-5xl">
+    <div class='max-w-4xl py-12 mx-auto'>
+      {{- block "main" . }}{{- end }}
+      <div class="mt-12 cta-callout print:hidden">
+        {{ partial "widgets/subscribe.html" . }}
+      </div>
+      {{ partial "site/logo-footer.html" . }}
+    </div>
   </main>
   {{- partial "site/footer.html" . -}}
 </body>

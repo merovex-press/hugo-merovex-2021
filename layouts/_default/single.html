@@ -1,13 +1,5 @@
 {{ define "main" }}
-<article class='single'>
-  <header>
-    {{ partial "author-image-round.html" .Parent.Permalink }}
-    {{ partial "site/nav.html"}}
-    <h1 itemprop="headline" class='md:text-6xl'>{{.Title}}</h1>
-  </header>
-  <section class="prosaic">
-    {{ .Content }}
-  </section>
-  {{ partial "site/logo-footer.html" . }}
+<article class="prosaic">
+  {{ .Content }}
 </article>
 {{ end }}

@@ -1,16 +1,10 @@
 {{define "main" }}
-<div class="single">
-  <header>
-    {{ partial "author-image-round.html" "/" }}
-    {{ partial "site/nav.html"}}
-    <h1 itemprop="headline" class='md:text-6xl'>{{.Title}}</h1>
-  </header>
-  {{ range .Pages }}
-  <article class="p-4 card">
-    <h2 class="h2"><a class="h3" href="{{ .Permalink }}">{{ .Title }}</a></h2>
-    <div class="mx-auto prosaic-sans">{{.Summary | truncate 330 }}
-    </div>
-  </article>
-  {{ end }}
+{{ range .Pages }}
+<article class="p-4 card">
+  <h2 class="h2"><a class="h3" href="{{ .Permalink }}">{{ .Title }}</a></h2>
+  <div class="mx-auto prosaic-sans">{{.Summary | truncate 330 }}
+  </div>
+</article>
+{{ end }}
 </div>
 {{ end }}

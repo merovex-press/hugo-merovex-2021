@@ -1,23 +1,13 @@
 {{define "main" }}
-<article class="single">
-  <header>
-    {{ partial "author-image-round.html" "/" }}
-    {{ partial "site/nav.html"}}
-    <h1 itemprop="headline" class='md:text-6xl'>
-      News and Random Posts
-    </h1>
-  </header>
-  <div class="mx-auto font-sans">
-    {{ $paginator := .Paginate (where .Pages "Type" "posts") }}
-    <div class="cta-callout print:hidden">
-      {{ partial "widgets/subscribe.html" . }}
-    </div>
-    {{ partial "site/pagination.html" . }}
-    {{ range $paginator.Pages }}
-    {{ partial "widgets/post-card.html" . }}
-    {{ end }}
-    {{ partial "site/pagination.html" . }}
-    {{ partial "site/logo-footer.html" . }}
+<div class="mx-auto font-sans">
+  {{ $paginator := .Paginate (where .Pages "Type" "posts") }}
+  <div class="cta-callout print:hidden">
+    {{ partial "widgets/subscribe.html" . }}
   </div>
-</article>
+  {{ partial "site/pagination.html" . }}
+  {{ range $paginator.Pages }}
+  {{ partial "widgets/post-card.html" . }}
+  {{ end }}
+  {{ partial "site/pagination.html" . }}
+</div>
 {{ end }}

@@ -1,20 +1,11 @@
+{{ define "figure"}}
+{{ partial "posts/figure.html" . }}
+{{ end }}
 {{ define "main" }}
-<article class='single'>
-  <header>
-    {{partial "author-image-round.html" "/posts"}}
-    {{partial "site/nav.html"}}
-    <div class='dtg'>{{ partial "dtg.html" . }}</div>
-    <h1 itemprop="headline">{{ .Title }}<span class='block'>{{.Params.Subtitle}}</span></h1>
-    {{ partial "posts/figure.html" . }}
-  </header>
-  <div class="mb-12 prosaic-sans">
-    {{ .Content }}
-  </div>
-  {{ partial "related-posts.html" . }}
-  {{ partial "citation.html" . }}
-  <div class="mt-12 cta-callout print:hidden">
-    {{ partial "widgets/subscribe.html" . }}
-  </div>
-  {{ partial "site/logo-footer.html" . }}
+<div class="mb-12 prosaic-sans">
+  {{ .Content }}
+</div>
+{{ partial "related-posts.html" . }}
+{{ partial "citation.html" . }}
 </article>
 {{ end }}

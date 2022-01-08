@@ -1,40 +1,32 @@
 {{define "main" }}
-<article class="single">
-  <header>
-    {{ partial "author-image-round.html" "/" }}
-    {{ partial "site/nav.html"}}
-    <h1 itemprop="headline" class='md:text-6xl'>Ben's Backlist</h1>
-  </header>
-  <div class="mx-auto">
 
-    <div class="cta-callout">
-      {{ partial "widgets/subscribe.html" . }}
-    </div>
-    <nav class="p-8 my-12 card">
-      <h2 class="h3">Series List</h2>
-      <div class="flex-none justify-items-center md:flex">
-        {{ range .Pages }}
-        <div class="flex-1">
-          <h3 class="text-xl">{{.Title}}</h3>
-          <ul class="pl-4 mx-auto list-disc list-inside">
-            {{- range .Pages.ByWeight }}
-            <li><a href="#{{.Title| urlize }}" class='link'>{{.Title}}</a></li>
-            {{ end }}
-          </ul>
-        </div>
-        {{ end }}
+<div class="mx-auto">
+  <div class="cta-callout">
+    {{ partial "widgets/subscribe.html" . }}
+  </div>
+  <nav class="p-8 my-12 card">
+    <h2 class="h3">Series List</h2>
+    <div class="flex-none justify-items-center md:flex">
+      {{ range .Pages }}
+      <div class="flex-1">
+        <h3 class="text-xl">{{.Title}}</h3>
+        <ul class="pl-4 mx-auto list-disc list-inside">
+          {{- range .Pages.ByWeight }}
+          <li><a href="#{{.Title| urlize }}" class='link'>{{.Title}}</a></li>
+          {{ end }}
+        </ul>
       </div>
-    </nav>
-
-    {{ range .Pages }}
-    <h2 class="mt-12 h2" id='{{ .Title | urlize }}'>{{.Title}} Series</h2>
-    <div class="mb-24">
-      {{- range .Pages.ByWeight }}
-      {{ partial "widgets/book-card.html" (dict "book" . ) }}
       {{ end }}
     </div>
+  </nav>
+
+  {{ range .Pages }}
+  <h2 class="mt-12 h2" id='{{ .Title | urlize }}'>{{.Title}} Series</h2>
+  <div class="mb-24">
+    {{- range .Pages.ByWeight }}
+    {{ partial "widgets/book-card.html" (dict "book" . ) }}
     {{ end }}
   </div>
-  {{ partial "site/logo-footer.html" . }}
-</article>
+  {{ end }}
+</div>
 {{ end }}

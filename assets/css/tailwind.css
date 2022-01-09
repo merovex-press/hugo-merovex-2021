@@ -118,6 +118,9 @@
   .button.success { 
     @apply text-success border-success hover:bg-success;
   }
+  .button.brand { 
+    @apply bg-brand border-brand hover:bg-brand text-shade-lighter;
+  }
   .button.warning { 
     @apply text-warning border-warning hover:bg-warning;
   }

@@ -1461,6 +1461,20 @@ footer .site-link:hover {
   background-color: rgb(73 155 107 / var(--tw-bg-opacity));
 }
 
+.button.brand {
+  --tw-border-opacity: 1;
+  border-color: rgb(50 98 135 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(50 98 135 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.button.brand:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(50 98 135 / var(--tw-bg-opacity));
+}
+
 .button.warning {
   --tw-border-opacity: 1;
   border-color: rgb(198 139 51 / var(--tw-border-opacity));
@@ -4451,6 +4465,11 @@ footer .site-link:hover {
   margin-bottom: 1.5rem;
 }
 
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -4563,10 +4582,6 @@ footer .site-link:hover {
   height: 1.25rem;
 }
 
-.h-4 {
-  height: 1rem;
-}
-
 .h-3\.5 {
   height: 0.875rem;
 }
@@ -4621,10 +4636,6 @@ footer .site-link:hover {
 
 .w-full {
   width: 100%;
-}
-
-.w-4 {
-  width: 1rem;
 }
 
 .w-16 {
@@ -5028,6 +5039,14 @@ footer .site-link:hover {
   padding: 0.75rem;
 }
 
+.p-0 {
+  padding: 0px;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -5048,11 +5067,6 @@ footer .site-link:hover {
   padding-bottom: 0.25rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
@@ -5061,6 +5075,11 @@ footer .site-link:hover {
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .py-24 {
@@ -5153,11 +5172,6 @@ footer .site-link:hover {
   line-height: 1.25rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -5166,6 +5180,11 @@ footer .site-link:hover {
 .text-9xl {
   font-size: 8rem;
   line-height: 1;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-3xl {
@@ -5286,10 +5305,6 @@ footer .site-link:hover {
 
 .text-opacity-80 {
   --tw-text-opacity: 0.8;
-}
-
-.text-opacity-50 {
-  --tw-text-opacity: 0.5;
 }
 
 .underline {
@@ -7210,6 +7225,10 @@ footer .site-link:hover {
     display: flex;
   }
 
+  .md\:inline-flex {
+    display: inline-flex;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -7224,6 +7243,10 @@ footer .site-link:hover {
 
   .md\:max-w-2xl {
     max-width: 42rem;
+  }
+
+  .md\:flex-1 {
+    flex: 1 1 0%;
   }
 
   .md\:grid-cols-3 {

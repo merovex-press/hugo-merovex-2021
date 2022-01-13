@@ -4686,6 +4686,10 @@ footer .site-link:hover {
   width: 1.5rem;
 }
 
+.w-40 {
+  width: 10rem;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -4712,6 +4716,10 @@ footer .site-link:hover {
 
 .max-w-none {
   max-width: none;
+}
+
+.max-w-md {
+  max-width: 28rem;
 }
 
 .flex-1 {
@@ -4980,6 +4988,11 @@ footer .site-link:hover {
 .bg-brand-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(41 74 104 / var(--tw-bg-opacity));
+}
+
+.bg-warning-light {
+  --tw-bg-opacity: 1;
+  background-color: rgb(227 194 145 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-90 {

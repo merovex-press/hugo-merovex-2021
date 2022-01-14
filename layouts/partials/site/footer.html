@@ -1,11 +1,19 @@
-<footer class="grid grid-cols-2 gap-0 py-2 mt-16 md:grid-cols-5 print:hidden">
-  <div class='px-8 text-center md:text-left'>
-    <a class='px-0 site-link' href="/uses">Hello from {{.Site.Params.venue}}</a> &middot; v<span id='wtr'></span>
+<footer id='site-footer'>
+  <div class="container flex items-center max-w-6xl px-2 py-1 mx-auto">
+    <div class="flex flex-wrap items-center w-full mx-auto">
+      <div class="flex justify-center w-full md:w-1/2 md:justify-start">
+        <span>Copyright {{ now.Format "2006"}} Ben Wilson</span>
+      </div>
+      <nav>
+        <ul>
+          <li><span class="text-base"> Hello from Virginia </span></li> &middot;
+          <li><a class="hover:underline" href="/tools/">Tools</a></li> &middot;
+          <li><a class="hover:underline" href="/privacy/">Privacy</a></li> &middot;
+          <li><a class="hover:underline" href="/permissions/">Terms of use</a></li>
+        </ul>
+      </nav>
+    </div>
   </div>
-  <div class='px-8 text-center '><a class='site-link' href="/tools/">Tools</a></div>
-  <div class='px-8 text-center '><a class='site-link' href="/privacy/">Privacy</a></div>
-  <div class='px-8 text-center '><a class='site-link' href="/permissions/">Terms of Use</a></div>
-  <div class='px-8 text-center md:text-right'>&copy; {{ now.Format "2006"}} &middot; Ben Wilson</div>
 </footer>
 <script>
   var seconds = new Date(2028, 07, 23) - new Date()

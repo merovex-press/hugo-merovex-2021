@@ -158,4 +158,19 @@
   .prosaic-serif { 
     @apply font-serif prosaic;
   }
+  #site-footer { 
+    @apply bg-shade-lighter dark:bg-shade-dark;
+  }
+  #site-footer span, #site-footer a {
+    @apply inline-block px-3 py-2 text-base text-shade dark:text-shade-lighter lining-nums;
+  }
+  #site-footer a {
+    @apply hover:opacity-100 opacity-70
+  }
+  #site-footer ul {
+    @apply flex items-center justify-center flex-1 md:flex-none;
+  }
+  #site-footer nav {
+    @apply flex content-center justify-between w-full pt-2 md:w-1/2 md:justify-end;
+  }
 }

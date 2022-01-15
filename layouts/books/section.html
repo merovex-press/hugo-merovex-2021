@@ -1,0 +1,38 @@
+{{ define "main" }}
+
+{{if .Params.shownav}}
+<div class="cta-callout">
+  {{ partial "widgets/subscribe.html" . }}
+</div>
+<nav class="p-8 my-12 card">
+  <h2 class="h3">Series List</h2>
+  <div class="flex-none justify-items-center md:flex">
+    {{ range .Pages }}
+    <div class="flex-1">
+      <h3 class="text-xl">{{.Title}}</h3>
+      <ul class="pl-4 mx-auto list-disc list-inside">
+        {{- range .Pages.ByWeight }}
+        <li><a href="#{{.Title| urlize }}" class='link'>{{.Title}}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+  </div>
+</nav>
+{{end}}
+
+<div class="prosaic">{{.Content}}</div>
+{{ range .Pages.ByWeight }}
+{{ if .IsSection}}
+<section class="mb-20">
+  <h2 class='h2' id='{{ .Title | urlize }}'><a href="{{.Permalink}}">{{.Title}}</a></h2>
+  {{ range .Pages.ByWeight }}
+  {{ partial "book/card.html" (dict "book" . ) }}
+  {{ end }}
+</section>
+{{else}}
+{{ partial "book/card.html" (dict "book" . ) }}
+{{ end }}
+{{end}}
+</ul>
+{{end}}

@@ -2,7 +2,7 @@
   <div class="container flex items-center max-w-6xl px-2 py-1 mx-auto">
     <div class="flex flex-wrap items-center w-full mx-auto">
       <div class="flex justify-center w-full md:w-1/2 md:justify-start">
-        <span>Copyright {{ now.Format "2006"}} Ben Wilson</span>
+        <span>Copyright {{ now.Format "2006"}}, Ben Wilson. All rights reserved.</span>
       </div>
       <nav>
         <ul>
@@ -16,7 +16,7 @@
   </div>
 </footer>
 <script>
-  var seconds = new Date(2028, 07, 23) - new Date()
+  var seconds = new Date(2028, 7, 23) - new Date()
   var weeks = Math.floor(seconds / 604800000)
   var days = Math.floor(seconds % 604800000 / 86400000);
   document.getElementById("wtr").innerHTML = Math.round(weeks) + "." + days

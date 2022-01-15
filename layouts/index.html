@@ -1,13 +1,17 @@
 {{ define "main" }}
-{{- with $.Site.GetPage "section" "book" }}
+{{- with $.Site.GetPage "section" "books" }}
+{{- range .Pages }}
+{{ if .IsSection}}
 {{- range .Pages }}
 {{- if .Params.featured }}
 <h1 class="text-5xl">
   New from Ben Wilson
 </h1>
 <h2 class="h2">{{.Title}}</h2>
-{{ partial "book/header.html" .}}
+{{ partial "book/header.html" . }}
 {{ partial "book/excerpt.html" . }}
+{{ end }}
+{{ end }}
 {{ end }}
 {{ end }}
 {{ end }}

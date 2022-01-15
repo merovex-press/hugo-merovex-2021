@@ -1,0 +1,13 @@
+{{- if .Params.praise }}
+<section id="testimonials" class='hidden mt-20'>
+  <div class="mb-8 prosaic">
+    <h2 class="h2">What Happy Readers Say</h2>
+  </div>
+  <div class="grid-cols-3 gap-8 md:grid">
+    {{ range .Params.praise }}
+    {{ partial "book/testimonial.html" . }}
+    <hr class='w-1/2 mx-auto my-8 opacity-50 text-brand md:hidden'>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

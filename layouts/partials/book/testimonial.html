@@ -1,0 +1,19 @@
+<div class='text-center'>
+  <div class="mb-4">
+    {{partial "svg/star.html" "inline-block w-6 h-6 text-accent" }}
+    {{partial "svg/star.html" "inline-block w-6 h-6 text-accent" }}
+    {{partial "svg/star.html" "inline-block w-6 h-6 text-accent" }}
+    {{partial "svg/star.html" "inline-block w-6 h-6 text-accent" }}
+    {{partial "svg/star.html" "inline-block w-6 h-6 text-accent" }}
+  </div>
+  <figure>
+    <blockquote{{if .url}} cite="{{.url}}" {{end}} class="my-6">
+      <p class='font-serif leading-7'>{{.text}}</p>
+      </blockquote>
+      {{- if (.person)}}
+      <figcaption class="font-display">
+        {{.person}}{{if (.cite)}}, <cite>Brave New World</cite>{{end}}
+      </figcaption>
+      {{- end}}
+  </figure>
+</div>

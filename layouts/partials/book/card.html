@@ -1,0 +1,29 @@
+<article id='{{ .book.Title | urlize }}' class="lg:flex card">
+  {{- if .book.Resources.Match "*cover*" }}
+  {{- with .book.Resources.GetMatch "*cover*" }}
+  {{- $resizedmd := .Resize "330x500 webp" }}
+  <div
+    class="flex-none h-48 overflow-hidden text-center bg-cover border border-r-0 border-opacity-25 rounded-l-lg rounded-r-none lg:h-auto lg:w-48"
+    style="background-image: url('{{$resizedmd.RelPermalink}}')" title="River">
+  </div>
+  {{end}}
+  {{else}}
+  <img class="" src='https://via.placeholder.com/333x500?text=Book+Cover'>
+  {{end}}
+  <div class="flex flex-col justify-between p-4 leading-normal border-l-0 rounded-l-none">
+    <div>
+      <h3 class='h3 font-display'>{{.book.Title}}</h3>
+      <p class="w-full my-6 font-sans">
+        {{if .book.Params.Hook}}
+        {{.book.Params.Hook | truncate 150}}
+        {{else}}
+        {{ .book.Summary | truncate 330 }}
+        {{end}}
+      </p>
+    </div>
+    <div class="flex items-center justify-center">
+      <a href="{{- .book.Permalink -}}" class="card-link" aria-label="Book Details: {{.book.Title}}">Learn More</a>
+      <span class="button" aria-hidden="true">Learn more</span>
+    </div>
+  </div>
+</article>

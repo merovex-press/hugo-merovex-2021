@@ -173,4 +173,7 @@
   #site-footer nav {
     @apply flex content-center justify-between w-full pt-2 md:w-1/2 md:justify-end;
   }
+  .logo-footer {
+    @apply fill-brand/50 hover:fill-brand dark:text-brand-dark/50 dark:hover:fill-brand-dark w-20 mx-auto
+  }
 }

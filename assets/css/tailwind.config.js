@@ -5,7 +5,9 @@ module.exports = {
     "./content/**/*.html",
     "./content/**/*.js",
     "./themes/hugo-merovex-2021/layouts/**/*.html",
+    "./themes/hugo-merovex-2021/layouts/**/*.svg",
     "./themes/hugo-merovex-2021/layouts/partials/**/*.html",
+    "./themes/hugo-merovex-2021/layouts/partials/svg/*.svg",
     "./themes/hugo-merovex-2021/layouts/partials/posts/*.html"
   ],
   safelist: ["rm-link", "rm-parent"],
@@ -147,6 +149,12 @@ module.exports = {
       noble: {
         DEFAULT: '#366251',
         light: '#8FC1AE'
+      },
+      facebook: {
+        DEFAULT: '#2f4779'
+      },
+      twitter: {
+        DEFAULT: '#4c9ad6'
       }
     }
   }

@@ -1,0 +1,50 @@
+<!-- Social Share Button HTML -->
+{{- if .Param "socialshare" }}
+{{ $title := .Title }}
+{{ $url := printf "%s" .Permalink }}
+{{ $body := print $title ", by " .Site.Title "\n" .Params.description "\n\n" $url "\n" }}
+
+<aside class="mx-auto text-center social-share">
+  Share:
+  <!-- Twitter -->
+  {{ if .Site.Params.social.share.twitter }}
+  <a href="https://twitter.com/intent/tweet?hashtags=benwilson&amp;url={{ .Permalink }}&amp;text={{ .Title }}"
+    class='inline-block w-6 mx-4 ' target="_blank" rel="noopener" aria-label="Share on Twitter"
+    class="share-btn twitter">
+    {{ partial "svg/twitter.svg" (dict "class" "twitter inline-block") }}
+  </a>
+  {{ end }}
+
+  <!-- Facebook -->
+  {{ if .Site.Params.social.share.facebook }}
+  <a href="https://www.facebook.com/sharer.php?u={{ $url }}" class='inline-block w-6 mx-4 ' target="_blank"
+    rel="noopener" aria-label="Share on Facebook" class="share-btn facebook">
+    {{ partial "svg/facebook.svg" (dict "class" "w-6 h-6") }}
+  </a>
+  {{ end }}
+
+  <!-- LinkedIn -->
+  {{ if .Site.Params.social.share.linkedin }}
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ $url }}&amp;source={{ $url }}&amp;title={{ $title }}&amp;summary={{ $title }}"
+    class='inline-block w-6 mx-4 ' target="_blank" rel="noopener" aria-label="Share on LinkedIn"
+    class="share-btn linkedin">
+    {{ partial "svg/linkedin.svg" (dict "class" "w-6 h-6") }}
+  </a>
+  {{ end }}
+
+  <!-- WhatsApp -->
+  {{ if .Site.Params.social.share.whatsapp }}
+  <a href="whatsapp://send?text={{ $body }}" class='inline-block w-6 mx-4 ' target="_blank" class="share-btn whatsapp">
+    {{ partial "svg/whatsapp.svg" (dict "class" "w-6 h-6") }}
+  </a>
+  {{ end }}
+
+  <!-- Email -->
+  {{ if .Site.Params.social.share.email }}
+  <a href="mailto:?subject={{ .Site.Title }} - {{ $title }}.&amp;body={{ $body }}" class='inline-block w-6 mx-4 '
+    target="_blank" class="share-btn email">
+    {{ partial "svg/email.svg" (dict "class" "w-6 h-6") }}
+  </a>
+</aside>
+{{ end }}
+{{- end }}

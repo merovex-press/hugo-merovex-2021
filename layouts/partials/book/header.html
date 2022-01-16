@@ -6,9 +6,9 @@
     <div>
       <div class="flex items-center mb-8 prosaic-sans">{{.Summary}}</div>
 
-      <aside class="text-left print:hidden">
+      <aside class=" print:hidden">
         {{- if .Params.price }}
-        <span class="mr-8 font-sans text-3xl font-bold text-danger">{{.Params.price}}</span>
+        <span class="p-2 m-2 font-sans text-3xl font-bold text-danger">{{.Params.price}}</span>
         {{- end }}
         {{ partial "cta-links.html" . }}
       </aside>

@@ -4482,40 +4482,44 @@ footer .site-link:hover {
   }
 }
 
-svg {
-  display: inline-block;
+.fill-twitter {
+  fill: #4c9ad6;
 }
 
-.share-btn.twitter:hover     {
-  background: #4c9ad6;
+.fill-twitter:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(64 105 162 / var(--tw-bg-opacity));
+  fill: #FFFFFF;
 }
 
-.share-btn.google-plus:hover {
-  background: #c64333;
+.fill-facebook {
+  fill: #2f4779;
 }
 
-.share-btn.facebook:hover    {
-  background: #2f4779;
+.fill-facebook:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(47 71 121 / var(--tw-bg-opacity));
+  fill: #FFFFFF;
 }
 
-.share-btn.linkedin:hover    {
-  background: #4069a2;
+.fill-linkedin {
+  fill: #4069a2;
 }
 
-.share-btn.stumbleupon:hover {
-  background: #d3401f;
+.fill-linkedin:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(64 105 162 / var(--tw-bg-opacity));
+  fill: #FFFFFF;
 }
 
-.share-btn.pinterest:hover   {
-  background: #AD0000;
+.fill-whatsapp {
+  fill: #25D366;
 }
 
-.share-btn.reddit:hover      {
-  background: #e54e00;
-}
-
-.share-btn.email:hover       {
-  background: #363636;
+.fill-whatsapp:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 211 37 / var(--tw-bg-opacity));
+  fill: #FFFFFF;
 }
 
 .sr-only {
@@ -4575,6 +4579,10 @@ svg {
   margin: 1rem;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -4605,9 +4613,9 @@ svg {
   margin-bottom: 0.5rem;
 }
 
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .mb-1 {
@@ -4928,6 +4936,10 @@ svg {
   justify-content: space-between;
 }
 
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
 .justify-items-center {
   justify-items: center;
 }
@@ -5116,6 +5128,11 @@ svg {
   background-color: rgb(227 194 145 / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-shade-lighter {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -5158,14 +5175,6 @@ svg {
 
 .fill-brand {
   fill: #326287;
-}
-
-.fill-facebook {
-  fill: #2f4779;
-}
-
-.fill-twitter {
-  fill: #4c9ad6;
 }
 
 .p-4 {
@@ -5277,6 +5286,10 @@ svg {
   text-align: right;
 }
 
+.align-middle {
+  vertical-align: middle;
+}
+
 .font-sans {
   font-family: Merovex Sans, Arial, sans-serif;
 }
@@ -5373,6 +5386,11 @@ svg {
 
 .leading-6 {
   line-height: 1.5rem;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-shade-light {
@@ -6582,6 +6600,11 @@ svg {
   color: rgb(50 98 135 / var(--tw-text-opacity));
 }
 
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .hover\:text-shade:hover {
   --tw-text-opacity: 1;
   color: rgb(87 83 78 / var(--tw-text-opacity));
@@ -6594,6 +6617,11 @@ svg {
 
 .hover\:opacity-100:hover {
   opacity: 1;
+}
+
+.focus\:text-white:focus {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .focus\:outline-none:focus {
@@ -6764,6 +6792,11 @@ svg {
   .dark\:text-brand-dark {
     --tw-text-opacity: 1;
     color: rgb(41 74 104 / var(--tw-text-opacity));
+  }
+
+  .dark\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 
   .dark\:hover\:bg-amazon-light:hover {

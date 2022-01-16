@@ -150,11 +150,8 @@ module.exports = {
         DEFAULT: '#366251',
         light: '#8FC1AE'
       },
-      facebook: {
-        DEFAULT: '#2f4779'
-      },
-      twitter: {
-        DEFAULT: '#4c9ad6'
+      white: {
+        DEFAULT: '#FFFFFF'
       }
     }
   }

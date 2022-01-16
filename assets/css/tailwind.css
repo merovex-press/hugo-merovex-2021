@@ -176,15 +176,11 @@
   .logo-footer {
     @apply fill-brand/50 hover:fill-brand dark:text-brand-dark/50 dark:hover:fill-brand-dark w-20 mx-auto
   }
-  svg {
-    @apply inline-block ;
-  }
-  .share-btn.twitter:hover     { background: #4c9ad6; }
-  .share-btn.google-plus:hover { background: #c64333; }
-  .share-btn.facebook:hover    { background: #2f4779; }
-  .share-btn.linkedin:hover    { background: #4069a2; }
-  .share-btn.stumbleupon:hover { background: #d3401f; }
-  .share-btn.pinterest:hover   { background: #AD0000; }
-  .share-btn.reddit:hover      { background: #e54e00; }
-  .share-btn.email:hover       { background: #363636; }
+  .fill-twitter     { @apply fill-[#4c9ad6] hover:bg-[#4069a2] hover:fill-white; }
+  .fill-facebook    { @apply fill-[#2f4779] hover:bg-[#2f4779] hover:fill-white; }
+  .fill-linkedin    { @apply fill-[#4069a2] hover:fill-white hover:bg-[#4069a2]; }
+  .fill-whatsapp    { @apply fill-[#25D366] hover:fill-white hover:bg-[#25d325]; }
+  .fill-pinterest   { @apply fill-[#AD0000] hover:fill-white hover:bg-[#ad0000]; }
+  .fill-reddit      { @apply fill-[#e54e00] hover:fill-white hover:bg-[#e54e00]; }
+  .fill-email       { @apply fill-brand hover:fill-white hover:bg-brand; }
 }

@@ -5059,16 +5059,6 @@ footer .site-link:hover {
   border-color: rgb(50 98 135 / var(--tw-border-opacity));
 }
 
-.border-accent-light {
-  --tw-border-opacity: 1;
-  border-color: rgb(186 139 91 / var(--tw-border-opacity));
-}
-
-.border-warning {
-  --tw-border-opacity: 1;
-  border-color: rgb(198 139 51 / var(--tw-border-opacity));
-}
-
 .border-shade {
   --tw-border-opacity: 1;
   border-color: rgb(87 83 78 / var(--tw-border-opacity));
@@ -5301,14 +5291,14 @@ footer .site-link:hover {
   font-family: Merovex Serif, Cambria, Georgia, Times New Roman, Times, serif;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-9xl {
@@ -5383,11 +5373,6 @@ footer .site-link:hover {
   line-height: 1.5rem;
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-shade-light {
   --tw-text-opacity: 1;
   color: rgb(231 229 228 / var(--tw-text-opacity));
@@ -5445,6 +5430,11 @@ footer .site-link:hover {
 .text-brand-dark {
   --tw-text-opacity: 1;
   color: rgb(41 74 104 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-shade-dark {
@@ -6555,21 +6545,6 @@ footer .site-link:hover {
   https: //benwilsonwrites.com;
 }
 
-.hover\:bg-brand:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(50 98 135 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-success-light:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(147 204 170 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-warning:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(198 139 51 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-amazon:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 153 0 / var(--tw-bg-opacity));
@@ -6578,6 +6553,11 @@ footer .site-link:hover {
 .hover\:bg-noble:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(54 98 81 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-brand:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(50 98 135 / var(--tw-bg-opacity));
 }
 
 .hover\:text-shade-light:hover {

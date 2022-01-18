@@ -4461,6 +4461,10 @@ footer .site-link:hover {
   }
 }
 
+h1 .span {
+  border-width: 1px;
+}
+
 .logo-footer {
   margin-left: auto;
   margin-right: auto;

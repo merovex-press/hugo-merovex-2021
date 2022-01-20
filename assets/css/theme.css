@@ -4587,14 +4587,19 @@ h1 .span {
   margin: 0.5rem;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .my-12 {
@@ -4610,11 +4615,6 @@ h1 .span {
 .mx-6 {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-}
-
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
 .mb-1 {
@@ -4635,6 +4635,10 @@ h1 .span {
 
 .mb-12 {
   margin-bottom: 3rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .mt-0 {
@@ -4671,10 +4675,6 @@ h1 .span {
 
 .mt-3 {
   margin-top: 0.75rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
 }
 
 .mr-8 {
@@ -4875,6 +4875,10 @@ h1 .span {
 
 .flex-none {
   flex: none;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .table-auto {
@@ -5295,6 +5299,11 @@ h1 .span {
   font-family: Merovex Serif, Cambria, Georgia, Times New Roman, Times, serif;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -5308,11 +5317,6 @@ h1 .span {
 .text-9xl {
   font-size: 8rem;
   line-height: 1;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .text-3xl {

@@ -4526,6 +4526,14 @@ h1 .span {
   fill: #FFFFFF;
 }
 
+.hint {
+  display: block;
+  font-family: Merovex Sans, Arial, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgb(87 83 78 / 0.5);
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -4877,10 +4885,6 @@ h1 .span {
   flex: none;
 }
 
-.grow {
-  flex-grow: 1;
-}
-
 .table-auto {
   table-layout: auto;
 }
@@ -5000,6 +5004,11 @@ h1 .span {
   border-top-right-radius: 0.5rem;
 }
 
+.rounded-t {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
 .rounded-l-lg {
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
@@ -5038,6 +5047,10 @@ h1 .span {
   border-width: 2px;
 }
 
+.border-b {
+  border-bottom-width: 1px;
+}
+
 .border-r-0 {
   border-right-width: 0px;
 }
@@ -5048,10 +5061,6 @@ h1 .span {
 
 .border-t {
   border-top-width: 1px;
-}
-
-.border-b {
-  border-bottom-width: 1px;
 }
 
 .border-l {
@@ -5080,6 +5089,10 @@ h1 .span {
 .border-noble {
   --tw-border-opacity: 1;
   border-color: rgb(54 98 81 / var(--tw-border-opacity));
+}
+
+.border-brand\/25 {
+  border-color: rgb(50 98 135 / 0.25);
 }
 
 .border-accent-dark {
@@ -5124,6 +5137,10 @@ h1 .span {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-brand\/25 {
+  background-color: rgb(50 98 135 / 0.25);
 }
 
 .bg-shade-lighter {
@@ -5458,16 +5475,16 @@ h1 .span {
   --tw-text-opacity: 0.8;
 }
 
-.opacity-50 {
-  opacity: 0.5;
-}
-
 .opacity-60 {
   opacity: 0.6;
 }
 
 .opacity-30 {
   opacity: 0.3;
+}
+
+.opacity-50 {
+  opacity: 0.5;
 }
 
 .opacity-80 {

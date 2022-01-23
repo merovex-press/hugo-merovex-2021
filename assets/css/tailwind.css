@@ -186,4 +186,5 @@
   .fill-pinterest   { @apply fill-[#AD0000] hover:fill-white hover:bg-[#ad0000]; }
   .fill-reddit      { @apply fill-[#e54e00] hover:fill-white hover:bg-[#e54e00]; }
   .fill-email       { @apply fill-brand hover:fill-white hover:bg-brand; }
+  .hint { @apply text-sm font-sans block text-shade/50}
 }

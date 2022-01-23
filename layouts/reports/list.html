@@ -1,0 +1,21 @@
+{{ define "main" }}
+{{- $paginator := .Paginate (where .Pages "Type" "reports") }}
+{{ partial "site/pagination.html" . }}
+{{- range $paginator.Pages.ByDate.Reverse }}
+
+<article class="p-4">
+  <h2 class="text-left border-b font-display border-brand/25">
+    <a class="px-2 pt-1 rounded-t bg-brand/25 " href="{{ .Permalink }}">
+      {{ dateFormat "2 January 2006" .Date }}
+    </a>
+  </h2>
+  <div class="mx-auto prosaic-sans">{{.Summary | truncate 330 }}
+    <br>
+    <a href="{{ .Permalink }}" class="inline-block mx-auto button">Read More</a>
+  </div>
+</article>
+
+{{- end }}
+{{ partial "site/pagination.html" . }}
+</div>
+{{ end }}

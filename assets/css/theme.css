@@ -6799,6 +6799,11 @@ h1 .span {
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 
+  .dark\:text-shade-darker {
+    --tw-text-opacity: 1;
+    color: rgb(28 25 23 / var(--tw-text-opacity));
+  }
+
   .dark\:hover\:bg-amazon-light:hover {
     --tw-bg-opacity: 1;
     background-color: rgb(255 226 184 / var(--tw-bg-opacity));

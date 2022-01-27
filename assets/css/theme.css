@@ -4777,6 +4777,18 @@ h1 .span {
   height: 100%;
 }
 
+.h-36 {
+  height: 9rem;
+}
+
+.h-60 {
+  height: 15rem;
+}
+
+.h-72 {
+  height: 18rem;
+}
+
 .max-h-96 {
   max-height: 24rem;
 }
@@ -4893,6 +4905,40 @@ h1 .span {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@-webkit-keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.animate-pulse {
+  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -4967,6 +5013,12 @@ h1 .span {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-hidden {
@@ -5045,6 +5097,10 @@ h1 .span {
 
 .border-2 {
   border-width: 2px;
+}
+
+.border-4 {
+  border-width: 4px;
 }
 
 .border-b {
@@ -5129,6 +5185,11 @@ h1 .span {
   background-color: rgb(41 37 36 / var(--tw-bg-opacity));
 }
 
+.bg-brand {
+  --tw-bg-opacity: 1;
+  background-color: rgb(50 98 135 / var(--tw-bg-opacity));
+}
+
 .bg-warning-light {
   --tw-bg-opacity: 1;
   background-color: rgb(227 194 145 / var(--tw-bg-opacity));
@@ -5151,11 +5212,6 @@ h1 .span {
 .bg-brand-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(41 74 104 / var(--tw-bg-opacity));
-}
-
-.bg-brand {
-  --tw-bg-opacity: 1;
-  background-color: rgb(50 98 135 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-30 {
@@ -5469,6 +5525,10 @@ h1 .span {
 
 .text-shade\/50 {
   color: rgb(87 83 78 / 0.5);
+}
+
+.text-brand\/50 {
+  color: rgb(50 98 135 / 0.5);
 }
 
 .text-opacity-80 {
@@ -6765,6 +6825,11 @@ h1 .span {
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 
+  .dark\:text-shade-darker {
+    --tw-text-opacity: 1;
+    color: rgb(28 25 23 / var(--tw-text-opacity));
+  }
+
   .dark\:text-shade-light\/60 {
     color: rgb(231 229 228 / 0.6);
   }
@@ -6797,11 +6862,6 @@ h1 .span {
   .dark\:text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
-
-  .dark\:text-shade-darker {
-    --tw-text-opacity: 1;
-    color: rgb(28 25 23 / var(--tw-text-opacity));
   }
 
   .dark\:hover\:bg-amazon-light:hover {

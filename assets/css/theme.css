@@ -5271,6 +5271,11 @@ h1 .span {
   background-color: rgb(28 25 23 / var(--tw-bg-opacity));
 }
 
+.bg-warning-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 108 40 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-30 {
   --tw-bg-opacity: 0.3;
 }
@@ -5592,6 +5597,30 @@ h1 .span {
 .text-warning-dark {
   --tw-text-opacity: 1;
   color: rgb(153 108 40 / var(--tw-text-opacity));
+}
+
+.text-warning-dark\/50 {
+  color: rgb(153 108 40 / 0.5);
+}
+
+.text-warning-dark\/75 {
+  color: rgb(153 108 40 / 0.75);
+}
+
+.text-warning-dark\/60 {
+  color: rgb(153 108 40 / 0.6);
+}
+
+.text-warning\/60 {
+  color: rgb(198 139 51 / 0.6);
+}
+
+.text-warning\/50 {
+  color: rgb(198 139 51 / 0.5);
+}
+
+.text-warning\/25 {
+  color: rgb(198 139 51 / 0.25);
 }
 
 .text-opacity-80 {
@@ -6870,6 +6899,11 @@ h1 .span {
     background-color: rgb(227 194 145 / var(--tw-bg-opacity));
   }
 
+  .dark\:bg-shade-darker {
+    --tw-bg-opacity: 1;
+    background-color: rgb(28 25 23 / var(--tw-bg-opacity));
+  }
+
   .dark\:from-shade-darker\/100 {
     --tw-gradient-from: rgb(28 25 23 / 1);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(28 25 23 / 0));
@@ -6925,6 +6959,11 @@ h1 .span {
   .dark\:text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
+  }
+
+  .dark\:text-warning-dark {
+    --tw-text-opacity: 1;
+    color: rgb(153 108 40 / var(--tw-text-opacity));
   }
 
   .dark\:hover\:bg-amazon-light:hover {

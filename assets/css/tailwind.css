@@ -187,4 +187,6 @@
   .fill-reddit      { @apply fill-[#e54e00] hover:fill-white hover:bg-[#e54e00]; }
   .fill-email       { @apply fill-brand hover:fill-white hover:bg-brand; }
   .hint { @apply text-sm font-sans block text-shade/50}
+  .js-tabs__title { @apply block px-6 py-4 text-shade dark:text-shade-light dark:hover:text-brand-light hover:text-brand focus:outline-none border-b-2 border-shade-lighter dark:border-shade-darker }
+  .js-tabs__title-active { @apply block px-6 py-4 dark:text-brand-light text-brand border-brand}
 }

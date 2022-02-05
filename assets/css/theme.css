@@ -5516,6 +5516,14 @@ h1 .span {
   line-height: 1.5rem;
 }
 
+.leading-4 {
+  line-height: 1rem;
+}
+
+.leading-none {
+  line-height: 1;
+}
+
 .text-shade-light {
   --tw-text-opacity: 1;
   color: rgb(231 229 228 / var(--tw-text-opacity));

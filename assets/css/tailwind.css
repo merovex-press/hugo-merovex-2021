@@ -179,6 +179,15 @@
   .logo-footer {
     @apply fill-brand/50 hover:fill-brand dark:text-brand-dark/50 dark:hover:fill-brand-dark w-20 mx-auto
   }
+  .heatmap-text {
+    @apply text-sm font-sans dark:fill-shade-light/50 fill-shade-dark/50
+  }
+  .heatmap-1 { @apply fill-shade-light/75 stroke-shade/25 dark:fill-shade-dark/75 }
+  .heatmap-2 { @apply fill-[#9be9a8] stroke-shade/25 dark:fill-[#0E4429] }
+  .heatmap-3 { @apply fill-[#40c463] stroke-shade/25 dark:fill-[#006D32] }
+  .heatmap-4 { @apply fill-[#30a14e] stroke-shade/25 dark:fill-[#26A641] }
+  .heatmap-5 { @apply fill-[#216e39] stroke-shade/25 dark:fill-[#39D353] }
+     
   .fill-twitter     { @apply fill-[#4c9ad6] hover:bg-[#4069a2] hover:fill-white; }
   .fill-facebook    { @apply fill-[#2f4779] hover:bg-[#2f4779] hover:fill-white; }
   .fill-linkedin    { @apply fill-[#4069a2] hover:fill-white hover:bg-[#4069a2]; }

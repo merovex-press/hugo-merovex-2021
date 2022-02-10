@@ -4668,6 +4668,8 @@ h1 .span {
   background-color: rgb(41 37 36 / var(--tw-bg-opacity));
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   font-family: Merovex Sans, Arial, sans-serif;
   font-size: 0.875rem;
   line-height: 1.25rem;

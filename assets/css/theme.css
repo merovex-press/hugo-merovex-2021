@@ -4661,6 +4661,37 @@ h1 .span {
   }
 }
 
+.tooltip {
+  position: absolute;
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(41 37 36 / var(--tw-bg-opacity));
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-family: Merovex Sans, Arial, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (prefers-color-scheme: dark) {
+  .tooltip {
+    --tw-bg-opacity: 1;
+    background-color: rgb(231 229 228 / var(--tw-bg-opacity));
+  }
+
+  .tooltip {
+    --tw-text-opacity: 1;
+    color: rgb(28 25 23 / var(--tw-text-opacity));
+  }
+}
+
+.has-tooltip:hover .tooltip {
+  visibility: visible;
+  z-index: 50;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -6919,14 +6950,14 @@ h1 .span {
     background-color: rgb(41 37 36 / var(--tw-bg-opacity));
   }
 
-  .dark\:bg-warning-light {
-    --tw-bg-opacity: 1;
-    background-color: rgb(227 194 145 / var(--tw-bg-opacity));
-  }
-
   .dark\:bg-shade {
     --tw-bg-opacity: 1;
     background-color: rgb(87 83 78 / var(--tw-bg-opacity));
+  }
+
+  .dark\:bg-warning-light {
+    --tw-bg-opacity: 1;
+    background-color: rgb(227 194 145 / var(--tw-bg-opacity));
   }
 
   .dark\:from-shade-darker\/100 {
@@ -6950,6 +6981,11 @@ h1 .span {
   .dark\:text-shade-darker {
     --tw-text-opacity: 1;
     color: rgb(28 25 23 / var(--tw-text-opacity));
+  }
+
+  .dark\:text-shade-light {
+    --tw-text-opacity: 1;
+    color: rgb(231 229 228 / var(--tw-text-opacity));
   }
 
   .dark\:text-shade-light\/60 {
@@ -6984,11 +7020,6 @@ h1 .span {
   .dark\:text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
-
-  .dark\:text-shade-light {
-    --tw-text-opacity: 1;
-    color: rgb(231 229 228 / var(--tw-text-opacity));
   }
 
   .dark\:hover\:bg-amazon-light:hover {

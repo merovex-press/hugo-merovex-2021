@@ -102,6 +102,11 @@ module.exports = {
       'code': ["Merovex Code", "ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace"]
     },
     colors: {
+      heatmap: {
+        DEFAULT: '#216e39',
+        light: '#216e39', // WCAG 2.0 7:0
+        dark: '#39D353' // WCAG 2.0 7:0
+      },
       brand: {
         DEFAULT: '#326287',
         light: '#8ac2da', // WCAG 2.0 7:0

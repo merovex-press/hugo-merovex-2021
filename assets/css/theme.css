@@ -5702,6 +5702,10 @@ h1 .span {
   height: 100%;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
 .max-h-96 {
   max-height: 24rem;
 }
@@ -5772,6 +5776,10 @@ h1 .span {
 
 .w-8 {
   width: 2rem;
+}
+
+.w-3\/4 {
+  width: 75%;
 }
 
 .min-w-0 {
@@ -5873,6 +5881,10 @@ h1 .span {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -5895,6 +5907,10 @@ h1 .span {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .justify-evenly {
@@ -6126,6 +6142,14 @@ h1 .span {
   background-color: rgb(41 74 104 / var(--tw-bg-opacity));
 }
 
+.bg-brand\/5 {
+  background-color: rgb(50 98 135 / 0.05);
+}
+
+.bg-brand\/10 {
+  background-color: rgb(50 98 135 / 0.1);
+}
+
 .bg-opacity-30 {
   --tw-bg-opacity: 0.3;
 }
@@ -6254,6 +6278,14 @@ h1 .span {
 
 .pr-2 {
   padding-right: 0.5rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.pr-1 {
+  padding-right: 0.25rem;
 }
 
 .text-left {

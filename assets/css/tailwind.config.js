@@ -103,9 +103,9 @@ module.exports = {
     },
     colors: {
       heatmap: {
-        DEFAULT: '#216e39',
-        light: '#216e39', // WCAG 2.0 7:0
-        dark: '#39D353' // WCAG 2.0 7:0
+        DEFAULT: '#348843',
+        light: '#348843', // WCAG 2.0 7:0
+        dark: '#8ec79b' // WCAG 2.0 7:0
       },
       brand: {
         DEFAULT: '#326287',
@@ -122,10 +122,10 @@ module.exports = {
       },
       shade: { // Tailwind Stone
         lighter: '#FFFFFF',
-        light: '#e7e5e4', // white
-        DEFAULT: '#57534e',
-        dark: '#292524', // black
-        darker: '#1c1917',
+        light: '#eaeded', // white
+        DEFAULT: '#495655', // #374140
+        dark: '#2A2C2B', // black
+        darker: '#1d1f1e',
       },
       info: {
         light: '#FeF1F2',
@@ -140,6 +140,21 @@ module.exports = {
         light: '#E3C291',
         DEFAULT: '#C68B33',
         dark: '#996C28',
+      },
+      purple: {
+        light: '#ad89c6',
+        DEFAULT: '#744793',
+        dark: '#513267'
+      },
+      green: {
+        light: '#8bd297',
+        DEFAULT: '#348843',
+        dark: '#245f2f'
+      },
+      red: {
+        light: '#d3847b',
+        DEFAULT: '#a34136',
+        dark: '#933a31'
       },
       danger: {
         light: '#F88B83',

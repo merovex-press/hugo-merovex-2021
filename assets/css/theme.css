@@ -4509,6 +4509,10 @@ h1 .span {
   .heatmap-1 {
     fill: rgb(42 44 43 / 0.75);
   }
+
+  .heatmap-1 {
+    stroke: rgb(73 86 85 / 0.75);
+  }
 }
 
 .heatmap-2 {
@@ -4518,7 +4522,11 @@ h1 .span {
 
 @media (prefers-color-scheme: dark) {
   .heatmap-2 {
-    fill: rgb(142 199 155 / 0.25);
+    fill: rgb(93 160 105 / 0.25);
+  }
+
+  .heatmap-2 {
+    stroke: rgb(73 86 85 / 0.75);
   }
 }
 
@@ -4529,7 +4537,11 @@ h1 .span {
 
 @media (prefers-color-scheme: dark) {
   .heatmap-3 {
-    fill: rgb(142 199 155 / 0.5);
+    fill: rgb(93 160 105 / 0.5);
+  }
+
+  .heatmap-3 {
+    stroke: rgb(73 86 85 / 0.75);
   }
 }
 
@@ -4540,7 +4552,11 @@ h1 .span {
 
 @media (prefers-color-scheme: dark) {
   .heatmap-4 {
-    fill: rgb(142 199 155 / 0.75);
+    fill: rgb(93 160 105 / 0.75);
+  }
+
+  .heatmap-4 {
+    stroke: rgb(73 86 85 / 0.75);
   }
 }
 
@@ -4551,7 +4567,11 @@ h1 .span {
 
 @media (prefers-color-scheme: dark) {
   .heatmap-5 {
-    fill: #8ec79b;
+    fill: #5DA069;
+  }
+
+  .heatmap-5 {
+    stroke: rgb(73 86 85 / 0.75);
   }
 }
 
@@ -6106,7 +6126,7 @@ h1 .span {
   background-color: rgb(42 44 43 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#744793\] {
+.bg-purple {
   --tw-bg-opacity: 1;
   background-color: rgb(116 71 147 / var(--tw-bg-opacity));
 }
@@ -6148,11 +6168,6 @@ h1 .span {
 .bg-brand {
   --tw-bg-opacity: 1;
   background-color: rgb(50 98 135 / var(--tw-bg-opacity));
-}
-
-.bg-purple {
-  --tw-bg-opacity: 1;
-  background-color: rgb(116 71 147 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-30 {

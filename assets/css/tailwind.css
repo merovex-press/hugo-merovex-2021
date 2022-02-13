@@ -182,11 +182,11 @@
   .heatmap-text {
     @apply text-sm font-sans dark:fill-shade-light/50 fill-shade-dark/50
   }
-  .heatmap-1 { @apply fill-shade-light/5 stroke-shade/25 dark:fill-shade-dark/75 }
-  .heatmap-2 { @apply fill-heatmap/25 stroke-shade/25 dark:fill-heatmap-dark/25 }
-  .heatmap-3 { @apply fill-heatmap/50 stroke-shade/25 dark:fill-heatmap-dark/50 }
-  .heatmap-4 { @apply fill-heatmap/75 stroke-shade/25 dark:fill-heatmap-dark/75 }
-  .heatmap-5 { @apply fill-heatmap stroke-shade/25 dark:fill-heatmap-dark }
+  .heatmap-1 { @apply fill-shade-light/5 stroke-shade/25 dark:stroke-shade/75 dark:fill-shade-dark/75 }
+  .heatmap-2 { @apply fill-heatmap/25 stroke-shade/25 dark:stroke-shade/75 dark:fill-heatmap-dark/25 }
+  .heatmap-3 { @apply fill-heatmap/50 stroke-shade/25 dark:stroke-shade/75 dark:fill-heatmap-dark/50 }
+  .heatmap-4 { @apply fill-heatmap/75 stroke-shade/25 dark:stroke-shade/75 dark:fill-heatmap-dark/75 }
+  .heatmap-5 { @apply fill-heatmap stroke-shade/25 dark:stroke-shade/75 dark:fill-heatmap-dark }
      
   .fill-twitter     { @apply fill-[#4c9ad6] hover:bg-[#4069a2] hover:fill-white; }
   .fill-facebook    { @apply fill-[#2f4779] hover:bg-[#2f4779] hover:fill-white; }

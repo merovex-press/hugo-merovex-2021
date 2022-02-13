@@ -104,8 +104,7 @@ module.exports = {
     colors: {
       heatmap: {
         DEFAULT: '#348843',
-        light: '#348843', // WCAG 2.0 7:0
-        dark: '#8ec79b' // WCAG 2.0 7:0
+        dark: '#5DA069'
       },
       brand: {
         DEFAULT: '#326287',
@@ -120,7 +119,14 @@ module.exports = {
         dark: '#603b1e',
         darkest: '#29180f', // WCAG 2.0 7:0
       },
-      shade: { // Tailwind Stone
+      charcoal: { // 
+        lighter: '#FFFFFF', // Forcing white
+        light: '#D7DADE', // Mix 000
+        DEFAULT: '#425167', // Mix 400
+        dark: '#2D3746', // Mix 500
+        darker: '#161C23', // Mix 700
+      },
+      shade: { // Tailwind Stone 
         lighter: '#FFFFFF',
         light: '#eaeded', // white
         DEFAULT: '#495655', // #374140

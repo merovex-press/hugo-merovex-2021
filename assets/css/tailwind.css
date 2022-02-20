@@ -187,6 +187,15 @@
   .heatmap-3 { @apply fill-heatmap/50 stroke-shade/25 dark:stroke-shade/75 dark:fill-heatmap-dark/50 }
   .heatmap-4 { @apply fill-heatmap/75 stroke-shade/25 dark:stroke-shade/75 dark:fill-heatmap-dark/75 }
   .heatmap-5 { @apply fill-heatmap stroke-shade/25 dark:stroke-shade/75 dark:fill-heatmap-dark }
+  .fill-zebra { 
+    background: repeating-linear-gradient(
+      -45deg,
+      rgba(64, 87, 178, 0.9),
+      rgba(64, 87, 178, 0.9) 10px,
+      rgba(64, 87, 178, 1) 10px,
+      rgba(64, 87, 178, 1) 20px
+    );
+  }
      
   .fill-twitter     { @apply fill-[#4c9ad6] hover:bg-[#4069a2] hover:fill-white; }
   .fill-facebook    { @apply fill-[#2f4779] hover:bg-[#2f4779] hover:fill-white; }

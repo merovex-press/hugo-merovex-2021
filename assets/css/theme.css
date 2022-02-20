@@ -4575,6 +4575,16 @@ h1 .span {
   }
 }
 
+.fill-zebra {
+  background: repeating-linear-gradient(
+      -45deg,
+      rgba(64, 87, 178, 0.9),
+      rgba(64, 87, 178, 0.9) 10px,
+      rgba(64, 87, 178, 1) 10px,
+      rgba(64, 87, 178, 1) 20px
+    );
+}
+
 .fill-twitter {
   fill: #4c9ad6;
 }

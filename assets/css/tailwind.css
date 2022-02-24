@@ -196,6 +196,9 @@
       rgba(64, 87, 178, 1) 20px
     );
   }
+  .text-hint {
+    @apply font-sans text-sm dark:text-shade-lighter/50 text-shade-lighter/50;
+  }
      
   .fill-twitter     { @apply fill-[#4c9ad6] hover:bg-[#4069a2] hover:fill-white; }
   .fill-facebook    { @apply fill-[#2f4779] hover:bg-[#2f4779] hover:fill-white; }

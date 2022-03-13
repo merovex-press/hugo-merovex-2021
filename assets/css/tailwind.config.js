@@ -103,36 +103,61 @@ module.exports = {
     },
     colors: {
       heatmap: {
-        DEFAULT: '#348843',
-        dark: '#5DA069'
+        DEFAULT: '#51528f', //'#528F51',
+        dark: '#75A574'
       },
       brand: {
-        DEFAULT: '#326287',
-        light: '#8ac2da', // WCAG 2.0 7:0
-        dark: '#294a68' // WCAG 2.0 7:0
+        DEFAULT: '#51528f',//'#5A5B9F',
+        light: '#9797BC',
+        dark: '#313156'
       },
       accent: {
-        lightest: '#E4D1B9',
-        lighter: '#d6b68b', // WCAG 2.0 7:0
-        light: '#ba8b5b',
-        DEFAULT: '#9d6938',
-        dark: '#603b1e',
-        darkest: '#29180f', // WCAG 2.0 7:0
+        light: '#DCE3E9',
+        DEFAULT: '#51718F',
+        dark: '#314456',
       },
-      charcoal: { // 
-        lighter: '#FFFFFF', // Forcing white
-        light: '#D7DADE', // Mix 000
-        DEFAULT: '#425167', // Mix 400
-        dark: '#2D3746', // Mix 500
-        darker: '#161C23', // Mix 700
-      },
+
+      // brand: { // This is my blue shirt
+      //   DEFAULT: '#326287',
+      //   light: '#8ac2da', // WCAG 2.0 7:0
+      //   dark: '#294a68' // WCAG 2.0 7:0
+      // },
+      // accent: {
+      //   lightest: '#E4D1B9',
+      //   lighter: '#d6b68b', // WCAG 2.0 7:0
+      //   light: '#ba8b5b',
+      //   DEFAULT: '#9d6938',
+      //   dark: '#603b1e',
+      //   darkest: '#29180f', // WCAG 2.0 7:0
+      // },
       shade: { // Tailwind Stone 
-        lighter: '#FFFFFF',
-        light: '#eaeded', // white
-        DEFAULT: '#495655', // #374140
-        dark: '#2A2C2B', // black
-        darker: '#1d1f1e',
+        lighter: '#fafaf9', // 50
+        light: '#e7e5e4', // 200
+        DEFAULT: '#57534e', // 600 #374140
+        dark: '#292524', // 800
+        darker: '#1c1917', // 900
       },
+      slate: { // Tailwind Slate
+        lighter: '#f8fafc', // 50
+        light: '#e2e8f0', // 200
+        DEFAULT: '#475569', // 600
+        dark: '#1e293b', // 800
+        darker: '#18181b', // 900
+      },
+      zinc: { // Tailwind Zinc
+        lighter: '#fafafa', // 50
+        light: '#e4e4e7', // 200
+        DEFAULT: '#52525b', // 600
+        dark: '#27272a', // 800
+        darker: '#0f172a', // 900
+      },
+      // charcoal: { // Tailwind Charcoal
+      //   lighter: '#FFFFFF', // Forcing white
+      //   light: '#D7DADE', // Mix 000
+      //   DEFAULT: '#425167', // Mix 400
+      //   dark: '#2D3746', // Mix 500
+      //   darker: '#161C23', // Mix 700
+      // },
       info: {
         light: '#FeF1F2',
         dark: '#202434',
@@ -158,9 +183,9 @@ module.exports = {
         dark: '#245f2f'
       },
       red: {
-        light: '#d3847b',
-        DEFAULT: '#a34136',
-        dark: '#933a31'
+        light: '#D2B9BA',
+        DEFAULT: '#8f5152',
+        dark: '#563131'
       },
       danger: {
         light: '#F88B83',

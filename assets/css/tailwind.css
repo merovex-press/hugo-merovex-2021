@@ -54,7 +54,7 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply subpixel-antialiased font-medium bg-shade-lighter shade-text dark:bg-shade-darker;
+    @apply subpixel-antialiased font-medium bg-shade-lighter dark:bg-shade-darker shade-text;
   }
   h1, .h1 {
     @apply mt-4 mb-8 text-3xl font-bold text-center font-display md:text-6xl;
@@ -80,7 +80,7 @@
     @apply text-brand-dark hover:underline dark:text-brand-light;
   }
   .toolkit input { 
-    @apply px-2 py-1 font-medium text-right border rounded-lg dark:bg-shade dark:bg-shade-darker dark:border-shade-light w-44 md:text-xl font-code
+    @apply px-2 py-1 font-medium text-right border rounded-lg dark:bg-shade-darker dark:border-shade-light w-44 md:text-xl font-code
   }
   .toolkit label { 
     @apply flex-1 block font-medium md:inline-block md:text-xl;

@@ -4476,90 +4476,103 @@ h1 .span {
   }
 }
 
-.heatmap-text {
+.calgraph-text {
   fill: rgb(41 37 36 / 0.5);
   font-family: Merovex Sans, Arial, sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 @media (prefers-color-scheme: dark) {
-  .heatmap-text {
+  .calgraph-text {
     fill: rgb(231 229 228 / 0.5);
   }
 }
 
-.heatmap-1 {
+.calgraph-text-bold {
+  fill: #292524;
+  font-family: Merovex Sans, Arial, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .calgraph-text-bold {
+    fill: #e7e5e4;
+  }
+}
+
+.calgraph-1 {
   fill: rgb(231 229 228 / 0.05);
   stroke: rgb(87 83 78 / 0.25);
 }
 
 @media (prefers-color-scheme: dark) {
-  .heatmap-1 {
+  .calgraph-1 {
     fill: rgb(41 37 36 / 0.75);
   }
 
-  .heatmap-1 {
+  .calgraph-1 {
     stroke: rgb(87 83 78 / 0.75);
   }
 }
 
-.heatmap-2 {
-  fill: rgb(81 82 143 / 0.25);
+.calgraph-2 {
+  fill: #A9C7A8;
   stroke: rgb(87 83 78 / 0.25);
 }
 
 @media (prefers-color-scheme: dark) {
-  .heatmap-2 {
+  .calgraph-2 {
     fill: rgb(117 165 116 / 0.25);
   }
 
-  .heatmap-2 {
+  .calgraph-2 {
     stroke: rgb(87 83 78 / 0.75);
   }
 }
 
-.heatmap-3 {
-  fill: rgb(81 82 143 / 0.5);
+.calgraph-3 {
+  fill: #86B185;
   stroke: rgb(87 83 78 / 0.25);
 }
 
 @media (prefers-color-scheme: dark) {
-  .heatmap-3 {
+  .calgraph-3 {
     fill: rgb(117 165 116 / 0.5);
   }
 
-  .heatmap-3 {
+  .calgraph-3 {
     stroke: rgb(87 83 78 / 0.75);
   }
 }
 
-.heatmap-4 {
-  fill: rgb(81 82 143 / 0.75);
+.calgraph-4 {
+  fill: #639A62;
   stroke: rgb(87 83 78 / 0.25);
 }
 
 @media (prefers-color-scheme: dark) {
-  .heatmap-4 {
+  .calgraph-4 {
     fill: rgb(117 165 116 / 0.75);
   }
 
-  .heatmap-4 {
+  .calgraph-4 {
     stroke: rgb(87 83 78 / 0.75);
   }
 }
 
-.heatmap-5 {
-  fill: #51528f;
+.calgraph-5 {
+  fill: #427241;
   stroke: rgb(87 83 78 / 0.25);
 }
 
 @media (prefers-color-scheme: dark) {
-  .heatmap-5 {
+  .calgraph-5 {
     fill: #75A574;
   }
 
-  .heatmap-5 {
+  .calgraph-5 {
     stroke: rgb(87 83 78 / 0.75);
   }
 }
@@ -5963,6 +5976,10 @@ h1 .span {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-scroll {
+  overflow: scroll;
 }
 
 .overflow-y-auto {

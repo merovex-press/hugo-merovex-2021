@@ -179,14 +179,17 @@
   .logo-footer {
     @apply fill-brand/50 hover:fill-brand dark:text-brand-dark/50 dark:hover:fill-brand-dark w-20 mx-auto
   }
-  .heatmap-text {
-    @apply text-sm font-sans dark:fill-shade-light/50 fill-shade-dark/50
+  .calgraph-text {
+    @apply font-sans text-xs dark:fill-shade-light/50 fill-shade-dark/50;
   }
-  .heatmap-1 { @apply fill-shade-light/5 stroke-shade/25 dark:stroke-shade/75 dark:fill-shade-dark/75 }
-  .heatmap-2 { @apply fill-heatmap/25 stroke-shade/25 dark:stroke-shade/75 dark:fill-heatmap-dark/25 }
-  .heatmap-3 { @apply fill-heatmap/50 stroke-shade/25 dark:stroke-shade/75 dark:fill-heatmap-dark/50 }
-  .heatmap-4 { @apply fill-heatmap/75 stroke-shade/25 dark:stroke-shade/75 dark:fill-heatmap-dark/75 }
-  .heatmap-5 { @apply fill-heatmap stroke-shade/25 dark:stroke-shade/75 dark:fill-heatmap-dark }
+  .calgraph-text-bold {
+    @apply font-sans text-xs dark:fill-shade-light fill-shade-dark;
+  }
+  .calgraph-1 { @apply fill-shade-light/5 stroke-shade/25 dark:stroke-shade/75 dark:fill-shade-dark/75 }
+  .calgraph-2 { @apply fill-heatmap-1 stroke-shade/25 dark:stroke-shade/75 dark:fill-heatmap-dark/25 }
+  .calgraph-3 { @apply fill-heatmap-2 stroke-shade/25 dark:stroke-shade/75 dark:fill-heatmap-dark/50 }
+  .calgraph-4 { @apply fill-heatmap-3 stroke-shade/25 dark:stroke-shade/75 dark:fill-heatmap-dark/75 }
+  .calgraph-5 { @apply fill-heatmap-4 stroke-shade/25 dark:stroke-shade/75 dark:fill-heatmap-dark }
   .fill-zebra { 
     background: repeating-linear-gradient(
       -45deg,

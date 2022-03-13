@@ -179,6 +179,9 @@
   .logo-footer {
     @apply fill-brand/50 hover:fill-brand dark:text-brand-dark/50 dark:hover:fill-brand-dark w-20 mx-auto
   }
+  svg.caligraph {
+    @apply bg-heatmap-4;
+  }
   .calgraph-text {
     @apply font-sans text-xs dark:fill-shade-light/50 fill-shade-dark/50;
   }

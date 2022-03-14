@@ -104,7 +104,7 @@ module.exports = {
     colors: {
       heatmap: {
         DEFAULT: '#528f51', //'#528F51',
-        dark: '#8ECB8A',
+        dark: '#8BF683',
         '0': '#FFFFFF',
         '1': '#A9C7A8',
         '2': '#86B185',
@@ -143,20 +143,20 @@ module.exports = {
         dark: '#292524', // 800
         darker: '#1c1917', // 900
       },
-      slate: { // Tailwind Slate
-        lighter: '#f8fafc', // 50
-        light: '#e2e8f0', // 200
-        DEFAULT: '#475569', // 600
-        dark: '#1e293b', // 800
-        darker: '#18181b', // 900
-      },
-      zinc: { // Tailwind Zinc
-        lighter: '#fafafa', // 50
-        light: '#e4e4e7', // 200
-        DEFAULT: '#52525b', // 600
-        dark: '#27272a', // 800
-        darker: '#0f172a', // 900
-      },
+      // slate: { // Tailwind Slate
+      //   lighter: '#f8fafc', // 50
+      //   light: '#e2e8f0', // 200
+      //   DEFAULT: '#475569', // 600
+      //   dark: '#1e293b', // 800
+      //   darker: '#18181b', // 900
+      // },
+      // zinc: { // Tailwind Zinc
+      //   lighter: '#fafafa', // 50
+      //   light: '#e4e4e7', // 200
+      //   DEFAULT: '#52525b', // 600
+      //   dark: '#27272a', // 800
+      //   darker: '#0f172a', // 900
+      // },
       // charcoal: { // Tailwind Charcoal
       //   lighter: '#FFFFFF', // Forcing white
       //   light: '#D7DADE', // Mix 000
@@ -165,8 +165,8 @@ module.exports = {
       //   darker: '#161C23', // Mix 700
       // },
       info: {
-        light: '#FeF1F2',
-        dark: '#202434',
+        light: '#fafaf9',
+        dark: '#292524',
       },
       success: {
         light: '#93CCAA',

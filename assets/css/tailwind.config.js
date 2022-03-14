@@ -104,7 +104,7 @@ module.exports = {
     colors: {
       heatmap: {
         DEFAULT: '#528f51', //'#528F51',
-        dark: '#75A574',
+        dark: '#8ECB8A',
         '0': '#FFFFFF',
         '1': '#A9C7A8',
         '2': '#86B185',

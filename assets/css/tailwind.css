@@ -188,7 +188,7 @@
   .calgraph-text-bold {
     @apply font-sans text-xs dark:fill-shade-light fill-shade-dark;
   }
-  .calgraph-1 { @apply fill-shade-light/5 stroke-shade/25 dark:stroke-shade/75 dark:fill-shade-dark/75 }
+  .calgraph-1 { @apply fill-shade-lighter/5 stroke-shade/25 dark:stroke-shade/50 }
   .calgraph-2 { @apply fill-heatmap-1 stroke-shade/25 dark:stroke-shade/75 dark:fill-heatmap-dark/25 }
   .calgraph-3 { @apply fill-heatmap-2 stroke-shade/25 dark:stroke-shade/75 dark:fill-heatmap-dark/50 }
   .calgraph-4 { @apply fill-heatmap-3 stroke-shade/25 dark:stroke-shade/75 dark:fill-heatmap-dark/75 }

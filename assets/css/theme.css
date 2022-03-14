@@ -4503,17 +4503,13 @@ h1 .span {
 }
 
 .calgraph-1 {
-  fill: rgb(231 229 228 / 0.05);
+  fill: rgb(250 250 249 / 0.05);
   stroke: rgb(87 83 78 / 0.25);
 }
 
 @media (prefers-color-scheme: dark) {
   .calgraph-1 {
-    fill: rgb(41 37 36 / 0.75);
-  }
-
-  .calgraph-1 {
-    stroke: rgb(87 83 78 / 0.75);
+    stroke: rgb(87 83 78 / 0.5);
   }
 }
 
@@ -4524,7 +4520,7 @@ h1 .span {
 
 @media (prefers-color-scheme: dark) {
   .calgraph-2 {
-    fill: rgb(117 165 116 / 0.25);
+    fill: rgb(142 203 138 / 0.25);
   }
 
   .calgraph-2 {
@@ -4539,7 +4535,7 @@ h1 .span {
 
 @media (prefers-color-scheme: dark) {
   .calgraph-3 {
-    fill: rgb(117 165 116 / 0.5);
+    fill: rgb(142 203 138 / 0.5);
   }
 
   .calgraph-3 {
@@ -4554,7 +4550,7 @@ h1 .span {
 
 @media (prefers-color-scheme: dark) {
   .calgraph-4 {
-    fill: rgb(117 165 116 / 0.75);
+    fill: rgb(142 203 138 / 0.75);
   }
 
   .calgraph-4 {
@@ -4569,7 +4565,7 @@ h1 .span {
 
 @media (prefers-color-scheme: dark) {
   .calgraph-5 {
-    fill: #75A574;
+    fill: #8ECB8A;
   }
 
   .calgraph-5 {
@@ -5555,14 +5551,14 @@ h1 .span {
   margin: 0.5rem;
 }
 
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .my-8 {
@@ -6118,6 +6114,11 @@ h1 .span {
   --tw-border-opacity: 0.25;
 }
 
+.bg-shade-lighter {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 249 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#51528f\] {
   --tw-bg-opacity: 1;
   background-color: rgb(81 82 143 / var(--tw-bg-opacity));
@@ -6136,11 +6137,6 @@ h1 .span {
 .bg-\[\#51718f\] {
   --tw-bg-opacity: 1;
   background-color: rgb(81 113 143 / var(--tw-bg-opacity));
-}
-
-.bg-shade-lighter {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 250 249 / var(--tw-bg-opacity));
 }
 
 .bg-shade-darker {
@@ -7762,6 +7758,11 @@ h1 .span {
     border-color: rgb(143 193 174 / var(--tw-border-opacity));
   }
 
+  .dark\:bg-shade-darker {
+    --tw-bg-opacity: 1;
+    background-color: rgb(28 25 23 / var(--tw-bg-opacity));
+  }
+
   .dark\:bg-shade-dark {
     --tw-bg-opacity: 1;
     background-color: rgb(41 37 36 / var(--tw-bg-opacity));
@@ -7790,11 +7791,6 @@ h1 .span {
   .dark\:bg-warning-light {
     --tw-bg-opacity: 1;
     background-color: rgb(227 194 145 / var(--tw-bg-opacity));
-  }
-
-  .dark\:bg-shade-darker {
-    --tw-bg-opacity: 1;
-    background-color: rgb(28 25 23 / var(--tw-bg-opacity));
   }
 
   .dark\:from-shade-darker\/100 {

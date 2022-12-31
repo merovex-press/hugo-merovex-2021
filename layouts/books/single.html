@@ -15,9 +15,9 @@
         </div>
         <aside class='flex item-center justify-left space-x-2 mt-8 print:hidden'>
           {{- if .Params.price }}
-          <span class="p-2 m-2 font-sans text-3xl font-bold text-danger">{{.Params.price}}</span>
+          <span class="p-2 m-2 font-sans text-4xl font-bold text-red-400">{{.Params.price}}</span>
           {{- end }}
-          {{ partial "cta-links.html" . }}
+          <div>{{ partial "cta-links.html" . }}</div>
         </aside>
       </div>
     </div>

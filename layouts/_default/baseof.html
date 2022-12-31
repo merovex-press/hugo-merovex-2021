@@ -5,9 +5,7 @@
 <body>
   <header>
     {{ partial "site/nav.html"}}
-    <h1 itemprop="headline" class='md:text-6xl'>{{.Title}}<span class='block mt-4'
-        style="font-size: 50%">{{.Params.Subtitle}}</span></h1>
-    {{- block "figure" .}}{{end}}
+
   </header>
   <main class="flex-1 w-screen min-h-screen mt-0 print:max-w-5xl">
     <div class="hidden">

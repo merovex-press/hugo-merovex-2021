@@ -1,7 +1,7 @@
 {{ define "main" }}
-{{partial "components/biography.html"}}
-{{ partial "widgets/subscribe.html" . }}
-
+<h1 itemprop="headline" class='my-12 md:text-6xl'>{{.Title}}<span class='block mt-4'
+    style="font-size: 50%">{{.Params.Subtitle}}</span></h1>
+{{- block "figure" .}}{{end}}
 {{if .Params.shownav}}
 
 <nav class="p-8 my-12 card hidden">

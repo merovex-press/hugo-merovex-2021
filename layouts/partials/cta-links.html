@@ -2,13 +2,8 @@
 {{- $icons := .Site.Params.icons }}
 {{- if .Params.cta }}
 {{- range $key, $val := .Params.cta}}
-<a class='{{ if eq $key "amazon" }}  
-  {{- "border-amazon dark:border-amazon-light dark:hover:text-shade-dark dark:text-amazon-light dark:hover:bg-amazon-light hover:bg-amazon text-amazon button"}}
-  {{ else if eq $key "noble" }}
-  {{- "border-noble dark:border-noble-light dark:hover:text-shade-dark dark:text-noble-light dark:hover:bg-noble-light hover:bg-noble text-noble button"}}
-  {{ else }}
-  {{- "border-brand dark:border-brand-light dark:hover:text-shade-dark dark:text-brand-light dark:hover:bg-brand-light hover:bg-brand text-brand button"}}
-  {{end}}' href="{{ $val }}">
+<a class='btn btn-secondary' href="{{ $val }}">
+  <span class='opacity-[0.50] tracking-tighter block'>Available on</span>
   <i class="{{$icons.Get $key}}" aria-hidden="true"></i> {{title $key }}
 </a>
 {{- end }}

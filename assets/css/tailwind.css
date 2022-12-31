@@ -112,6 +112,39 @@
     @apply p-2 m-2 font-sans text-sm font-semibold uppercase border-opacity-50 rounded bordered text-brand border-brand hover:bg-brand hover:text-shade-lighter dark:text-brand-light dark:border-brand-light;
     text-decoration: none !important;
   }
+  .btn {
+    @apply inline-block px-5 py-2.5 font-medium text-xs leading-tight uppercase rounded shadow-md transition duration-150 ease-in-out no-underline;
+    @apply focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg hover:ring-2;
+  }
+    .btn-secondary {
+    @apply text-black bg-secondary-100 hover:ring-secondary-100 dark:bg-secondary-100;
+    @apply hover:text-white focus:text-gray-500 hover:bg-secondary-200 focus:bg-secondary-200;
+
+    &.outline {
+      @apply text-secondary-200 bg-transparent shadow-none outline-1;
+      @apply hover:text-gray-500 focus:text-gray-500 hover:bg-secondary-200 focus:bg-secondary-300;
+    }
+  }
+    .btn-white {
+    @apply text-gray-400 bg-white dark:bg-gray-300 dark:text-black border;
+    @apply border-gray-300 hover:bg-gray-50 hover:text-gray-400 focus:ring-blue-500;
+
+    &.primary {
+      @apply text-blue-600;
+    }
+
+    &.secondary {
+      @apply text-green-600;
+    }
+
+    &.tertiary {
+      @apply text-gray-600;
+    }
+
+    &.gray {
+      @apply text-gray-400;
+    }
+  }
   .button .info { 
     @apply shade-text border-shade-dark hover:bg-shade-dark dark:border-shade-light dark:hover:bg-shade-light;
   }

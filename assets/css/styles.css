@@ -7,14 +7,15 @@
 @import "assets/css/site";
 @import "assets/css/prose";
 @import "assets/css/button";
-@import "assets/css/fa";
+
 /* Tailwind's utility classes - generated based on config file */
 @import "node_modules/tailwindcss/utilities";
 
 @media print {
-  .no-print { 
+  .no-print {
     display: none;
   }
+
   .prosaic {
     font-size: 10pt !important;
   }

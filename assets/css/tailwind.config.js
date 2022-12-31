@@ -96,9 +96,9 @@ module.exports = {
       })
     },
     fontFamily: {
-      'sans': ["Merovex Sans", 'Arial', 'sans-serif'],
-      'serif': ["Merovex Serif", 'Cambria', 'Georgia', "Times New Roman", 'Times', 'serif'],
-      'display': ["Merovex Display", 'Arial', 'sans-serif'],
+      'sans': ["Atkinson Hyperlegible", 'Arial', 'sans-serif'],
+      'serif': ["Atkinson Hyperlegible", 'Cambria', 'Georgia', "Times New Roman", 'Times', 'serif'],
+      'display': ["Atkinson Hyperlegible", 'Arial', 'sans-serif'],
       'code': ["Merovex Code", "ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace"]
     },
     colors: {

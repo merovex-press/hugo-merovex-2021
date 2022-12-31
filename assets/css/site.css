@@ -2,52 +2,70 @@
   html {
     scroll-behavior: smooth;
   }
+
   body {
-    @apply subpixel-antialiased bg-shade-light text-shade-dark dark:bg-shade-darker dark:text-shade-light;
+    @apply font-display subpixel-antialiased bg-shade-light text-shade-dark dark: bg-shade-darker dark:text-shade-light;
   }
-  h1, .h1 {
-    @apply mt-4 mb-8 text-3xl text-center font-display md:text-4xl;
+
+  h1,
+  .h1 {
+    @apply mt-4 mb-8 text-3xl text-center font-display md: text-4xl;
   }
+
   .h2 {
-    @apply mt-4 mb-8 text-3xl font-bold text-center md:text-5xl text-brand dark:text-brand-light;
+    @apply mt-4 mb-8 text-3xl font-bold text-center md: text-5xl text-brand dark:text-brand-light;
   }
-  .h3 { 
-    @apply font-sans text-3xl font-bold text-center lg:text-4xl;
+
+  .h3 {
+    @apply font-sans text-3xl font-bold text-center lg: text-4xl;
   }
 
 
-article.single {
-  @apply max-w-4xl p-8 mx-auto mt-4 border-opacity-0 md:border-opacity-10 md:mt-12 bordered article-background;
-}
-.card {
-  @apply relative w-full mx-auto mt-8 md:max-w-2xl bordered article-background;
-}
-.card-link {
-  @apply absolute top-0 left-0 z-10 w-full h-full
-}
-.card-link:hover ~ .card-title { @apply underline }
-.link { 
-  @apply text-brand-dark hover:underline dark:text-brand-light;
-}
-article.card h2 {
-  @apply mt-3 mb-6 font-sans text-4xl font-bold text-center;
-}
-article.card .summary {
-  @apply mb-6 font-sans prose dark:prose-dark max-w-none md:prose-lg;
-}
-.dtg {
-  @apply font-sans text-center text-brand dark:text-brand-light
-}
-header .logo {
-  @apply w-5 h-5 fill-current lg:h-8 lg:w-8 opacity-30;
-}
-header .site-link {
-  @apply px-2 py-1 my-2 underline-link sm:inline lg:mr-3 ;
-}
-footer .site-link {
-  @apply underline-link;
-}
-.cta-callout {
-  @apply max-w-lg p-8 mx-auto text-center transform border-2 -rotate-1 bordered border-brand;
-}
+  article.single {
+    @apply max-w-4xl p-8 mx-auto mt-4 border-opacity-0 md: border-opacity-10 md:mt-12 bordered article-background;
+  }
+
+  .card {
+    @apply relative w-full mx-auto mt-8 md: max-w-2xl bordered article-background;
+  }
+
+  .card-link {
+    @apply absolute top-0 left-0 z-10 w-full h-full
+  }
+
+  .card-link:hover~.card-title {
+    @apply underline
+  }
+
+  .link {
+    @apply text-brand-dark hover: underline dark:text-brand-light;
+  }
+
+  article.card h2 {
+    @apply mt-3 mb-6 font-sans text-4xl font-bold text-center;
+  }
+
+  article.card .summary {
+    @apply mb-6 font-sans prose dark: prose-dark max-w-none md:prose-lg;
+  }
+
+  .dtg {
+    @apply font-sans text-center text-brand dark: text-brand-light
+  }
+
+  header .logo {
+    @apply w-5 h-5 fill-current lg: h-8 lg:w-8 opacity-30;
+  }
+
+  header .site-link {
+    @apply px-2 py-1 my-2 underline-link sm: inline lg:mr-3;
+  }
+
+  footer .site-link {
+    @apply underline-link;
+  }
+
+  .cta-callout {
+    @apply max-w-lg p-8 mx-auto text-center transform border-2 -rotate-1 bordered border-brand;
+  }
 }

@@ -1,3 +1,4 @@
+const colors = require('tailwindcss/colors')
 module.exports = {
   mode: 'jit',
   content: [
@@ -122,6 +123,7 @@ module.exports = {
         DEFAULT: '#51718F',
         dark: '#314456',
       },
+      yellow: colors.amber,
 
       // brand: { // This is my blue shirt
       //   DEFAULT: '#326287',

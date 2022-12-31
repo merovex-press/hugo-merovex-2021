@@ -1,10 +1,11 @@
 {{define "main" }}
 <div class="mx-auto font-sans">
   {{ $paginator := .Paginate (where .Pages "Type" "posts") }}
-  <div class="cta-callout print:hidden">
+  <div class="print:hidden">
     {{ partial "widgets/subscribe.html" . }}
   </div>
-  {{ partial "site/pagination.html" . }}
+  {{partial "components/biography.html"}}
+  <!-- {{ partial "site/pagination.html" . }} -->
   {{ range $paginator.Pages }}
   {{ partial "widgets/post-card.html" . }}
   {{ end }}

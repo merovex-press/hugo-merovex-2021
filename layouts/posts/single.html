@@ -5,8 +5,12 @@
 <div class="mb-12 prosaic-serif">
   {{ .Content }}
 </div>
-{{ partial "asides/social-sharing.html" . }}
-{{ partial "related-posts.html" . }}
-{{ partial "citation.html" . }}
+{{partial "components/biography.html"}}
+<div class="print:hidden">
+  {{ partial "widgets/subscribe.html" . }}
+</div>
+<!-- {{ partial "asides/social-sharing.html" . }} -->
+<!-- {{ partial "related-posts.html" . }} -->
+<!-- {{ partial "citation.html" . }} -->
 </article>
 {{ end }}

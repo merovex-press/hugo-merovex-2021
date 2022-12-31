@@ -33,7 +33,7 @@
     @apply rounded-lg;
   }
   .prosaic code { 
-    @apply dark:text-brand-light text-brand font-code
+    @apply dark:text-brand-light text-brand 
   }
   .prosaic th { 
     @apply dark:text-shade-dark text-shade-light font-sans bg-brand dark:bg-brand-light p-2
@@ -80,7 +80,7 @@
     @apply text-brand-dark hover:underline dark:text-brand-light;
   }
   .toolkit input { 
-    @apply px-2 py-1 font-medium text-right border rounded-lg dark:bg-shade-darker dark:border-shade-light w-44 md:text-xl font-code
+    @apply px-2 py-1 font-medium text-right border rounded-lg dark:bg-shade-darker dark:border-shade-light w-44 md:text-xl 
   }
   .toolkit label { 
     @apply flex-1 block font-medium md:inline-block md:text-xl;
@@ -156,7 +156,7 @@
     @apply font-sans prosaic;
   }
   .prosaic-serif { 
-    @apply font-serif prosaic;
+    @apply font-sans prosaic;
   }
   #site-footer { 
     @apply bg-shade-lighter dark:bg-shade-dark;

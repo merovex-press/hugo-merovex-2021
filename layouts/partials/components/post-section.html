@@ -1,0 +1,4 @@
+{{ $paginator := .Paginate (where .Pages "Type" "posts") }}
+{{ range $paginator.Pages }}
+{{ partial "components/post-card.html" . }}
+{{ end }}

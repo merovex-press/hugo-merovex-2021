@@ -1,0 +1,32 @@
+<section id='hero' class='z-0 md:block text-white min-h-[300px]' {{- $img
+  :=resources.Get "images/sky-purple-blue-galaxy-atmosphere-astronomical-object-1614937-pxhere.com.webp" -}}
+  style="background: url({{$img.Permalink}}); background-size: cover;">
+  <div class='flex bg-primary-500/[0.50]'>
+    <div class='flex-1 flex items-center justify-center my-8'>
+      <div class='mx-8 lg:mx-auto lg:w-2/3 text-lg'>
+        <div style='text-shadow: 1px 1px 1px #000'>
+          <h1>{{.Title}}</h1>
+        </div>
+        <div class='flex-1' style='text-shadow: 1px 1px 1px #000'>
+          {{.Summary}}
+        </div>
+        <aside class='flex item-center justify-left space-x-2 mt-8 print:hidden'>
+          {{- if .Params.price }}
+          <span class="p-2 m-2 font-sans text-4xl font-bold text-red-400">{{.Params.price}}</span>
+          {{- end }}
+          <div>{{ partial "components/cta-links.html" . }}</div>
+        </aside>
+      </div>
+    </div>
+    <div class='w-1/2 min-h-[300px]' style='clip-path: polygon(7% 0, 100% 0, 100% 100%, 0% 100%);'>
+      {{ partial "book/art.html" . }}
+    </div>
+  </div>
+</section>
+<p class='hidden'>from
+  <strong>
+    <a href="https://pxhere.com/en/photo/1614937?utm_content=clipUser&utm_medium=referral&utm_source=pxhere">
+      PxHere
+    </a>
+  </strong>
+</p>

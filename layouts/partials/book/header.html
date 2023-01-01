@@ -1,6 +1,6 @@
 <section class='my-12 md:flex'>
   <div class="mx-auto mb-12 md:w-1/4 md:mb-0">
-    {{ partial "book-cover-image.html" . }}
+    {{ partial "book/cover.html" . }}
   </div>
   <div class="flex items-center px-3 md:w-3/4 md:px-6">
     <div>
@@ -10,7 +10,7 @@
         {{- if .Params.price }}
         <span class="p-2 m-2 font-sans text-3xl font-bold text-danger">{{.Params.price}}</span>
         {{- end }}
-        {{ partial "cta-links.html" . }}
+        {{ partial "components/cta-links.html" . }}
       </aside>
     </div>
   </div>

@@ -18,6 +18,7 @@ module.exports = {
             path: [themeDir]
         }),
         require('tailwindcss')(themeDir + 'assets/css/tailwind.config.js'),
+        require('tailwindcss/nesting'),
         require('autoprefixer')({
             path: [themeDir]
         }),

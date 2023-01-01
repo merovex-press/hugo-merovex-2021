@@ -3,8 +3,7 @@
 {{ end }}
 {{ define "main" }}
 <article class="px-4 mx-auto max-w-3xl">
-  <h1 itemprop="headline" class='my-12 md:text-6xl'>{{.Title}}<span class='block mt-4'
-      style="font-size: 50%">{{.Params.Subtitle}}</span></h1>
+  {{ partial "components/headline.html" . }}
   {{- block "figure" .}}{{end}}
   <div class="mb-12 prosaic-serif dark:prose-dark">
     {{ .Content }}
@@ -12,10 +11,10 @@
 </article>
 {{partial "components/biography.html"}}
 <div class="print:hidden">
-  {{ partial "widgets/subscribe.html" . }}
+  {{ partial "components/subscribe.html" . }}
 </div>
 <!-- {{ partial "asides/social-sharing.html" . }} -->
 <!-- {{ partial "related-posts.html" . }} -->
-<!-- {{ partial "citation.html" . }} -->
+<!-- {{ partial "components/citation.html" . }} -->
 </article>
 {{ end }}

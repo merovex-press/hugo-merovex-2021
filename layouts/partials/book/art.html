@@ -1,0 +1,27 @@
+<picture>
+  {{- if .Resources.Match "*-art*" }}
+  {{- with .Resources.GetMatch "*-art*" }}
+  {{- $resizedsm := .Resize "600x400 webp" }}
+  {{- $resizedmd := .Resize "1000x660 webp" }}
+  {{- $resizedlg := .Resize "150x1000 webp" }}
+  {{- $resizedxl := .Resize "2000x1320 webp" }}
+  <source media="(min-width: 1280px)" srcset="{{ $resizedlg.RelPermalink }} 1x,
+                {{ $resizedxl.RelPermalink }} 2x,
+                {{ $resizedxl.RelPermalink }} 3x">
+  <source media="(min-width: 1024px)" srcset="{{ $resizedlg.RelPermalink }} 1x,
+                {{ $resizedxl.RelPermalink }} 2x,
+                {{ $resizedxl.RelPermalink }} 3x">
+  <source media="(min-width: 768px)" srcset="{{ $resizedmd.RelPermalink }} 1x,
+                {{ $resizedlg.RelPermalink }} 2x,
+                {{ $resizedxl.RelPermalink }} 3x">
+  <!-- Support Mobile -->
+  <source media="(min-width: 640px)" srcset="{{ $resizedsm.RelPermalink }} 1x,
+                {{ $resizedmd.RelPermalink }} 2x,
+                {{ $resizedlg.RelPermalink }} 3x">
+  <img alt='book-cover' class="h-full w-full" style="object-fit:cover" src='{{ $resizedmd.RelPermalink }}'>
+  {{ end }}
+  {{ else}}
+  <img alt='book-cover' class="h-full w-full" style="object-fit:cover"
+    src='https://via.placeholder.com/900x600?text=Book+Cover'>
+  {{- end }}
+</picture>

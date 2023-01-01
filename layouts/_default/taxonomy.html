@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div class="max-w-3xl px-4 mx-auto mt-8 lg:mt-12">
-<h1 class="text-3xl font-display lg:text-6xl">Posts Related to &ldquo;{{.Title}}&rdquo;</h1>
+<h1 class="text-3xl font-display lg:text-4xl">Posts Related to &ldquo;{{.Title}}&rdquo;</h1>
 {{ range .Pages }}
 {{ partial "post-item.html" . }}
 {{ end }}

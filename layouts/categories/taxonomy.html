@@ -8,17 +8,15 @@
   <header>
     {{ partial "author-image-round.html" . }}
     {{ partial "site/nav.html"}}
-    <h1 itemprop="headline" class='md:text-6xl'>
-      {{.Title}}
-    </h1>
+    {{ partial "components/headline.html" . }}
   </header>
   <div class="mx-auto font-sans">
     <div class="cta-callout print:hidden">
-      {{ partial "widgets/subscribe.html" . }}
+      {{ partial "components/subscribe.html" . }}
     </div>
     {{ partial "site/pagination.html" . }}
     {{ range .Paginator.Pages }}
-    {{ partial "widgets/post-card.html" . }}
+    {{ partial "components/post-card.html" . }}
     {{ end }}
     {{ partial "site/pagination.html" . }}
     {{ partial "site/logo-footer.html" . }}

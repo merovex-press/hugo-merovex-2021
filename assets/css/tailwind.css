@@ -11,13 +11,13 @@
     @apply hover:border-b-4 border-brand text-shade-dark dark:text-shade-light dark:border-brand-light
   }
   .bordered {
-    @apply border rounded rounded-lg drop-shadow-lg print:drop-shadow-none border-opacity-10 print:border-0 border-shade-dark;
+    @apply border rounded-lg drop-shadow-lg print:drop-shadow-none border-opacity-10 print:border-0 border-shade-dark;
   }
   .shade-text {
     @apply dark:text-shade-lighter text-shade-darker;
   }
   .prosaic { 
-    @apply mx-auto prose md:prose-lg lg:prose-xl print:text-shade-darker print:font-serif;
+    @apply mx-auto prose prose-stone lg:prose-lg print:text-shade-darker print:font-serif max-w-2xl;
   }
   .prosaic h2, .prosaic h3 {
     @apply text-brand dark:text-brand-light
@@ -57,13 +57,13 @@
     @apply subpixel-antialiased font-medium bg-shade-lighter dark:bg-shade-darker shade-text;
   }
   h1, .h1 {
-    @apply mt-4 mb-8 text-3xl font-bold text-center font-display md:text-6xl;
+    @apply mt-4 mb-8 text-3xl font-bold text-center font-display md:text-4xl;
   }
   .h2 {
-    @apply mt-4 mb-8 text-3xl font-bold text-center md:text-5xl text-brand dark:text-brand-light;
+    @apply mt-4 mb-8 text-2xl font-bold text-center md:text-3xl text-brand dark:text-brand-light;
   }
   .h3 { 
-    @apply font-sans text-3xl font-bold text-center lg:text-4xl;
+    @apply font-sans text-2xl font-bold text-center lg:text-2xl;
   }
   blockquote p {
     @apply mt-4
@@ -89,7 +89,7 @@
     @apply even:bg-shade-light dark:even:bg-shade-darker;
   }
   .dtg {
-    @apply font-sans text-center text-brand dark:text-brand-light
+    @apply font-sans text-center text-opacity-50
   }
 
   header .logo {
@@ -115,6 +115,14 @@
   .btn {
     @apply inline-block px-5 py-2.5 font-medium text-xs leading-tight uppercase rounded shadow-md transition duration-150 ease-in-out no-underline;
     @apply focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg hover:ring-2;
+  }
+    .btn-primary {
+    @apply text-white bg-primary-300 dark:text-black dark:bg-blue-300
+    focus:bg-white focus:text-primary-300 hover:bg-white hover:text-primary-300 hover:ring-primary-300;
+
+    &.outline {
+      @apply text-primary-300 bg-transparent shadow-none outline-1 hover:text-white hover:bg-primary-300;
+    }
   }
     .btn-secondary {
     @apply text-black bg-secondary-100 hover:ring-secondary-100 dark:bg-secondary-100;

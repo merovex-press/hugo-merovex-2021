@@ -1,33 +1,16 @@
 {{ define "main" }}
-<h1 itemprop="headline" class='my-12 md:text-6xl'>{{.Title}}<span class='block mt-4'
-    style="font-size: 50%">{{.Params.Subtitle}}</span></h1>
-{{- block "figure" .}}{{end}}
-{{if .Params.shownav}}
+{{ partial "components/headline.html" . }}
 
-<nav class="p-8 my-12 card hidden">
-  <h2 class="h3">Series List</h2>
-  <div class="flex-none justify-items-center md:flex">
-    {{ range .Pages }}
-    <div class="flex-1">
-      <h3 class="text-xl">{{.Title}}</h3>
-      <ul class="pl-4 mx-auto list-disc list-inside">
-        {{- range .Pages.ByWeight }}
-        <li><a href="#{{.Title| urlize }}" class='link'>{{.Title}}</a></li>
-        {{ end }}
-      </ul>
-    </div>
-    {{ end }}
-  </div>
-</nav>
-{{end}}
+<div class="prosaic">
+  {{.Content}}
+</div>
 
-
-<div class="prosaic">{{.Content}}</div>
 {{ range .Pages.ByWeight }}
 {{ if .IsSection}}
 <section class="mb-20">
-  <h2 class='h2' id='{{ .Title | urlize }}'><a href="{{.Permalink}}">{{.Title}}</a></h2>
-
+  <h2 class='h2' id='{{ .Title | urlize }}'>
+    <a href="{{.Permalink}}">{{.Title}}</a>
+  </h2>
   <div
     class="relative w-full flex gap-6 snap-x snap-mandatory overflow-x-auto p-14 shadow-inner bg-gray-100 dark:bg-gray-500">
     <div class="snap-center shrink-0">
@@ -36,20 +19,18 @@
     {{ range .Pages.ByWeight }}
     <div class="snap-center shrink-0 first:pl-8 last:pr-8">
       <a href="{{ .Permalink }}" class="rounded">
-        {{ partial "book-cover-image.html" . }}
+        {{ partial "book/cover.html" . }}
         <h3 class="text-center">{{ .Title }}</h3>
       </a>
     </div>
-    <!-- {{ partial "book/card.html" (dict "book" . ) }} -->
     {{ end }}
     <div class="snap-center shrink-0">
       <div class="shrink-0 w-4 sm:w-48"></div>
     </div>
   </div>
 </section>
-{{else}}
-{{ partial "book/card.html" (dict "book" . ) }}
-{{ end }}
-{{end}}
-</ul>
-{{end}}
+{{- else}}
+<!-- {{ partial "book/card.html" (dict "book" . ) }} -->
+{{- end }}
+{{- end }}
+{{- end }}

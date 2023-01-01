@@ -2,7 +2,7 @@
 {{- $img := resources.Get "images/sky-purple-blue-galaxy-atmosphere-astronomical-object-1614937-pxhere.com.webp" -}}
 {{- $cover_img := resources.Get "images/sky-purple-blue-galaxy-atmosphere-astronomical-object-1614937-pxhere.com.webp"
 -}}
-<section id='hero' class='z-0 hidden md:block text-white min-h-[300px]'
+<section id='hero' class='z-0 md:block text-white min-h-[300px]'
   style="background: url({{$img.Permalink}}); background-size: cover;">
   <div class='flex bg-primary-500/[0.50]'>
     <div class='flex-1 flex items-center justify-center my-8'>
@@ -62,6 +62,9 @@
 <!-- {{ partial "book/characters.html" . }} -->
 <!-- {{ partial "book/excerpt.html" . }} -->
 <!-- {{ partial "related-posts.html" . }} -->
+
+{{ partial "components/biography.html" . }}
+<hr class='w-1/4 mx-auto'>
 {{ partial "citation.html" . }}
 
 {{ end }}

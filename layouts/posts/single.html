@@ -2,7 +2,7 @@
 {{/* partial "posts/figure.html" . */}}
 {{ end }}
 {{ define "main" }}
-<article class="mx-4 md:mx-auto max-w-3xl">
+<article class="px-4 mx-auto max-w-3xl">
   <h1 itemprop="headline" class='my-12 md:text-6xl'>{{.Title}}<span class='block mt-4'
       style="font-size: 50%">{{.Params.Subtitle}}</span></h1>
   {{- block "figure" .}}{{end}}

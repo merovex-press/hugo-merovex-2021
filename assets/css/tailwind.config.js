@@ -9,6 +9,7 @@ module.exports = {
     "./content/**/*.md",
     "./content/**/*.html",
     "./content/**/*.js",
+    "./content/**/*.svg",
     "./themes/hugo-merovex-2021/layouts/**/*.html",
     "./themes/hugo-merovex-2021/layouts/**/*.svg",
     "./themes/hugo-merovex-2021/layouts/partials/**/*.html",
@@ -112,7 +113,7 @@ module.exports = {
           dark: '#314456',
         },
         yellow: colors.amber,
-        
+
 
         shade: { // Tailwind Stone 
           lighter: '#fafaf9', // 50
@@ -191,11 +192,6 @@ module.exports = {
           light: '#ad89c6',
           DEFAULT: '#744793',
           dark: '#513267'
-        },
-        green: {
-          light: '#8bd297',
-          DEFAULT: '#348843',
-          dark: '#245f2f'
         },
         red: {
           light: '#D2B9BA',

@@ -1,5 +1,10 @@
 {{ define "main" }}
+
 {{ partial "components/headline.html" . }}
 {{- block "figure" .}}{{end}}
-{{ .Content }}
+<article class="prosaic dark:prose-dark">
+  {{ .Content }}
+</article>
+{{ partial "components/pagebreak.html" . }}
+{{ partial "components/biography.html" . }}
 {{ end }}

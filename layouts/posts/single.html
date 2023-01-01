@@ -9,10 +9,10 @@
     {{ .Content }}
   </div>
 </article>
-{{partial "components/biography.html"}}
-<div class="print:hidden">
-  {{ partial "components/subscribe.html" . }}
-</div>
+{{ partial "components/pagebreak.html" . }}
+{{ partial "components/biography.html"}}
+{{ partial "components/subscribe.html" . }}
+
 <!-- {{ partial "asides/social-sharing.html" . }} -->
 <!-- {{ partial "related-posts.html" . }} -->
 <!-- {{ partial "components/citation.html" . }} -->

@@ -4,7 +4,7 @@
   <div class='mb-6 font-sans prosaic dark:prose-dark max-w-none'>{{.Summary | truncate 330 }}</div>
   <div class='text-center '>
     <a href="{{- .Permalink -}}" class="card-link"
-      aria-label="Post: {{ .Title }} on {{ dateFormat 'January 2, 2006' .Date }}"></a>
+      aria-label='Post: {{ .Title }} on {{ dateFormat "January 2, 2006" .Date }}'></a>
     <span class="button">Read More</span>
   </div>
 </article>

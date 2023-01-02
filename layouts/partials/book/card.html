@@ -1,4 +1,4 @@
-<article id='{{ .book.Title | urlize }}' class="lg:flex card">
+<article id='{{ .book.Title | urlize }}' class="lg:flex card bg-stone-700">
   {{- if .book.Resources.Match "*cover*" }}
   {{- with .book.Resources.GetMatch "*cover*" }}
   {{- $resizedmd := .Resize "330x500 webp" }}

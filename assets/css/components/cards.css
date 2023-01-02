@@ -1,0 +1,21 @@
+  /* CARD */
+  .card {
+    @apply relative w-full mx-auto mt-8 md:max-w-2xl bordered;
+  }
+
+  .card-link {
+    @apply absolute top-0 left-0 z-10 w-full h-full;
+    text-indent: -9999px;
+  }
+
+  .card-link:hover~.card-title {
+    @apply underline
+  }
+
+  .card h2 {
+    @apply mt-3 mb-6 font-sans text-4xl font-bold text-center;
+  }
+
+  .card .summary {
+    @apply mb-6 font-sans prose dark:prose-dark max-w-none md:prose-lg;
+  }

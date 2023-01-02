@@ -1,7 +1,6 @@
 
 
 const defaultTheme = require('tailwindcss/defaultTheme')
-
 const colors = require('tailwindcss/colors')
 
 module.exports = {
@@ -102,26 +101,13 @@ module.exports = {
           // '4': '#528F51',
           '4': '#427241',
         },
-        brand: {
-          DEFAULT: '#51528f',//'#5A5B9F',
-          light: '#9797BC',
-          dark: '#313156'
-        },
         accent: {
           light: '#DCE3E9',
           DEFAULT: '#51718F',
           dark: '#314456',
         },
         yellow: colors.amber,
-
-
-        shade: { // Tailwind Stone 
-          lighter: '#fafaf9', // 50
-          light: '#e7e5e4', // 200
-          DEFAULT: '#57534e', // 600 #374140
-          dark: '#292524', // 800
-          darker: '#1c1917', // 900
-        },
+        // gray: colors.zinc,
         'old-primary': {
           100: '#b9c6df',
           200: '#738ebf',
@@ -136,12 +122,20 @@ module.exports = {
           400: '#173162',
           500: '#051533',
         },
-        'old-secondary': {
-          100: '#f4dfa4',
-          200: '#efcf76',
-          300: '#eabf48',
-          400: '#b78c15',
-          500: '#5b460b',
+        'primary': {
+          DEFAULT: '#38249E',
+          light: '#C5BDF0', // 200
+          dark: '#180F42', // 800
+          '50': '#D4CDF4',
+          '100': '#C5BDF0',
+          '200': '#A89BE8',
+          '300': '#8B7AE1',
+          '400': '#6E59D9',
+          '500': '#482FCB',
+          '600': '#38249E',
+          '700': '#281A70',
+          '800': '#180F42',
+          '900': '#070515'
         },
         secondary: {
           50: '#FFEEBF',
@@ -150,21 +144,6 @@ module.exports = {
           300: '#997C2E',
           400: '#665014',
           500: '#332705',
-        },
-        // gray: colors.zinc,
-        gray: {
-          100: '#C9CBCF',
-          200: '#A3A6AB',
-          300: '#93969f',
-          400: '#60636c',
-          500: '#3a3b41',
-          600: '#2a2b31',
-          // '600': theme('colors.zinc.200')
-          // 100: theme('colors.zinc.100'),
-          // 200: theme('colors.zinc.300'),
-          // 300: theme('colors.zinc.500'),
-          // 400: theme('colors.zinc.700'),
-          // 500: theme('colors.zinc.900'),
         },
         // heatmap: colors.emerald,
         'black': '#18191b',

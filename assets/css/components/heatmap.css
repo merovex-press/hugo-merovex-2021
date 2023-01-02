@@ -1,0 +1,28 @@
+
+.calgraph-text {
+  @apply font-sans text-xs dark:fill-stone-200/50 fill-stone-800/50;
+}
+
+.calgraph-text-bold {
+  @apply font-sans text-xs dark:fill-stone-200 fill-stone-800;
+}
+
+.calgraph-1 {
+  @apply fill-stone-100/5 stroke-stone-600/25 dark:stroke-stone-600/50
+}
+
+.calgraph-2 {
+  @apply fill-emerald-200 stroke-stone-600/25 dark:stroke-stone-600/75 dark:fill-emerald-400/25
+}
+
+.calgraph-3 {
+  @apply fill-emerald-400 stroke-stone-600/25 dark:stroke-stone-600/75 dark:fill-emerald-400/50
+}
+
+.calgraph-4 {
+  @apply fill-emerald-700 stroke-stone-600/25 dark:stroke-stone-600/75 dark:fill-emerald-400/75
+}
+
+.calgraph-5 {
+  @apply fill-emerald-800 stroke-stone-600/25 dark:stroke-stone-600/75 dark:fill-emerald-400
+}

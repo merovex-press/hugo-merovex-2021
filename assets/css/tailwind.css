@@ -1,265 +1,139 @@
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import 'components/base';
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/heatmap';
+@import 'components/prose';
 
 @layer utilities {
   .article-background {
-    @apply bg-shade-lighter dark:bg-shade-dark;
+    @apply bg-stone-50 dark:bg-stone-800;
   }
+
   .underline-link {
-    @apply hover:border-b-4 border-brand text-shade-dark dark:text-shade-light dark:border-brand-light
+    @apply hover:border-b-4 border-primary text-stone-800 dark:text-stone-200 dark:border-primary-light
   }
+
   .bordered {
-    @apply border rounded-lg drop-shadow-lg print:drop-shadow-none border-opacity-10 print:border-0 border-shade-dark;
-  }
-  .shade-text {
-    @apply dark:text-shade-lighter text-shade-darker;
-  }
-  .prosaic { 
-    @apply mx-auto prose prose-stone lg:prose-lg print:text-shade-darker print:font-serif max-w-2xl;
-  }
-  .prosaic h2, .prosaic h3 {
-    @apply text-brand dark:text-brand-light
-  }
-  .prosaic a { 
-    @apply font-sans text-brand-dark dark:text-brand-light;
-  }
-  .prosaic p+p { 
-    text-indent: 1.5em;
-    @apply m-0
-  }
-  .prosaic table { 
-    @apply rounded-lg;
-  }
-  .prosaic code { 
-    @apply dark:text-brand-light text-brand 
-  }
-  .prosaic th { 
-    @apply dark:text-shade-dark text-shade-light font-sans bg-brand dark:bg-brand-light p-2
-  }
-  .prosaic h2, .prosaic h3 { 
-    @apply font-serif dark:text-brand-light;
-  }
-  .prosaic strong { 
-    @apply font-sans dark:text-warning-light;
-  }
-  .prosaic table td, .prosaic table th { 
-    @apply text-sm px-4
-  }
-}
-
-@layer base {
-  html {
-    scroll-behavior: smooth;
-  }
-  body {
-    @apply subpixel-antialiased font-medium bg-shade-lighter dark:bg-shade-darker shade-text;
-  }
-  h1, .h1 {
-    @apply mt-4 mb-8 text-3xl font-bold text-center font-display md:text-4xl;
-  }
-  .h2 {
-    @apply mt-4 mb-8 text-2xl font-bold text-center md:text-3xl text-brand dark:text-brand-light;
-  }
-  .h3 { 
-    @apply font-sans text-2xl font-bold text-center lg:text-2xl;
-  }
-  blockquote p {
-    @apply mt-4
-  }
-  blockquote p+p {
-    text-indent: 1em;
-  }
-  .quote-mark {
-    font-size: 10rem;
-    right: 100%;
-    @apply absolute top-0 leading-none text-opacity-40 text-brand font-display;
-  }
-  .link { 
-    @apply text-brand-dark hover:underline dark:text-brand-light;
-  }
-  .toolkit input { 
-    @apply px-2 py-1 font-medium text-right border rounded-lg dark:bg-shade-darker dark:border-shade-light w-44 md:text-xl 
-  }
-  .toolkit label { 
-    @apply flex-1 block font-medium md:inline-block md:text-xl;
-  }
-  .striped { 
-    @apply even:bg-shade-light dark:even:bg-shade-darker;
-  }
-  .dtg {
-    @apply font-sans text-center text-opacity-50
+    @apply border rounded-lg drop-shadow-lg print:drop-shadow-none border-opacity-10 print:border-0 border-stone-800;
   }
 
-  header .logo {
-    @apply w-5 h-5 lg:h-8 lg:w-8 opacity-30;
-    fill: currentColor;
-  }
-  header .site-link {
-    @apply px-2 py-1 my-2 underline-link sm:inline lg:mr-3 ;
-  }
-  footer .site-link {
-    @apply underline-link;
-  }
-  .cta-callout {
-    @apply max-w-lg p-8 mx-auto text-center transform border-2 -rotate-1 bordered border-brand;
-  }
 }
+
 @layer components {
-  /* BUTTON */
-  .button { 
-    @apply p-2 m-2 font-sans text-sm font-semibold uppercase border-opacity-50 rounded bordered text-brand border-brand hover:bg-brand hover:text-shade-lighter dark:text-brand-light dark:border-brand-light;
-    text-decoration: none !important;
-  }
-  .btn {
-    @apply inline-block px-5 py-2.5 font-medium text-xs leading-tight uppercase rounded shadow-md transition duration-150 ease-in-out no-underline;
-    @apply focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg hover:ring-2;
-  }
-    .btn-primary {
-    @apply text-white bg-primary-300 dark:text-black dark:bg-blue-300
-    focus:bg-white focus:text-primary-300 hover:bg-white hover:text-primary-300 hover:ring-primary-300;
-
-    &.outline {
-      @apply text-primary-300 bg-transparent shadow-none outline-1 hover:text-white hover:bg-primary-300;
-    }
-  }
-    .btn-secondary {
-    @apply text-black bg-secondary-100 hover:ring-secondary-100 dark:bg-secondary-100;
-    @apply hover:text-white focus:text-gray-500 hover:bg-secondary-200 focus:bg-secondary-200;
-
-    &.outline {
-      @apply text-secondary-200 bg-transparent shadow-none outline-1;
-      @apply hover:text-gray-500 focus:text-gray-500 hover:bg-secondary-200 focus:bg-secondary-300;
-    }
-  }
-    .btn-white {
-    @apply text-gray-400 bg-white dark:bg-gray-300 dark:text-black border;
-    @apply border-gray-300 hover:bg-gray-50 hover:text-gray-400 focus:ring-blue-500;
-
-    &.primary {
-      @apply text-blue-600;
-    }
-
-    &.secondary {
-      @apply text-green-600;
-    }
-
-    &.tertiary {
-      @apply text-gray-600;
-    }
-
-    &.gray {
-      @apply text-gray-400;
-    }
-  }
-  .button .info { 
-    @apply shade-text border-shade-dark hover:bg-shade-dark dark:border-shade-light dark:hover:bg-shade-light;
-  }
-  .button.success { 
-    @apply text-success border-success hover:bg-success;
-  }
-  .button.brand { 
-    @apply bg-brand border-brand hover:bg-brand text-shade-lighter;
-  }
-  .button.warning { 
-    @apply text-warning border-warning hover:bg-warning;
-  }
-  .button.danger { 
-    @apply text-danger border-danger hover:bg-danger;
-  }
-  /* CARD */
-  .card {
-    @apply relative w-full mx-auto mt-8 md:max-w-2xl bordered article-background;
-  }
-  .card-link {
-    @apply absolute top-0 left-0 z-10 w-full h-full;
-    text-indent: -9999px;
-  }
-  .card-link:hover ~ .card-title { @apply underline }
-  .card h2 {
-    @apply mt-3 mb-6 font-sans text-4xl font-bold text-center;
-  }
-  .card .summary {
-    @apply mb-6 font-sans prose dark:prose-dark max-w-none md:prose-lg;
-  }
   #nav-menu {
     @apply w-full mx-auto mb-12 text-xl text-center print:hidden;
   }
+
   #nav-menu a {
-    @apply inline-block w-1/3 py-2 text-center uppercase align-middle rounded md:w-1/6 hover:shadow-md hover:text-shade-lighter hover:bg-brand;
+    @apply inline-block w-1/3 py-2 text-center uppercase align-middle rounded md:w-1/6 hover:shadow-md hover:text-stone-50 hover:bg-primary;
   }
+
   #nav-menu a .nav-icon {
     @apply hidden w-5 h-5 mb-1 opacity-50 md:inline-block;
   }
+
   /* PROSE */
-  .prosaic-sans { 
+  .prosaic-sans {
     @apply font-sans prosaic;
   }
-  .prosaic-serif { 
+
+  .prosaic-serif {
     @apply font-sans prosaic;
   }
-  #site-footer { 
-    @apply bg-shade-lighter dark:bg-shade-dark;
+
+  #site-footer {
+    @apply bg-stone-50 dark:bg-stone-800;
   }
-  #site-footer span, #site-footer a {
-    @apply inline-block px-3 py-2 text-base text-shade dark:text-shade-lighter lining-nums;
+
+  #site-footer span,
+  #site-footer a {
+    @apply inline-block px-3 py-2 text-base text-stone-600 dark:text-stone-50 lining-nums;
   }
+
   #site-footer a {
     @apply hover:opacity-100 opacity-70
   }
+
   #site-footer ul {
     @apply flex items-center justify-center flex-1 md:flex-none;
   }
+
   #site-footer nav {
     @apply flex content-center justify-between w-full pt-2 md:w-1/2 md:justify-end;
   }
+
   h1 .span {
     @apply border;
   }
+
   .logo-footer {
-    @apply fill-brand/50 hover:fill-brand dark:text-brand-dark/50 dark:hover:fill-brand-dark w-20 mx-auto
+    @apply fill-primary/50 hover:fill-primary dark:text-primary-dark/50 dark:hover:fill-primary-dark w-20 mx-auto
   }
+
   svg.caligraph {
     @apply bg-heatmap-4;
   }
-  .calgraph-text {
-    @apply font-sans text-xs dark:fill-shade-light/50 fill-shade-dark/50;
+
+
+  .fill-zebra {
+    background: repeating-linear-gradient(-45deg,
+        rgba(64, 87, 178, 0.9),
+        rgba(64, 87, 178, 0.9) 10px,
+        rgba(64, 87, 178, 1) 10px,
+        rgba(64, 87, 178, 1) 20px);
   }
-  .calgraph-text-bold {
-    @apply font-sans text-xs dark:fill-shade-light fill-shade-dark;
-  }
-  .calgraph-1 { @apply fill-shade-lighter/5 stroke-shade/25 dark:stroke-shade/50 }
-  .calgraph-2 { @apply fill-heatmap-1 stroke-shade/25 dark:stroke-shade/75 dark:fill-heatmap-dark/25 }
-  .calgraph-3 { @apply fill-heatmap-2 stroke-shade/25 dark:stroke-shade/75 dark:fill-heatmap-dark/50 }
-  .calgraph-4 { @apply fill-heatmap-3 stroke-shade/25 dark:stroke-shade/75 dark:fill-heatmap-dark/75 }
-  .calgraph-5 { @apply fill-heatmap-4 stroke-shade/25 dark:stroke-shade/75 dark:fill-heatmap-dark }
-  .fill-zebra { 
-    background: repeating-linear-gradient(
-      -45deg,
-      rgba(64, 87, 178, 0.9),
-      rgba(64, 87, 178, 0.9) 10px,
-      rgba(64, 87, 178, 1) 10px,
-      rgba(64, 87, 178, 1) 20px
-    );
-  }
+
   .text-hint {
-    @apply font-sans text-sm dark:text-shade-lighter/50 text-shade-darker/50;
+    @apply font-sans text-sm dark:text-stone-50/50 text-stone-900/50;
   }
-     
-  .fill-twitter     { @apply fill-[#4c9ad6] hover:bg-[#4069a2] hover:fill-white; }
-  .fill-facebook    { @apply fill-[#2f4779] hover:bg-[#2f4779] hover:fill-white; }
-  .fill-linkedin    { @apply fill-[#4069a2] hover:fill-white hover:bg-[#4069a2]; }
-  .fill-whatsapp    { @apply fill-[#25D366] hover:fill-white hover:bg-[#25d325]; }
-  .fill-pinterest   { @apply fill-[#AD0000] hover:fill-white hover:bg-[#ad0000]; }
-  .fill-reddit      { @apply fill-[#e54e00] hover:fill-white hover:bg-[#e54e00]; }
-  .fill-email       { @apply fill-brand hover:fill-white hover:bg-brand; }
-  .hint { @apply text-sm font-sans block text-shade/50}
-  .js-tabs__title { @apply block px-6 py-4 text-shade dark:text-shade-light dark:hover:text-brand-light hover:text-brand focus:outline-none border-b-2 border-shade-lighter dark:border-shade-darker }
-  .js-tabs__title-active { @apply block px-6 py-4 dark:text-brand-light text-brand border-brand}
+
+  .fill-twitter {
+    @apply fill-[#4c9ad6] hover:bg-[#4069a2] hover:fill-white;
+  }
+
+  .fill-facebook {
+    @apply fill-[#2f4779] hover:bg-[#2f4779] hover:fill-white;
+  }
+
+  .fill-linkedin {
+    @apply fill-[#4069a2] hover:fill-white hover:bg-[#4069a2];
+  }
+
+  .fill-whatsapp {
+    @apply fill-[#25D366] hover:fill-white hover:bg-[#25d325];
+  }
+
+  .fill-pinterest {
+    @apply fill-[#AD0000] hover:fill-white hover:bg-[#ad0000];
+  }
+
+  .fill-reddit {
+    @apply fill-[#e54e00] hover:fill-white hover:bg-[#e54e00];
+  }
+
+  .fill-email {
+    @apply fill-primary hover:fill-white hover:bg-primary;
+  }
+
+  .hint {
+    @apply text-sm font-sans block text-stone-600/50
+  }
+
+  .js-tabs__title {
+    @apply block px-6 py-4 text-stone-600 dark:text-stone-200 dark:hover:text-primary-light hover:text-primary focus:outline-none border-b-2 border-stone-50 dark:border-stone-900
+  }
+
+  .js-tabs__title-active {
+    @apply block px-6 py-4 dark:text-primary-light text-primary border-primary
+  }
+
   .tooltip {
     @apply absolute w-48 px-2 py-1 font-sans text-sm text-center card;
   }
+
   .has-tooltip:hover .tooltip {
     @apply z-[1000] visible opacity-100;
   }

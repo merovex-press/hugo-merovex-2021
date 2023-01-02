@@ -4,7 +4,7 @@
   }
 
   body {
-    @apply font-display subpixel-antialiased bg-shade-light text-shade-dark dark: bg-shade-darker dark:text-shade-light;
+    @apply font-display subpixel-antialiased bg-gray-200 text-gray-800 dark: bg-gray-900 dark:text-gray-200;
   }
 
   h1,

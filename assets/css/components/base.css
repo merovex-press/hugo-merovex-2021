@@ -1,0 +1,70 @@
+body {
+@apply subpixel-antialiased font-medium bg-stone-50 dark:bg-stone-800 text-stone-900 dark:text-stone-300;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+.h1 {
+  @apply mt-4 mb-8 text-3xl font-bold text-center font-display md:text-4xl;
+}
+
+.h2 {
+  @apply mt-4 mb-8 text-2xl font-bold text-center md:text-3xl text-primary dark:text-primary-light;
+}
+
+.h3 {
+  @apply font-sans text-2xl font-bold text-center lg:text-2xl;
+}
+
+blockquote p {
+  @apply mt-4
+}
+
+blockquote p+p {
+  text-indent: 1em;
+}
+
+.quote-mark {
+  font-size: 10rem;
+  right: 100%;
+  @apply absolute top-0 leading-none text-opacity-40 text-primary font-display;
+}
+
+.link {
+  @apply text-primary-dark hover:underline dark:text-primary-light;
+}
+
+.toolkit input {
+  @apply px-2 py-1 font-medium text-right border rounded-lg dark:bg-stone-900 dark:border-stone-200 w-44 md:text-xl
+}
+
+.toolkit label {
+  @apply flex-1 block font-medium md:inline-block md:text-xl;
+}
+
+.striped {
+  @apply even:bg-stone-200 dark:even:bg-stone-900;
+}
+
+.dtg {
+  @apply font-sans text-center text-opacity-50
+}
+
+header .logo {
+  @apply w-5 h-5 lg:h-8 lg:w-8 opacity-30;
+  fill: currentColor;
+}
+
+header .site-link {
+  @apply px-2 py-1 my-2 underline-link sm:inline lg:mr-3;
+}
+
+footer .site-link {
+  @apply underline-link;
+}
+
+.cta-callout {
+  @apply max-w-lg p-8 mx-auto text-center transform border-2 -rotate-1 bordered border-primary;
+}

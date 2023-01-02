@@ -1,0 +1,43 @@
+  .prosaic {
+    @apply mx-auto prose prose-stone lg:prose-lg print:text-stone-900 print:font-serif max-w-2xl;
+  }
+
+  .prosaic h2,
+  .prosaic h3 {
+    @apply text-primary dark:text-primary-light
+  }
+
+  .prosaic a {
+    @apply font-sans text-primary-dark dark:text-primary-light;
+  }
+
+  .prosaic p+p {
+    text-indent: 1.5em;
+    @apply m-0
+  }
+
+  .prosaic table {
+    @apply rounded-lg;
+  }
+
+  .prosaic code {
+    @apply dark:text-primary-light text-primary
+  }
+
+  .prosaic th {
+    @apply dark:text-stone-800 text-stone-200 font-sans bg-primary dark:bg-primary-light p-2
+  }
+
+  .prosaic h2,
+  .prosaic h3 {
+    @apply font-serif dark:text-primary-light;
+  }
+
+  .prosaic strong {
+    @apply font-sans dark:text-warning-light;
+  }
+
+  .prosaic table td,
+  .prosaic table th {
+    @apply text-sm px-4
+  }

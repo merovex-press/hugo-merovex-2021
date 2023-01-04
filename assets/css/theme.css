@@ -3620,16 +3620,16 @@ h1 .span {
   z-index: 50;
 }
 
+.m-1 {
+  margin: 0.25rem;
+}
+
 .m-4 {
   margin: 1rem;
 }
 
 .m-2 {
   margin: 0.5rem;
-}
-
-.m-1 {
-  margin: 0.25rem;
 }
 
 .mx-auto {
@@ -3640,6 +3640,11 @@ h1 .span {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .my-12 {
@@ -3675,11 +3680,6 @@ h1 .span {
 .my-1 {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
-}
-
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
 .mb-1 {
@@ -4042,6 +4042,10 @@ h1 .span {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -4270,6 +4274,18 @@ h1 .span {
 .border-accent-dark {
   --tw-border-opacity: 1;
   border-color: rgb(49 68 86 / var(--tw-border-opacity));
+}
+
+.border-red-500\/\[0\.50\] {
+  border-color: rgb(239 68 68 / 0.50);
+}
+
+.border-stone-500\/\[0\.50\] {
+  border-color: rgb(120 113 108 / 0.50);
+}
+
+.border-stone-500\/\[0\.30\] {
+  border-color: rgb(120 113 108 / 0.30);
 }
 
 .border-opacity-25 {
@@ -7089,6 +7105,11 @@ footer .site-link:hover {
   .dark\:bg-accent-dark {
     --tw-bg-opacity: 1;
     background-color: rgb(49 68 86 / var(--tw-bg-opacity));
+  }
+
+  .dark\:bg-stone-800 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(41 37 36 / var(--tw-bg-opacity));
   }
 
   .dark\:bg-gray-500 {

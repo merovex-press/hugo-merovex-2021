@@ -1,5 +1,26 @@
-<section id='hero' class='z-0 md:block text-white min-h-[300px]' {{- $img
-  :=resources.Get "images/sky-purple-blue-galaxy-atmosphere-astronomical-object-1614937-pxhere.com.webp" -}}
+{{- $img
+:=resources.Get "images/sky-purple-blue-galaxy-atmosphere-astronomical-object-1614937-pxhere.com.webp" -}}
+<section id='hero-mobile' class='z-0 lg:hidden' style="background: url({{$img.Permalink}}); background-size: cover;">
+  <div class="max-w-screen p-4 mx-auto bg-primary-800/[.80]">
+    <div class='w-full flex items-center justify-center'>
+      {{ partial "book/cover.html" . }}
+    </div>
+    <div class='w-full max-w-lg mx-auto flex flex-col text-white items-center'>
+      <div style='text-shadow: 1px 1px 1px #000'>
+        <h1>{{.Title}}</h1>
+      </div>
+      <div class='flex-1' style='text-shadow: 1px 1px 1px #000'>
+        {{.Summary}}
+      </div>
+      <aside class='flex item-center justify-center mt-8'>
+        {{- if .Params.price }}
+        <span class="p-2 m-2 font-sans text-4xl font-bold text-red-400">{{.Params.price}}</span>
+        {{- end }}
+        <div>{{ partial "components/cta-links.html" . }}</div>
+      </aside>
+    </div>
+</section>
+<section id='hero' class='z-0 hidden lg:block text-white min-h-[300px]'
   style="background: url({{$img.Permalink}}); background-size: cover;">
   <div class='flex bg-primary-800/[0.80]'>
     <div class='flex-1 flex items-center justify-center my-8'>

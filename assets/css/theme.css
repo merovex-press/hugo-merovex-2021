@@ -3854,6 +3854,10 @@ h1 .span {
   height: 2rem;
 }
 
+.h-\[480px\] {
+  height: 480px;
+}
+
 .max-h-96 {
   max-height: 24rem;
 }
@@ -3934,6 +3938,14 @@ h1 .span {
   width: 2rem;
 }
 
+.w-\[320px\] {
+  width: 320px;
+}
+
+.w-3\/4 {
+  width: 75%;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -3964,6 +3976,10 @@ h1 .span {
 
 .max-w-lg {
   max-width: 32rem;
+}
+
+.max-w-screen-lg {
+  max-width: 1024px;
 }
 
 .flex-1 {
@@ -4116,6 +4132,18 @@ h1 .span {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2rem * var(--tw-space-x-reverse));
+  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -4351,6 +4379,18 @@ h1 .span {
 .bg-gray-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
+.bg-primary-400\/\[\.85\] {
+  background-color: rgb(110 89 217 / .85);
+}
+
+.bg-primary-400\/\[\.80\] {
+  background-color: rgb(110 89 217 / .80);
+}
+
+.bg-primary-800\/\[\.80\] {
+  background-color: rgb(24 15 66 / .80);
 }
 
 .bg-opacity-30 {
@@ -7847,6 +7887,11 @@ footer .site-link:hover {
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 

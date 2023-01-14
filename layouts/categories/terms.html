@@ -5,7 +5,7 @@
       <h1 class="text-3xl md:text-5xl font-display">News & Random Thoughts</h1>
       {{ .Content }}
     </div>
-    <div class="grid grid-cols-1 gap-4 p-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
+    <div class="p-10 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
       {{ range .Data.Terms.ByCount }}
       <div class="">
         <div class="max-w-sm overflow-hidden bg-white rounded shadow-lg bone-white dark:bg-gray-600">

@@ -6,7 +6,7 @@
       <h1 class="text-3xl md:text-5xl font-display">{{ .Title | humanize | title}}</h1>
       {{ .Content }}
     </div>
-    <div class="grid grid-cols-1 gap-5 p-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
+    <div class="p-10 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
       {{ range .Paginator.Pages }}
       <div class="">
         {{ partial "components/post-card.html" . }}

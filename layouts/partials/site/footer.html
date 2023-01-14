@@ -1,4 +1,4 @@
-<div class="text-right px-4">
+<div class="px-4 text-right">
   <a href="/dashboard" class="inline-block text-dove-gray-50 hover:text-dove-gray-700 dark:text-dove-gray-900">
     <svg xmlns="http://www.w3.org/2000/svg" class='inline-block' height="16" viewBox="240 -247 502 481" width="16">
       <path
@@ -9,11 +9,11 @@
   </a>
 </div>
 <div class="bg-dove-gray-100 dark:bg-dove-gray-800">
-  <div class="md:px-12 px-4 py-2 mx-auto flex items-center sm:flex-row flex-col justify-between">
-    <div class='flex items-center sm:flex-row flex-col flex-1'>
-      <a class="flex font-display font-medium items-center md:justify-start justify-center text-dove-gray-500">
+  <div class="flex flex-col items-center justify-between px-4 py-2 mx-auto md:px-12 sm:flex-row">
+    <div class='flex flex-col items-center flex-1 sm:flex-row'>
+      <a class="flex items-center justify-center font-medium font-display md:justify-start text-dove-gray-500">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450.000000 450.000000"
-          preserveAspectRatio="xMidYMid meet" class='fill-dove-gray-300 h-6 w-6'>
+          preserveAspectRatio="xMidYMid meet" class='w-6 h-6 fill-dove-gray-300'>
           <text x="350" y="80" font-size="40">®</text>
           <g transform="translate(0.000000,450.000000) scale(0.100000,-0.100000)" stroke="none">
             <path
@@ -24,15 +24,15 @@
         </svg>
         <span class="ml-3 text-xl">Merovex<sup style="font-size:40%">®</sup></span>
       </a>
-      <div class="text-sm text-dove-gray-500 sm:ml-6 my-1">© {{ now.Format "2006"}} Ben Wilson &middot; Rights Reserved
+      <div class="my-1 text-sm text-dove-gray-500 sm:ml-6">© {{ now.Format "2006"}} Ben Wilson &middot; Rights Reserved
         <!-- <% if config.social&.twitter %>
-          <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-dove-gray-600 hidden ml-1"
+          <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="hidden ml-1 text-dove-gray-600"
             target="_blank">@knyttneve</a>
           <% end %> -->
       </div>
     </div>
 
-    <nav class="justify-end flex-1 flex space-x-3 text-dove-gray-500">
+    <nav class="flex justify-end flex-1 space-x-3 text-dove-gray-500">
       <span> Hello from Virginia </span>
       <span>&middot;</span>
       <a class="hover:underline" href="/tools/">Tools</a>
@@ -43,7 +43,7 @@
     </nav>
 
     <!-- <% if config.social %>
-      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <span class="inline-flex justify-center mt-4 sm:ml-auto sm:mt-0 sm:justify-start">
         <a class="text-dove-gray-300">
           <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
             viewBox="0 0 24 24">

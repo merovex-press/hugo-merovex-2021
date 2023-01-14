@@ -12,9 +12,9 @@
     <a href="{{.Permalink}}">{{.Title}}</a>
   </h2>
   <div
-    class="relative w-full flex gap-6 snap-x snap-mandatory overflow-x-auto p-14 shadow-inner bg-dove-gray-200 dark:bg-dove-gray-800">
+    class="relative flex w-full overflow-x-auto shadow-inner gap-6 snap-x snap-mandatory p-14 bg-dove-gray-200 dark:bg-dove-gray-800">
     <div class="snap-center shrink-0">
-      <div class="shrink-0 w-4 sm:w-48"></div>
+      <div class="w-4 shrink-0 sm:w-48"></div>
     </div>
     {{ range .Pages.ByWeight }}
     <div class="snap-center shrink-0 first:pl-8 last:pr-8">
@@ -25,7 +25,7 @@
     </div>
     {{ end }}
     <div class="snap-center shrink-0">
-      <div class="shrink-0 w-4 sm:w-48"></div>
+      <div class="w-4 shrink-0 sm:w-48"></div>
     </div>
   </div>
 </section>

@@ -1,5 +1,5 @@
 {{- $img := resources.Get "images/ben-wilson-2021-square-160.webp" -}}
-<div class="m-4 flex-1" id='top'>
+<div class="flex-1 m-4" id='top'>
   <a href="{{if .Parent }}{{.Parent.Permalink}}{{else}}/{{end}}">
     <img src="{{$img.Permalink}}" alt='author headshot' height="50" width="50" class='mx-auto mb-2 rounded-full'>
     <p class='text-xl text-center uppercase text-dove-gray-600 dark:text-dove-gray-300' style='letter-spacing: 3px'>

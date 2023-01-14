@@ -18,10 +18,10 @@
   <source media="(min-width: 640px)" srcset="{{ $resizedsm.RelPermalink }} 1x,
                 {{ $resizedmd.RelPermalink }} 2x,
                 {{ $resizedlg.RelPermalink }} 3x">
-  <img alt='book-cover' class="h-full w-full" style="object-fit:cover" src='{{ $resizedmd.RelPermalink }}'>
+  <img alt='book-cover' class="w-full h-full" style="object-fit:cover" src='{{ $resizedmd.RelPermalink }}'>
   {{ end }}
   {{ else}}
-  <img alt='book-cover' class="h-full w-full" style="object-fit:cover"
+  <img alt='book-cover' class="w-full h-full" style="object-fit:cover"
     src='https://via.placeholder.com/900x600?text=Book+Cover'>
   {{- end }}
 </picture>

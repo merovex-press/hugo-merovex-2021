@@ -3,7 +3,7 @@
   {{- with .book.Resources.GetMatch "*cover*" }}
   {{- $resizedmd := .Resize "330x500 webp" }}
   <div
-    class="flex-none h-48 overflow-hidden text-center bg-cover border border-r-0 border-opacity-25 rounded-l-lg rounded-r-none lg:h-auto lg:w-48"
+    class="flex-none h-48 overflow-hidden text-center bg-cover border border-r-0 rounded-l-lg rounded-r-none border-opacity-25 lg:h-auto lg:w-48"
     style="background-image: url('{{$resizedmd.RelPermalink}}')" title="River">
   </div>
   {{end}}

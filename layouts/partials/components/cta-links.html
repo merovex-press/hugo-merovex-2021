@@ -2,7 +2,7 @@
 {{- $icons := .Site.Params.icons }}
 {{- if .Params.cta }}
 {{- range $key, $val := .Params.cta}}
-<a class='btn btn-secondary' href="{{ $val }}">
+<a class='btn btn-cta' href="{{ $val }}">
   <span class='opacity-[0.50] tracking-tighter block'>Available on</span>
   <i class="{{$icons.Get $key}}" aria-hidden="true"></i> {{title $key }}
 </a>

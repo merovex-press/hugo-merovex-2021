@@ -3,6 +3,7 @@
 @import "tailwindcss/utilities";
 @import 'components/base';
 @import 'components/buttons';
+@import 'components/citation';
 @import 'components/cards';
 @import 'components/heatmap';
 @import 'components/prose';

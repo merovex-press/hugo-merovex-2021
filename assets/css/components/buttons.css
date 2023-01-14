@@ -1,38 +1,42 @@
   /* BUTTON */
   .button {
-    @apply p-2 m-2 font-sans text-sm font-semibold uppercase border-opacity-50 rounded bordered text-primary border-primary hover:bg-primary hover:text-stone-50 dark:text-primary-light dark:border-primary-light;
+    @apply bg-rose-200;
     text-decoration: none !important;
   }
 
   .btn {
-    @apply inline-block px-5 py-2.5 font-medium text-xs leading-tight uppercase rounded shadow-md transition duration-150 ease-in-out no-underline;
+    @apply inline-block px-4 py-2 font-medium text-xs leading-tight uppercase rounded shadow-md transition duration-150 ease-in-out no-underline;
     @apply focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg hover:ring-2;
   }
 
   .btn-primary {
     @apply text-white bg-primary-600 dark:text-black dark:bg-primary-400 hover:dark:bg-primary-500 hover:dark:text-primary-50 focus:bg-white focus:text-primary-300 hover:bg-primary-300 hover:text-primary-900 hover:ring-primary-300;
-
-    &.outline {
-      @apply text-primary-600 bg-transparent shadow-none outline-1 hover:text-white hover:bg-primary-300;
-    }
+  }
+  .btn-primary-outline {
+    @apply text-primary-600 dark:text-primary-300 bg-transparent border border-primary-600 dark:border-primary-300 hover:bg-primary-600 hover:text-white focus:bg-primary-600 focus:text-white;
   }
 
   .btn-secondary {
-    @apply text-black bg-secondary-100 hover:ring-secondary-100 dark:bg-secondary-100;
-    @apply hover:text-white focus:text-stone-500 hover:bg-secondary-200 focus:bg-secondary-200;
+    @apply text-black bg-secondary-500 hover:ring-secondary-100 dark:bg-secondary-300;
+    @apply hover:text-white focus:text-dove-gray-500 hover:bg-secondary-800 focus:bg-secondary-200;
 
     &.outline {
       @apply text-secondary-200 bg-transparent shadow-none outline-1;
-      @apply hover:text-stone-500 focus:text-stone-500 hover:bg-secondary-200 focus:bg-secondary-300;
+      @apply hover:text-dove-gray-500 focus:text-dove-gray-500 hover:bg-secondary-200 focus:bg-secondary-300;
     }
   }
 
+  .btn-cta {
+    @apply text-black bg-secondary-300 shadow-lg;
+    @apply hover:text-white focus:text-dove-gray-500 hover:bg-secondary-800 focus:bg-secondary-200 focus:ring-rose-50;
+  }
+
   .btn-white {
-    @apply text-stone-400 bg-white dark:bg-stone-300 dark:text-black border;
-    @apply border-stone-300 hover:bg-stone-50 hover:text-stone-400 focus:ring-blue-500;
+    @apply text-dove-gray-400 bg-white dark:bg-dove-gray-300 dark:text-black border;
+    @apply border-dove-gray-300 hover:bg-dove-gray-50 hover:text-dove-gray-400 focus:ring-dove-gray-50;
 
     &.primary {
-      @apply text-blue-600;
+      @apply text-primary-600;
     }
 
     &.secondary {
@@ -40,16 +44,16 @@
     }
 
     &.tertiary {
-      @apply text-stone-600;
+      @apply text-dove-gray-600;
     }
 
-    &.stone {
-      @apply text-stone-400;
+    &.dove-gray {
+      @apply text-dove-gray-400;
     }
   }
 
   .button .info {
-    @apply border-stone-800 hover:bg-stone-800 dark:border-stone-200 dark:hover:bg-stone-200;
+    @apply border-dove-gray-800 hover:bg-dove-gray-800 dark:border-dove-gray-200 dark:hover:bg-dove-gray-200;
   }
 
   .button.success {
@@ -57,7 +61,7 @@
   }
 
   .button.brand {
-    @apply bg-primary border-primary hover:bg-primary text-stone-50;
+    @apply bg-primary border-primary hover:bg-primary text-dove-gray-50;
   }
 
   .button.warning {

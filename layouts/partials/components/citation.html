@@ -1,5 +1,4 @@
-<aside
-  class="mt-12 text-center text-gray-300 dark:text-gray-700 print:text-gray-900 hover:text-gray-800 dark:hover:text-gray-50">
+<aside class="citation">
   Copyright © {{ dateFormat "2006" .Date }}, Benjamin C. Wilson. All rights reserved.
   <br>Originally published at
   {{ .Site.BaseURL| replaceRE "/$" "" }}{{with .Params.Aliases}}{{ index . 0 }}{{end}}

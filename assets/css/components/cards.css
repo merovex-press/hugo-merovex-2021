@@ -1,6 +1,9 @@
   /* CARD */
   .card {
-    @apply relative w-full mx-auto mt-8 md:max-w-2xl bordered;
+    @apply relative w-full p-8 mx-auto mt-8 md:max-w-2xl bordered shadow-xl dark:bg-dove-gray-800;
+  }
+  .card .summary {
+    @apply mb-6 font-sans prosaic dark:prose-dark max-w-none;
   }
 
   .card-link {
@@ -8,12 +11,8 @@
     text-indent: -9999px;
   }
 
-  .card-link:hover~.card-title {
-    @apply underline
-  }
-
   .card h2 {
-    @apply mt-3 mb-6 font-sans text-4xl font-bold text-center;
+    @apply mt-3 mb-6 font-sans text-3xl font-bold text-center;
   }
 
   .card .summary {

@@ -5115,11 +5115,6 @@ h1 .span {
   background-color: rgb(187 247 208 / var(--tw-bg-opacity));
 }
 
-.bg-dove-gray-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 248 248 / var(--tw-bg-opacity));
-}
-
 .bg-gray-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
@@ -7914,7 +7909,7 @@ footer .site-link:hover {
 
 @media (prefers-color-scheme: dark) {
   .calgraph-1 {
-    fill: #4f5355;
+    fill: rgb(63 67 68 / 0.5);
     stroke: rgb(95 100 102 / 0.5);
   }
 }
@@ -7962,7 +7957,7 @@ footer .site-link:hover {
 
 @media (prefers-color-scheme: dark) {
   .calgraph-5 {
-    fill: #10b981;
+    fill: #34d399;
     stroke: rgb(95 100 102 / 0.75);
   }
 }
@@ -8802,11 +8797,6 @@ footer .site-link:hover {
     background-color: rgb(21 128 61 / var(--tw-bg-opacity));
   }
 
-  .dark\:bg-dove-gray-800 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(63 67 68 / var(--tw-bg-opacity));
-  }
-
   .dark\:bg-warning-dark {
     --tw-bg-opacity: 1;
     background-color: rgb(153 108 40 / var(--tw-bg-opacity));
@@ -8820,6 +8810,11 @@ footer .site-link:hover {
   .dark\:bg-accent-dark {
     --tw-bg-opacity: 1;
     background-color: rgb(49 68 86 / var(--tw-bg-opacity));
+  }
+
+  .dark\:bg-dove-gray-800 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(63 67 68 / var(--tw-bg-opacity));
   }
 
   .dark\:bg-gray-600 {

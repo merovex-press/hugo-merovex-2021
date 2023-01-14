@@ -1,5 +1,5 @@
 body {
-@apply subpixel-antialiased font-medium bg-stone-50 dark:bg-stone-800 text-stone-900 dark:text-stone-300;
+@apply subpixel-antialiased font-medium bg-dove-gray-50 dark:bg-dove-gray-900 text-dove-gray-900 dark:text-dove-gray-300;
 }
 html {
   scroll-behavior: smooth;
@@ -37,7 +37,7 @@ blockquote p+p {
 }
 
 .toolkit input {
-  @apply px-2 py-1 font-medium text-right border rounded-lg dark:bg-stone-900 dark:border-stone-200 w-44 md:text-xl
+  @apply px-2 py-1 font-medium text-right border rounded-lg dark:bg-dove-gray-900 dark:border-dove-gray-200 w-44 md:text-xl
 }
 
 .toolkit label {
@@ -45,7 +45,7 @@ blockquote p+p {
 }
 
 .striped {
-  @apply even:bg-stone-200 dark:even:bg-stone-900;
+  @apply even:bg-dove-gray-200 dark:even:bg-dove-gray-900;
 }
 
 .dtg {

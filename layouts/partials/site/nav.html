@@ -1,12 +1,12 @@
-<nav id="xnav-menu" class="space-x-4 flex items-center justify-center">
-  <div class="flex-1 text-right">
+<nav id="xnav-menu" class="space-x-4 flex items-center justify-center mt-11">
+  <div class="flex-1 text-right print:hidden">
     <a href="/books">
       Books
       <i class="bi-book-half"></i>
     </a>
   </div>
   <div class="flex-1">{{ partial "author-image-round.html" . }}</div>
-  <div class="flex-1">
+  <div class="flex-1 print:hidden">
     <a rel="prefetch" href="/posts/">
       <i class="bi-envelope-paper"></i> Updates
     </a>

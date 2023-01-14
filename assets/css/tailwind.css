@@ -2,6 +2,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 @import 'components/base';
+@import 'components/popover';
 @import 'components/buttons';
 @import 'components/citation';
 @import 'components/cards';

@@ -5,9 +5,8 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   content: [
-    "./content/**/*.{md,html,js}",
+    "./content/**/*.{md,html,js,svg}",
     "./sveltekit-author-dashboard/src/**/*.{js,html,svelte}",
-    "./content/**/*.svg",
     "./themes/hugo-merovex-2021/layouts/**/*.html",
     "./themes/hugo-merovex-2021/layouts/**/*.svg",
     "./themes/hugo-merovex-2021/layouts/partials/**/*.html",

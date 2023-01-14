@@ -5949,6 +5949,58 @@ footer .site-link:hover {
   }
 }
 
+.popover {
+  position: absolute;
+  border-radius: 0.125rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(79 83 85 / var(--tw-bg-opacity));
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  line-height: 1.25;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (prefers-color-scheme: dark) {
+  .popover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(195 197 198 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(24 25 27 / var(--tw-text-opacity));
+  }
+}
+
+.popover::after {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-width: 4px;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  --tw-border-opacity: 1;
+  border-top-color: rgb(79 83 85 / var(--tw-border-opacity));
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
+@media (prefers-color-scheme: dark) {
+  .popover::after {
+    content: var(--tw-content);
+    --tw-border-opacity: 1;
+    border-top-color: rgb(195 197 198 / var(--tw-border-opacity));
+  }
+}
+
 /* BUTTON */
 
 .button {

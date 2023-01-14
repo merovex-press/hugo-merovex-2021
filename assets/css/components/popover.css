@@ -1,0 +1,4 @@
+.popover {
+  @apply absolute px-2 py-1 rounded-sm shadow-xl text-xs text-white dark:text-black leading-tight bg-dove-gray-700 dark:bg-dove-gray-300;
+  @apply after:content-[''] after:absolute after:left-1/2 after:top-[100%] after:-translate-x-1/2 after:border-4 after:border-x-transparent after:border-b-transparent after:border-t-dove-gray-700 dark:after:border-t-dove-gray-300;
+}

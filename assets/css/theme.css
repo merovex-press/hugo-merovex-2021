@@ -5188,6 +5188,11 @@ h1 .span {
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
 
+.bg-secondary-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 245 233 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-30 {
   --tw-bg-opacity: 0.3;
 }

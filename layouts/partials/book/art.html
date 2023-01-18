@@ -3,7 +3,7 @@
   {{- with .Resources.GetMatch "*-art*" }}
   {{- $resizedsm := .Resize "600x400 webp" }}
   {{- $resizedmd := .Resize "1000x660 webp" }}
-  {{- $resizedlg := .Resize "150x1000 webp" }}
+  {{- $resizedlg := .Resize "1500x1000 webp" }}
   {{- $resizedxl := .Resize "2000x1320 webp" }}
   <source media="(min-width: 1280px)" srcset="{{ $resizedlg.RelPermalink }} 1x,
                 {{ $resizedxl.RelPermalink }} 2x,

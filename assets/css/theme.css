@@ -5104,11 +5104,6 @@ h1 .span {
   background-color: rgb(187 247 208 / var(--tw-bg-opacity));
 }
 
-.bg-rose-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(244 63 94 / var(--tw-bg-opacity));
-}
-
 .bg-gray-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
@@ -5182,18 +5177,8 @@ h1 .span {
   --tw-bg-opacity: 0.3;
 }
 
-.bg-gradient-to-b {
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-}
-
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
-}
-
-.from-black {
-  --tw-gradient-from: #18191b;
-  --tw-gradient-to: rgb(24 25 27 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-gray-50\/100 {
@@ -5205,10 +5190,6 @@ h1 .span {
 .via-gray-50\/80 {
   --tw-gradient-to: rgb(249 250 251 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), rgb(249 250 251 / 0.8), var(--tw-gradient-to);
-}
-
-.to-rose-900 {
-  --tw-gradient-to: #881337;
 }
 
 .to-gray-50\/0 {
@@ -5951,7 +5932,8 @@ footer .site-link:hover {
 }
 
 svg#clock {
-  height: 100%;
+  height: auto;
+  max-height: 90vh;
   width: 100%;
 }
 
@@ -5978,25 +5960,25 @@ svg#clock {
 }
 
 .dayText {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .daysText, .weatherText {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .dateText, .tempText {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .timeText {
-  font-size: 4.5rem;
+  font-size: 6rem;
   line-height: 1;
   font-weight: 500;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.05em;
 }
 
 .popover {

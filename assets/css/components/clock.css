@@ -2,7 +2,7 @@
 }
 
 svg#clock {
-  @apply w-full h-full
+  @apply w-full max-h-[90vh] h-auto;
 }
 
 .bgDot {
@@ -28,17 +28,17 @@ svg#clock {
 }
 
 .dayText {
-  @apply text-2xl
+  @apply text-3xl
 }
 
 .daysText, .weatherText {
-  @apply text-base;
+  @apply text-xl;
 }
 
 .dateText, .tempText {
-  @apply text-4xl;
+  @apply text-5xl;
 }
 
 .timeText {
-  @apply text-7xl font-medium tracking-tight;
+  @apply text-8xl font-medium tracking-tighter;
 }

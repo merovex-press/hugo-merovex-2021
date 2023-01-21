@@ -1,9 +1,10 @@
-{{define "main" }}
-{{ range .Pages }}
-<article class="p-4 card">
-  <h2 class="h2"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-  <div class="mx-auto dark:prose-dark prosaic-sans">{{.Summary | truncate 330 }}
-  </div>
+{{ define "main" }}
+{{ partial "components/headline.html" . }}
+{{- block "figure" .}}{{end}}
+<article class="prosaic dark:prose-dark">
+  {{ .Content }}
 </article>
-{{ end }}
+{{ partial "components/subscribe.html" . }}
+{{ partial "components/pagebreak.html" . }}
+{{ partial "components/biography.html" . }}
 {{ end }}

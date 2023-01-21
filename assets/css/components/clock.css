@@ -1,0 +1,44 @@
+#clock-gradient {
+}
+
+svg#clock {
+  @apply w-full h-full
+}
+
+.bgDot {
+  stroke: none;
+}
+
+.clockCircle {
+  fill: none;
+  stroke: #2a2a2a;
+}
+
+.clockArc {
+  fill: none;
+  stroke: hsl(200, 60%, 60%);
+}
+
+.clockDot {
+  fill: hsl(200, 80%, 85%);
+}
+
+.caption {
+  fill: hsl(200, 60%, 95%);
+}
+
+.dayText {
+  @apply text-2xl
+}
+
+.daysText, .weatherText {
+  @apply text-base;
+}
+
+.dateText, .tempText {
+  @apply text-4xl;
+}
+
+.timeText {
+  @apply text-7xl font-medium tracking-tight;
+}

@@ -4453,11 +4453,6 @@ h1 .span {
   margin-bottom: 1.5rem;
 }
 
-.mx-8 {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
 .mx-6 {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -4909,12 +4904,6 @@ h1 .span {
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
-.space-x-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.75rem * var(--tw-space-x-reverse));
@@ -5115,6 +5104,11 @@ h1 .span {
   background-color: rgb(187 247 208 / var(--tw-bg-opacity));
 }
 
+.bg-rose-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 63 94 / var(--tw-bg-opacity));
+}
+
 .bg-gray-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
@@ -5155,10 +5149,6 @@ h1 .span {
   background-color: rgb(79 83 85 / var(--tw-bg-opacity));
 }
 
-.bg-primary-800\/\[\.80\] {
-  background-color: rgb(34 22 95 / .80);
-}
-
 .bg-primary-800\/\[0\.80\] {
   background-color: rgb(34 22 95 / 0.80);
 }
@@ -5188,17 +5178,22 @@ h1 .span {
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
 
-.bg-secondary-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 245 233 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-30 {
   --tw-bg-opacity: 0.3;
 }
 
+.bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
+.from-black {
+  --tw-gradient-from: #18191b;
+  --tw-gradient-to: rgb(24 25 27 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-gray-50\/100 {
@@ -5210,6 +5205,10 @@ h1 .span {
 .via-gray-50\/80 {
   --tw-gradient-to: rgb(249 250 251 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), rgb(249 250 251 / 0.8), var(--tw-gradient-to);
+}
+
+.to-rose-900 {
+  --tw-gradient-to: #881337;
 }
 
 .to-gray-50\/0 {
@@ -5412,11 +5411,6 @@ h1 .span {
   line-height: 1.75rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -5436,6 +5430,10 @@ h1 .span {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }
 
 .italic {
@@ -5947,6 +5945,58 @@ footer .site-link:hover {
     --tw-drop-shadow: drop-shadow(0 0 #0000);
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   }
+}
+
+#clock-gradient {
+}
+
+svg#clock {
+  height: 100%;
+  width: 100%;
+}
+
+.bgDot {
+  stroke: none;
+}
+
+.clockCircle {
+  fill: none;
+  stroke: #2a2a2a;
+}
+
+.clockArc {
+  fill: none;
+  stroke: hsl(200, 60%, 60%);
+}
+
+.clockDot {
+  fill: hsl(200, 80%, 85%);
+}
+
+.caption {
+  fill: hsl(200, 60%, 95%);
+}
+
+.dayText {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.daysText, .weatherText {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.dateText, .tempText {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.timeText {
+  font-size: 4.5rem;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -0.025em;
 }
 
 .popover {
@@ -9584,11 +9634,6 @@ footer .site-link:hover {
 }
 
 @media (min-width: 1024px) {
-  .lg\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .lg\:mx-8 {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -9628,10 +9673,6 @@ footer .site-link:hover {
 
   .lg\:w-48 {
     width: 12rem;
-  }
-
-  .lg\:w-2\/3 {
-    width: 66.666667%;
   }
 
   .lg\:w-auto {

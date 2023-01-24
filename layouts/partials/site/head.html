@@ -4,6 +4,9 @@
     {{- if .Params.seo.noindex}}
     <meta name="robots" content="noindex">
     {{- end }}
+    {{- if .Params.redirectTarget }}
+    <meta http-equiv="Refresh" content="0; url='{{.Params.redirectTarget}}'" />
+    {{- end }}
 
     {{- $title := (cond (ne ($.Param "seo.title") nil) ($.Param "seo.title") ( printf "%s | %s" .Title .Site.Title) ) }}
     <title>{{$title}}</title>

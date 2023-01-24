@@ -1,0 +1,27 @@
+{{ define "main" }}
+<header>
+  <h1 class="text-5xl">
+    {{.Title}}
+  </h1>
+</header>
+
+{{ partial "components/subscribe.html" . }}
+{{ partial "components/pagebreak.html" . }}
+{{ partial "components/biography.html" . }}
+<article class="prose lg:prose-lg dark:prose-dark mx-auto my-8">
+  {{.Content}}
+</article>
+{{- with $.Site.GetPage "section" "books" }}
+{{- range .Pages }}
+{{ if .IsSection}}
+{{- range .Pages }}
+{{- if .Params.featured }}
+{{ partial "book/hero.html" . }}
+{{ end }}
+{{ end }}
+{{ end }}
+{{ end }}
+{{ end }}
+
+
+{{ end }}

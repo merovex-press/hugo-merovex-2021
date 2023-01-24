@@ -4,10 +4,11 @@
 {{ if .IsSection}}
 {{- range .Pages }}
 {{- if .Params.featured }}
-<h1 class="text-5xl">
-  New from Ben Wilson
-</h1>
-<h2 class="h2">{{.Title}}</h2>
+<header>
+  <h1 class="text-5xl">
+    New from Ben Wilson
+  </h1>
+</header>
 {{ partial "book/hero.html" . }}
 <!-- {{ partial "book/excerpt.html" . }} -->
 

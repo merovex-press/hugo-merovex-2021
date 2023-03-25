@@ -9,7 +9,39 @@
     New from Ben Wilson
   </h1>
 </header>
-{{ partial "book/hero.html" . }}
+
+<section id="hero" class="z-0 mb-12" style="background: url(); background-size: cover;">
+  <div class="flex bg-primary-800/[0.80]">
+    <div class="flex flex-col items-center justify-center flex-1 my-8">
+      <div class="flex items-center justify-center w-full lg:hidden">
+        <!-- {{ partial "book/cover.html" . }} -->
+      </div>
+      <div class="flex flex-col items-center w-full max-w-lg mx-auto text-white p-4">
+        <header style="text-shadow: 1px 1px 1px #000">
+          <h1>Postal Marines:
+            <span class="block">Bophendze Quartet</span>
+          </h1>
+        </header>
+
+        <div class="flex-1" style="text-shadow: 1px 1px 1px #000">
+          Embark on the thrilling military sci-fi odyssey
+          with Postal Marine Danel Bophendze&mdash;who has an unstable AI in his brain&mdash;and his fellow warriors.
+          Through fierce battles and high-stakes strategic power plays,
+          can they harness game-changing technology and change humanity's course?</div>
+        <aside class="flex justify-center mt-8 item-center">
+          <div class="">
+            {{ partial "components/cta-links.html" . }}
+          </div>
+        </aside>
+      </div>
+    </div>
+    <div class="min-h-[300px] flex-1 hidden lg:block" style="clip-path: polygon(7% 0, 100% 0, 100% 100%, 0% 100%);">
+      {{ partial "book/art.html" . }}
+    </div>
+  </div>
+</section>
+
+<!-- {{ partial "book/hero.html" . }} -->
 <!-- {{ partial "book/excerpt.html" . }} -->
 
 {{ end }}

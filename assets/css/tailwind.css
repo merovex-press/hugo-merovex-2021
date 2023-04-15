@@ -5,7 +5,7 @@
 @import 'components/clock';
 @import 'components/popover';
 @import 'components/buttons';
-@import 'components/footer';
+/* @import 'components/footer'; */
 @import 'components/citation';
 @import 'components/cards';
 @import 'components/prose';

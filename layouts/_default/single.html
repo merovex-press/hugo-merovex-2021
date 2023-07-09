@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ partial "components/headline.html" . }}
 {{- block "figure" .}}{{end}}
-<article class="prosaic dark:prose-dark">
+<article class="prose mx-auto dark:prose-dark">
   {{ .Content }}
 </article>
 {{ partial "components/subscribe.html" . }}

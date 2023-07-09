@@ -1447,6 +1447,10 @@ select {
   width: 100vw;
 }
 
+.w-24 {
+  width: 6rem;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -1863,6 +1867,18 @@ select {
 
 .bg-primary-300 {
   background-color: oklch(75% 0.12 278);
+}
+
+.bg-secondary-300 {
+  background-color: oklch(92% 0.15 107);
+}
+
+.bg-grey-800 {
+  background-color: oklch(38% 0.006 220);
+}
+
+.bg-primary-500 {
+  background-color: oklch(58% 0.2 278);
 }
 
 .bg-opacity-30 {
@@ -3338,6 +3354,10 @@ svg#clock {
     border-color: oklch(81% 0.16 107);
   }
 
+  .dark\:border-primary-300 {
+    border-color: oklch(75% 0.12 278);
+  }
+
   .dark\:bg-dove-gray-800 {
     --tw-bg-opacity: 1;
     background-color: rgb(63 67 68 / var(--tw-bg-opacity));
@@ -3376,6 +3396,14 @@ svg#clock {
   .dark\:bg-warning-dark {
     --tw-bg-opacity: 1;
     background-color: rgb(153 108 40 / var(--tw-bg-opacity));
+  }
+
+  .dark\:bg-secondary-600 {
+    background-color: oklch(70% 0.14 107);
+  }
+
+  .dark\:bg-grey-950 {
+    background-color: oklch(30% 0.005 220);
   }
 
   .dark\:from-gray-900\/100 {
@@ -3459,6 +3487,10 @@ svg#clock {
 
   .dark\:text-primary-300 {
     color: oklch(75% 0.12 278);
+  }
+
+  .dark\:text-primary-100 {
+    color: oklch(91% 0.04 278);
   }
 }
 

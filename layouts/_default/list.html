@@ -1,6 +1,6 @@
 {{define "main" }}
 {{ range .Pages }}
-<article class="p-4 card">
+<article class="p-4 max-w-lg border">
   <h2 class="h2"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
   <div class="mx-auto dark:prose-dark prosaic-sans">{{.Summary | truncate 330 }}
   </div>

@@ -2,8 +2,8 @@
 {{- $icons := .Site.Params.icons }}
 {{- if .Params.cta }}
 {{- range $key, $val := .Params.cta}}
-<a class='btn btn-cta' href="{{ $val }}">
-  <span class='opacity-[0.50] tracking-tighter block'>Available on</span>
+<a class='border rounded inline-block py-2 px-3 bg-secondary-500 text-grey-950 border-secondary-100' href="{{ $val }}">
+  <span class='opacity-[0.70] tracking-tighter block'>Available on</span>
   <i class="" aria-hidden="true"></i> {{title $key }}
 </a>
 {{- end }}

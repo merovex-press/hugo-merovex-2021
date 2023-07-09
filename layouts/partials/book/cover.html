@@ -1,28 +1,28 @@
-{{ $klass := "mx-auto" }}
+{{ $klass := "mx-auto rounded" }}
 
 <picture>
-    {{- if .Resources.Match "*cover*" }}
-    {{- with .Resources.GetMatch "*cover*" }}
-    {{- $resizedsm := .Resize "200x300 webp" }}
-    {{- $resizedmd := .Resize "330x500 webp" }}
-    {{- $resizedlg := .Resize "500x750 webp" }}
-    {{- $resizedxl := .Resize "660x1000 webp" }}
-    <source media="(min-width: 1280px)" srcset="{{ $resizedlg.RelPermalink }} 1x,
+      {{- if .Resources.Match "*cover*" }}
+      {{- with .Resources.GetMatch "*cover*" }}
+      {{- $resizedsm := .Resize "200x300 webp" }}
+      {{- $resizedmd := .Resize "330x500 webp" }}
+      {{- $resizedlg := .Resize "500x750 webp" }}
+      {{- $resizedxl := .Resize "660x1000 webp" }}
+      <source media="(min-width: 1280px)" srcset="{{ $resizedlg.RelPermalink }} 1x,
           {{ $resizedxl.RelPermalink }} 2x,
           {{ $resizedxl.RelPermalink }} 3x">
-    <source media="(min-width: 1024px)" srcset="{{ $resizedlg.RelPermalink }} 1x,
+      <source media="(min-width: 1024px)" srcset="{{ $resizedlg.RelPermalink }} 1x,
           {{ $resizedxl.RelPermalink }} 2x,
           {{ $resizedxl.RelPermalink }} 3x">
-    <source media="(min-width: 768px)" srcset="{{ $resizedmd.RelPermalink }} 1x,
+      <source media="(min-width: 768px)" srcset="{{ $resizedmd.RelPermalink }} 1x,
           {{ $resizedlg.RelPermalink }} 2x,
           {{ $resizedxl.RelPermalink }} 3x">
-    <!-- Support Mobile -->
-    <source media="(min-width: 640px)" srcset="{{ $resizedsm.RelPermalink }} 1x,
+      <!-- Support Mobile -->
+      <source media="(min-width: 640px)" srcset="{{ $resizedsm.RelPermalink }} 1x,
           {{ $resizedmd.RelPermalink }} 2x,
           {{ $resizedlg.RelPermalink }} 3x">
-    <img alt='book-cover' class="{{$klass}}" src='{{ $resizedmd.RelPermalink }}'>
-    {{ end }}
-    {{ else}}
-    <img alt='book-cover' class="{{$klass}}" src='https://via.placeholder.com/333x500?text=Book+Cover'>
-    {{- end }}
+      <img alt='book-cover' class="{{$klass}}" src='{{ $resizedmd.RelPermalink }}'>
+      {{ end }}
+      {{ else}}
+      <img alt='book-cover' class="{{$klass}}" src='https://via.placeholder.com/333x500?text=Book+Cover'>
+      {{- end }}
 </picture>

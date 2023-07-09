@@ -8,11 +8,11 @@
 {{ range .Pages.ByWeight }}
 {{ if .IsSection}}
 <section class="mb-20">
-  <h2 class='h2' id='{{ .Title | urlize }}'>
+  <h2 class='text-center text-3xl md:text-4xl' id='{{ .Title | urlize }}'>
     <a href="{{.Permalink}}">{{.Title}}</a>
   </h2>
   <div
-    class="relative flex w-full overflow-x-auto shadow-inner gap-6 snap-x snap-mandatory p-14 bg-dove-gray-200 dark:bg-dove-gray-800">
+    class="relative flex w-full overflow-x-auto shadow-inner gap-6 snap-x snap-mandatory p-14 bg-grey-200 dark:bg-grey-700">
     <div class="snap-center shrink-0">
       <div class="w-4 shrink-0 sm:w-48"></div>
     </div>

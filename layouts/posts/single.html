@@ -2,10 +2,10 @@
 {{/* partial "posts/figure.html" . */}}
 {{ end }}
 {{ define "main" }}
-<article class="max-w-3xl px-4 mx-auto">
+<article class="max-w-prose px-4 mx-auto">
   {{ partial "components/headline.html" . }}
-  {{- block "figure" .}}{{end}}
-  <div class="mb-12 prosaic-serif dark:prose-dark">
+  <!-- {{- block "figure" .}}{{end}} -->
+  <div class="mb-12 prose dark:prose-dark">
     {{ .Content }}
   </div>
 </article>

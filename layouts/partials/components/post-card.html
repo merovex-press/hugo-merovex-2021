@@ -1,10 +1,15 @@
-<article class='card'>
-  <div class='dtg'>{{ partial "dtg.html" . }}</div>
-  <h2>{{.Title}} <span class='block'>{{.Params.Subtitle}}</span></h2>
-  <div class='summary'>{{.Summary | truncate 330 }}</div>
-  <div class='text-center'>
-    <a href="{{- .Permalink -}}" class="card-link"
-      aria-label='Post: {{ .Title }} on {{ dateFormat "January 2, 2006" .Date }}'></a>
-    <span class="btn btn-primary-outline">Read More</span>
-  </div>
-</article>
+<a href="{{- .Permalink -}}" class="card-link"
+  aria-label='Post: {{ .Title }} on {{ dateFormat "January 2, 2006" .Date }}'>
+  <article class='max-w-lg shadow-md mx-auto dark:bg-grey-700 rounded border my-4 p-4'>
+    <div class='text-center text-grey-500 dark:text-grey-300'>{{ partial "dtg.html" . }}</div>
+    <h2 class="text-2xl mb-2 balanced text-center font-semibold">{{.Title}} <span
+        class='block'>{{.Params.Subtitle}}</span>
+    </h2>
+    <div class='summary'>{{.Summary | truncate 330 }}</div>
+    <div class='text-center py-4'>
+      <span
+        class="border rounded uppercase text-primary-600 dark:text-primary-200 py-2 px-3 text-xs border-primary-600 dark:border-primary-400">Read
+        More</span>
+    </div>
+  </article>
+</a>

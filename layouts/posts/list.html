@@ -1,11 +1,9 @@
 {{define "main" }}
 <div class="mx-auto font-sans">
-
-  <div class="print:hidden">
-    {{ partial "components/subscribe.html" . }}
-  </div>
   {{ partial "components/biography.html"}}
   {{ partial "components/pagebreak.html" . }}
+  {{ partial "components/subscribe.html" . }}
+
   <!-- {{ partial "site/pagination.html" . }} -->
   {{ partial "components/post-section.html" .}}
   {{ partial "site/pagination.html" . }}

@@ -1,12 +1,12 @@
 <a href="{{- .Permalink -}}" class="card-link "
   aria-label='Post: {{ .Title }} on {{ dateFormat "January 2, 2006" .Date }}'>
-  <article class='max-w-prose shadow-md mx-auto dark:bg-grey-900 rounded border dark:border-grey-800 my-4 p-4'>
+  <article class='max-w-prose shadow-md mx-auto dark:bg-grey-900 rounded border dark:border-grey-800 my-8 p-8'>
     <div class='text-center text-sm text-grey-500 dark:text-grey-300'>{{ partial "dtg.html" . }}</div>
     <h2 class="text-3xl mb-2 balanced text-center font-semibold">{{.Title}} <span
         class='block'>{{.Params.Subtitle}}</span>
     </h2>
     <div class='summary text-lg'>{{.Summary | truncate 330 }}</div>
-    <div class='text-center py-4'>
+    <div class='text-center mt-8'>
       <span
         class="border rounded uppercase text-primary-600 dark:text-primary-200 py-2 px-3 text-xs border-primary-600 dark:border-primary-400">Read
         More</span>
